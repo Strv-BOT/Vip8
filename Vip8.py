@@ -254,7 +254,8 @@ def Masuk():
 				exit("%s%s isi yang benar "%(M,til))
 				
 	pilihan().menu()
-	
+
+class pilihan
 def login():
 		try:
 			token = open('.token.txt','r').read()
