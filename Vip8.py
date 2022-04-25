@@ -228,7 +228,7 @@ def Masuk():
 			elif rom in ('1','01'):
 				checkin()
 			elif rom in ['2','02']:
-	  login()
+	      login()
 			elif rom in ('3', '03'):
 				print (N)
 				tutorial = ('''# Untuk mendapatkan cookie siapkan aplikasi kiwi browser, download di play store jika belum. Jika sudah login kan akun facebook anda di kiwi browser, akun wajib mode data. Salin link: https://chrome.google.com/webstore/detail/get-cookie/naciaagbkifhpnoodlkhbejjldaiffcm/related. Ketik Y/y lalu enter untuk melihat tutorial lebih lengkap!''')
@@ -319,32 +319,7 @@ def login_bot(romz):
 		
 # MENU PILIHAN INI AJG
 class Menu():
-	
-	def __init__(self,url):
-		self.url = url
-		
-	def tentang(self):
-		try:
-			kueh = romz_xyz(open("data/cookies","r").read().strip())
-		except IOError:
-			os.system("rm -rf data/cookies && rm -rf data/token && rm -rf data/my_info")
-			print ("%s%s cookie invalid "%(M,til));jeda(2)
-			os.system('python bff-2.py')
-		try:
-			tentang = json.loads(open("data/my_info","r").read().strip())
-		except FileNotFoundError:
-			from data import informasi
-			informasi.info(kueh, requests.get("https://mbasic.facebook.com/profile.php?v=info",cookies = kueh).text).myinfo()
-			os.system('python bff-2.py')
-		try:
-			a = requests.get(f"{self.url}/profile.php", cookies = kueh).text
-		except requests.exceptions.ConnectionError:
-			exit('\n\n%s%s tidak ada koneksi%s\n'%(M,til,N))
-		if "mbasic_logout_button" not in a:
-			os.system("rm -rf data/cookies && rm -rf data/token && rm -rf data/my_info")
-			print ("%s%s cookie invalid "%(M,til));jeda(2)
-			os.system('python bff-2.py')
-		else:
+		jalan('𝑯𝒆𝒍𝒍𝒐....... ')
 			banner()
 			print(f"{U} # {O}Name{M} : {H}{tentang.get('nama')}\n")
 			print ('%s•%s 01 %sCrack dari daftar teman '%(U,P,O))
@@ -363,20 +338,7 @@ class Menu():
 			print ('%s•%s rm %sHapus data login'%(U,P,O))
 			print ('%s•%s 00 %sKeluar (logout)'%(U,M,O))
 		
-class pilihan:
-	
-	def __init__(self):
-		self.kueh = romz_xyz(open("data/cookies","r").read().strip())
-		try:
-			self.token = open("data/token.txt","r").read()
-		except FileNotFoundError:
-			os.system("rm -rf data/cookies && rm -rf data/token && rm -rf data/my_info")
-			os.system('clear')
-			print ("%s%s cookie invalid "%(M,til));jeda(2)
-			os.system('python bff-2.py')
-		self.url = ("https://mbasic.facebook.com")
-		self.id = []
-				
+class pilihan:			
 	def menu(self):
 		Menu(self.url).tentang()
 		slut = input('\n%s# %sPilih %s> %s'%(P,O,M,K))
