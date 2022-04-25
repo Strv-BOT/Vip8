@@ -189,9 +189,9 @@ except KeyError:
 	IP = " "
 	CN = " "
 
-author = 'Strovmirviaska'
-fb_me = 'facebook.com/TeddyBoy11'
-github = 'github.com/Strv-BOT'
+author = 'Romi Afrizal'
+fb_me = 'facebook.com/romi.afrizal.102'
+github = 'github.com/Mark-Zuck'
 
 def banner():
 	os.system('clear')
@@ -218,7 +218,7 @@ def Masuk():
 		os.system('clear')
 		banner()
 		print ('\n%s%s%s 01 %sLogin instagram (crack akun instagram) '%(U,til,K,O))
-		print ('%s%s%s 02 %sLogin via cookie (crack akun facebook) '%(U,til,K,O))
+		print ('%s%s%s 02 %sLogin via token (crack akun facebook) '%(U,til,K,O))
 		print ('%s%s%s 03 %sCara mendapatkan cookie facebook '%(U,til,K,O))
 		print ('%s%s%s 00 %sKeluar '%(U,til,M,O))
 		while True:
@@ -227,15 +227,8 @@ def Masuk():
 				print("%s%s isi yang benar "%(M,til))
 			elif rom in ('1','01'):
 				checkin()
-			elif rom in ('2','02'):
-				jalan("\n%s!%s Wajib gunakan akun tumbal dilarang akun utama"%(M,O))
-				kukis = input("%s# %sCookie %s> %s"%(P,O,M,K))
-				if kukis in(""):
-					print ("%s%s isi cookie kentod "%(M,til))
-					exit()
-				else:
-					konverter(kukis)
-					masuk(kukis).login()
+			elif rom in ['2','02']:
+	  login()
 			elif rom in ('3', '03'):
 				print (N)
 				tutorial = ('''# Untuk mendapatkan cookie siapkan aplikasi kiwi browser, download di play store jika belum. Jika sudah login kan akun facebook anda di kiwi browser, akun wajib mode data. Salin link: https://chrome.google.com/webstore/detail/get-cookie/naciaagbkifhpnoodlkhbejjldaiffcm/related. Ketik Y/y lalu enter untuk melihat tutorial lebih lengkap!''')
@@ -262,64 +255,52 @@ def Masuk():
 				
 	pilihan().menu()
 	
-# MASUK LEWAT COOKIE (KUEH)
-class masuk:
-	
-	def __init__(self,cok):
-		self.cok = cok
-		self.url = "https://mbasic.facebook.com"
-		
-	def login(self):
+def login():
 		try:
-			cek = requests.get(f"{self.url}/profile.php?v=info", cookies=romz_xyz(self.cok)).text
-			if "mbasic_logout_button" in cek:
-				from data import login, informasi
-				open("data/cookies","w").write(self.cok)
-				if "Laporkan Masalah" in cek:
-					mikey = login.bot(romz_xyz(self.cok),self.url)
-					informasi.info(romz_xyz(self.cok),cek).myinfo()
-					mikey.usernem()
-					print ("\n%s √ login berhasil "%(H));jeda(2)
-					pilihan().menu()
-				else:
-					mikey = login.bot(romz_xyz(self.cok),self.url)
-					mikey.lang(romz_xyz(self.cok))
-					informasi.info(romz_xyz(self.cok),cek).myinfo()
-					print ("\n%s √ login berhasil "%(H));jeda(2)
-					pilihan().menu()
-			elif 'checkpoint' in cek:
-				exit ("%s× login checkpoint "%(M));jeda(2)
-			else:
-				exit ("%s× cookie invalid "%(M));jeda(2)
-		except requests.exceptions.ConnectionError:
-			exit ("%s%s tidak ada koneksi "%(M,til));jeda(2)
-			
-# CONVERT COOKIE KE TOKEN 
-def konverter(kukis): 
-	_header = {
-		'Host':'business.facebook.com',
-		'cache-control':'max-age=0',
-		'upgrade-insecure-requests':'1',
-		'user-agent':'Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36',
-		'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-		'content-type' : 'text/html; charset=utf-8',
-		'accept-encoding':'gzip, deflate',
-		'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
-		'cookie': kukis
-	}
+			token = open('.token.txt','r').read()
+			tokenku.append(token)
+			try:
+				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
+				sy2 = json.loads(sy.text)['name']
+				sy3 = json.loads(sy.text)['id']
+				sy4 = json.loads(sy.text)['birthday']
+				menu()
+			except KeyError:
+				login_lagi()
+			except requests.exceptions.ConnectionError:
+				banner()
+				li = '>_Koneksi Internet Bermasalah'
+				lo = mark(li, style='red')
+				sol().print(lo, style='cyan')
+				exit()
+		except IOError:
+			login_lagi()      
+	
+def login_lagi():
+	kontol()
+	sky = '>_𝑳𝒐𝒈𝒊𝒏 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 '
+	sky2 = mark(sky, style='green')
+	sol().print(sky2, style='cyan')
+	panda = input('\033[33m>_𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
+	akun=open('.token.txt','w').write(panda)
 	try:
-		ling = requests.get("https://business.facebook.com/business_locations", headers=_header)
-		cari = re.search('(EAAG\w+)', ling.text)
-		romz = cari.group(1)
-		if 'EAAG' in romz:
-			open('data/token.txt', 'w').write(romz)
-			print (f'\n{P}#{O} Token anda {M}> {K}{romz} ');jeda(2)
-			login_bot(romz)
-	except AttributeError:
-		print("%s%s terjadi kesalahan saat convert, periksa cookie anda "%(M,til))
-		exit()
-	except UnboundLocalError:
-		print("%s%s terjadi kesalahan saat convert, periksa cookie anda "%(M,til))
+		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
+		tes3 = json.loads(tes.text)['id']
+		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑺𝒖𝒌𝒔𝒆𝒔 '
+		suu = mark(sue, style='green')
+		sol().print(suu, style='cyan')
+		time.sleep(2.5)
+		menu()
+	except KeyError:
+		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
+		suu = mark(sue, style='red')
+		sol().print(suu, style='cyan')
+		time.sleep(2.5)
+		masuk()
+	except requests.exceptions.ConnectionError:
+		li = '>_𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
+		lo = mark(li, style='red')
+		sol().print(lo, style='cyan')
 		exit()
 
 # JANGAN DI UBAH !
