@@ -218,7 +218,7 @@ def Masuk():
 		os.system('clear')
 		banner()
 		print ('\n%s%s%s 01 %sLogin instagram (crack akun instagram) '%(U,til,K,O))
-		print ('%s%s%s 02 %sLogin via token (crack akun facebook) '%(U,til,K,O))
+		print('%s 2. 𝑳𝒐𝒈𝒊𝒏 𝑲𝒆 𝑺𝒄𝒓𝒊𝒑𝒕 '%(B))
 		print ('%s%s%s 03 %sCara mendapatkan cookie facebook '%(U,til,K,O))
 		print ('%s%s%s 00 %sKeluar '%(U,til,M,O))
 		while True:
