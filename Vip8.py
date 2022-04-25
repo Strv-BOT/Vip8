@@ -189,9 +189,9 @@ except KeyError:
 	IP = " "
 	CN = " "
 
-author = 'Romi Afrizal'
-fb_me = 'facebook.com/romi.afrizal.102'
-github = 'github.com/Mark-Zuck'
+author = 'Strovmirviaska'
+fb_me = 'facebook.com/TeddyBoy11'
+github = 'github.com/Strv-BOT'
 
 def banner():
 	os.system('clear')
