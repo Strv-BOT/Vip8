@@ -26,7 +26,7 @@ logo = '\n\x1b[1;92m              \n\x1b[1;92m                      \n\x1b[1;96m
 
 def reg():
     os.system('clear')
-    print logo
+    print logo()
     print ''
     print '\x1b[1;31;1mTake The Approval For Login Charges 350'
     print ''
