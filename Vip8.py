@@ -130,7 +130,7 @@ def login():
 			login_lagi()      
 	
 def login_lagi():
-	banner()
+	kontol()
 	sky = '>_𝑳𝒐𝒈𝒊𝒏 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 '
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
@@ -174,7 +174,7 @@ def menu_test():
 		exit()
 		
 def krekefbi():
-	kontol()
+	banner()
 	print('[𝑻𝒐𝒌𝒆𝒏 𝑨𝒏𝒅𝒂>>>> :  '+str(tokenku)) 
 	print('[01] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌')
 	print('[02] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒄 [𝑴𝒂𝒔𝒔𝒂𝒍]')
