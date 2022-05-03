@@ -221,7 +221,6 @@ def bottzy():
 def kanjoed():
 	main()
 
-	except:pass
 def result():
 	cek = '>_Cek Hasil Crack'
 	sol().print(mark(cek, style='green'))
