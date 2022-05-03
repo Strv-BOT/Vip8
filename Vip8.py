@@ -89,15 +89,14 @@ def clear():
 	os.system('clear')
 def back():
 	login()
-
 def banner():
-		clear()
-	wel = '>_𝑯𝒆𝒍𝒍𝒐 𝑨𝒏𝒅𝒂 𝑩𝒆𝒓𝒉𝒂𝒔𝒊𝒍 𝑳𝒐𝒈𝒊𝒏'
+	clear()
+	wel = '>_𝑯𝑬𝑳𝑳𝑶 𝑨𝑵𝑫𝑨 𝑩𝑬𝑹𝑯𝑨𝑺𝑰𝑳 𝑴𝑨𝑺𝑼𝑲'
 	wel2 = mark(wel, style='cyan')
 	sol().print(wel2)
-	au=' Banner Nanti Gw Benerin >_Author > Hikmat  >_Facebook > Muhammad Umar Farooq >_Notice > Kalo Crack Jangan Pake Kartu Tsel Karena Sering Dapet Akun Checkpoint'
+	au='🅢🅘🅛🅐🅗🅚🅐🅝 🅤🅝🅣🅤🅚 🅜🅔🅝🅖🅖🅤🅝🅚🅐🅝 🅣🅞🅞🅛🅢 🅑🅤🅐🅣🅐🅝 🅢🅐🅨🅐'
 	pengembang1=nel(au,style="green")
-	cetak(nel(pengembang1, title='>_𝗦𝘁𝗿𝗼𝘃𝗺𝗶𝗿𝘃𝗶𝗮𝘀𝗸𝗮 𝗩𝗶𝗽𝟳'))
+	cetak(nel(pengembang1, title='𝗦𝘁𝗿𝗼𝘃𝗺𝗶𝗿𝘃𝗶𝗮𝘀𝗸𝗮 𝗩𝗶𝗽𝟳'))
 
 def memek():
 	banner()
@@ -1423,7 +1422,7 @@ def kontol():
 \x1b[0;32m█  \33[m𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂           
 \x1b[0;32m█  \33[m𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒
 \x1b[0;32m█  \33[m𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 : 𝑻𝒆𝒅𝒅𝒚𝒚𝒚𝒚_𝟏𝟏     
-\x1b[0;32m█  \33[m𝑻𝒐𝒐𝒍𝒔 𝑺𝒄𝒓𝒊𝒑𝒕 : 𝑩𝒆𝒍𝒖𝒎 𝑷𝒓𝒆𝒎𝒊𝒖𝒎   
+\x1b[0;32m█  \33[m𝑻𝒐𝒐𝒍𝒔 𝑺𝒄𝒓𝒊𝒑𝒕 : \33[1;96m𝑷𝒓𝒆𝒎𝒊𝒖𝒎    
 \x1b[0;32m█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
 \33[31m𝒔𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝒍𝒐𝒈𝒊𝒏 𝒅𝒖𝒍𝒖 : """)
