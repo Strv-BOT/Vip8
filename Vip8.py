@@ -134,7 +134,7 @@ def login_lagi():
 	panda = input('\033[33m𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	akun=open('.token.txt','w').write(panda)
 	try:
-		tes = requests.get('https://graph.facebook.com/me?access_token=%s'(panda)
+		tes = requests.get('https://graph.facebook.com/me?access_token=%s'panda)
 		tes3 = json.loads(tes.text)['id']
 		sue = ' 𝑳𝒐𝒈𝒊𝒏 𝑺𝒖𝒌𝒔𝒆𝒔 '
 		suu = mark(sue, style='green')
