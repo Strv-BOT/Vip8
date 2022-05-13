@@ -110,7 +110,7 @@ def login():
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:
-				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
+				sy = requests.get('https://free.facebook.com/me?access_token='+tokenku[0])
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				sy4 = json.loads(sy.text)['birthday']
