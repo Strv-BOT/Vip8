@@ -113,36 +113,29 @@ def login():
     cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
     with requests.Session() as xyz:
         try:
-            data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
-            "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
-            "referer"                   : "https://m.facebook.com/",
-            "host"                      : "m.facebook.com",
-            "origin"                    : "https://m.facebook.com",
-            "upgrade-insecure-requests" : "1",
-            "accept-language"           : "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-            "cache-control"             : "max-age=0",
-            "accept"                    : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-            "content-type"              : "text/html; charset=utf-8"
-            }, cookies = {
-            "cookie"                    : cookie
-            })
-            find_token = re.search("(EAAA\w+)", data.text)
-            hasil = "\n* Fail : maybe your cookie invalid !!" if (find_token is None) else "\n* Your fb access token : " + find_token.group(1)
-            xd = open("token.txt", "w")
-            xd.write(find_token.group(1))
-            xd.close()
-            print('%s║'%(O))
-            jalan('%s╚══[%s!%s] %sLogin Berhasil'%(O,P,O,P))
+            get_tok = xyz.get(url_businness+'/business_locations',headers = {
+                    "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36",
+                    "referer": web_fb,
+                    "host": "business.facebook.com",
+                    "origin": url_businness,
+                    "upgrade-insecure-requests" : "1",
+                    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "cache-control": "max-age=0",
+                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8",
+                    "content-type":"text/html; charset=utf-8"},cookies = {"cookie":cookie})
+            token = re.search("(EAAG\w+)", get_tok.text).group(1)
+            coki = {'cookie':cookie}
+            bot_author(coki,token,cookie)
+            open('cookies.txt','w').write(cookie)
+            open('token.txt','w').write(token)
+            #bot_fol()
             menu_test()
         except requests.exceptions.ConnectionError:
-            print('%s║'%(O))
-            jalan('%s╚══[%s!%s] %sKoneksi Bermasalah'%(M,P,M,P))
+            print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P))
             exit()
         except (KeyError,IOError,AttributeError):
-            print('%s║'%(O))
-            jalan('%s╚══[%s!%s] %sCookies Invalid'%(M,P,M,P))
-            os.system('rm -rf token.txt')
-            memek()
+            print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
+            exit()
 		
 def menu_test():
 	jalan('𝑯𝒆𝒍𝒍𝒐....... ')
