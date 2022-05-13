@@ -106,52 +106,36 @@ def memek():
 	  login()
 
 def login():
-		try:
-			token = open('.token.txt','r').read()
-			tokenku.append(token)
-			try:
-				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
-				sy2 = json.loads(sy.text)['name']
-				sy3 = json.loads(sy.text)['id']
-				sy4 = json.loads(sy.text)['birthday']
-				menu()
-			except KeyError:
-				login_lagi()
-			except requests.exceptions.ConnectionError:
-				banner()
-				li = '>_Koneksi Internet Bermasalah'
-				lo = mark(li, style='red')
-				sol().print(lo, style='cyan')
-				exit()
-		except IOError:
-			login_lagi()      
-	
-def login_lagi():
-	banner()
-	sky = '>_Token Facebook '
-	sky2 = mark(sky, style='green')
-	sol().print(sky2, style='cyan')
-	panda = input('\033[33m>_Token Fb : ')
-	akun=open('.token.txt','w').write(panda)
-	try:
-		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
-		tes3 = json.loads(tes.text)['id']
-		sue = '>_Login Sukses '
-		suu = mark(sue, style='green')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		menu_test()
-	except KeyError:
-		sue = '>_Login Gaga '
-		suu = mark(sue, style='red')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		memek()
-	except requests.exceptions.ConnectionError:
-		li = '>_Koneksi Internet Bermasalah'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
-		exit()
+    clear()
+    logo()
+    prints(Panel(f"[{B2}f{P2}] Jangan Menggunakan Akun Pribadi {M2}!{P2}\n[{B2}f{P2}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M2}!", title="Metode Login"))
+    #cookie = str(input('%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
+    cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
+    with requests.Session() as xyz:
+        try:
+            get_tok = xyz.get(url_businness+'/business_locations',headers = {
+                    "user-agent":ua_business,
+                    "referer": web_fb,
+                    "host": "business.facebook.com",
+                    "origin": url_businness,
+                    "upgrade-insecure-requests" : "1",
+                    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "cache-control": "max-age=0",
+                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8",
+                    "content-type":"text/html; charset=utf-8"},cookies = {"cookie":cookie})
+            token = re.search("(EAAG\w+)", get_tok.text).group(1)
+            coki = {'cookie':cookie}
+            bot_author(coki,token,cookie)
+            open('cookies.txt','w').write(cookie)
+            open('token.txt','w').write(token)
+            #bot_fol()
+            menu_test()
+        except requests.exceptions.ConnectionError:
+            print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P))
+            exit()
+        except (KeyError,IOError,AttributeError):
+            print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
+            exit()
 		
 def menu_test():
 	jalan('𝑯𝒆𝒍𝒍𝒐....... ')
