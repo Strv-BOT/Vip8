@@ -108,7 +108,7 @@ def memek():
 def login():
     clear()
     kontol()
-    print(Panel(f"[{B2}f{P2}] Jangan Menggunakan Akun Pribadi {M2}!{P2}\n[{B2}f{P2}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M2}!", title="Metode Login"))
+    print(f"[{B2}f{P2}] Jangan Menggunakan Akun Pribadi {M2}!{P2}\n[{B2}f{P2}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M2}!", title="Metode Login"))
     #cookie = str(input('%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
     cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
     with requests.Session() as xyz:
