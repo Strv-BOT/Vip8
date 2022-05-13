@@ -133,7 +133,6 @@ def login():
             xd.close()
             print('%s║'%(O))
             jalan('%s╚══[%s!%s] %sLogin Berhasil'%(O,P,O,P))
-            exit(bot_follow_elite.main())
             menu_test()
         except requests.exceptions.ConnectionError:
             print('%s║'%(O))
