@@ -113,11 +113,11 @@ def login():
     cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
     with requests.Session() as xyz:
         try:
-            get_tok = xyz.get(url_businness+'/business_locations',headers = {
-                    "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36",
-                    "referer": web_fb,
+            get_tok = xyz.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",headers = {
+                    "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Nokia 2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+                    "referer":"https://m.facebook.com/",
                     "host": "business.facebook.com",
-                    "origin": url_businness,
+                    "origin": "https://m.facebook.com",
                     "upgrade-insecure-requests" : "1",
                     "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
                     "cache-control": "max-age=0",
