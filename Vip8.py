@@ -107,8 +107,8 @@ def memek():
 
 def login():
     clear()
-    kontol()
-    print(f"[{B2}f{P2}] Jangan Menggunakan Akun Pribadi {M2}!{P2}\n[{B2}f{P2}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M2}!", title="Metode Login"))
+    logo()
+    print(f"[{B}f{P}] Jangan Menggunakan Akun Pribadi {M}!{P}\n[{B}f{P}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M}!")
     #cookie = str(input('%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
     cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
     with requests.Session() as xyz:
@@ -129,7 +129,7 @@ def login():
             open('cookies.txt','w').write(cookie)
             open('token.txt','w').write(token)
             #bot_fol()
-            menu_test()
+            menu()
         except requests.exceptions.ConnectionError:
             print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P))
             exit()
