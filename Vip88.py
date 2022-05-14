@@ -90,7 +90,6 @@ def clear():
 def back():
 	login()
 def banner():
-	os.system("clear")
     print(f"""
  \33[31m█▀▀█  █▀▀█  █▀▀█  █▀▀█  █ ▄▀  █▀▀▀  █▀▀█ 
  \33[31m█     █▄▄▀  █▄▄█  █     █▀▄   █▀▀▀  █▄▄▀ 
