@@ -155,7 +155,7 @@ def login_lagi():
 
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
-def bot:
+def bot():
 		try:
 			toket = open('token.x','r').read()
 		except IOError:
