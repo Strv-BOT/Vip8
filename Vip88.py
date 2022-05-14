@@ -95,13 +95,13 @@ def banner():
  \33[31m█▀▀█  █▀▀█  █▀▀█  █▀▀█  █ ▄▀  █▀▀▀  █▀▀█ 
  \33[31m█     █▄▄▀  █▄▄█  █     █▀▄   █▀▀▀  █▄▄▀ 
  \33[31m█▄▄█  █  █  █  █  █▄▄█  █  █  █▄▄▄  █  █
-\33[31m───────────────────────────────────────────────────────
- [\x1b[1;96m+%s] Author   : Strovmirviaska
- [\x1b[1;96m+%s] Github   : https://github.com/Strv-BOT
- [\x1b[1;96m+%s] Facebook : Teddy Cahyo Putra Pangembara
- [\x1b[1;96m+%s] intagram : teddyyyy_11
- [\x1b[1;96m+%s] Tools    : Belum Premium
-\33[31m─────────────────────────────────────────────────────── 
+\x1b[0;31m───────────────────────────────────────────────────────
+\x1b[0;31m█  \33[m GITHUB    : \33[1;32mhttps://github.com/Strv-BOT 
+\x1b[0;31m█  \33[m FACEBOOK  : \33[1;33mTEDDY Cahyo Putra Pangembara       
+\x1b[0;31m█  \33[m WHATSAPP  : \33[1;33m082290885204
+\x1b[0;31m█  \33[m INSTAGRAM : \33[1;33mteddyyyy_11     
+\x1b[0;31m█  \33[m TOOLS     : \33[31mBelum Premium  
+\x1b[0;31m───────────────────────────────────────────────────────
 """)
 def memek():
 	kontol()
