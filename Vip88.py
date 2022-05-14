@@ -128,7 +128,7 @@ def login():
 	
 def login_lagi():
 		os.system('clear')
-		banner()
+		kontol()
 		token = input(' [%s*%s] Masukan token : '%(O,N))
 		if token in ['']:
 			time.sleep(2);login().login_lagi()
