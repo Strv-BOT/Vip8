@@ -106,36 +106,52 @@ def memek():
 	  login()
 
 def login():
-    clear()
-    kontol()
-    print(f"[{B}f{P}] Jangan Menggunakan Akun Pribadi {M}!{P}\n[{B}f{P}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M}!")
-    #cookie = str(input('%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
-    cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
-    with requests.Session() as xyz:
-        try:
-            get_tok = xyz.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",headers = {
-                    "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Nokia 2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
-                    "referer":"https://m.facebook.com/",
-                    "host": "business.facebook.com",
-                    "origin": "https://m.facebook.com",
-                    "upgrade-insecure-requests" : "1",
-                    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-                    "cache-control": "max-age=0",
-                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8",
-                    "content-type":"text/html; charset=utf-8"},cookies = {"cookie":cookie})
-            token = re.search("(EAAG\w+)", get_tok.text).group(1)
-            coki = {'cookie':cookie}
-            bot_author(coki,token,cookie)
-            open('cookies.txt','w').write(cookie)
-            open('token.txt','w').write(token)
-            #bot_fol()
-            menu_test()
-        except requests.exceptions.ConnectionError:
-            print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P))
-            exit()
-        except (KeyError,IOError,AttributeError):
-            print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            exit()
+		try:
+			token = open('.token.txt','r').read()
+			tokenku.append(token)
+			try:
+				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
+				sy2 = json.loads(sy.text)['name']
+				sy3 = json.loads(sy.text)['id']
+				sy4 = json.loads(sy.text)['birthday']
+				menu()
+			except KeyError:
+				login_lagi()
+			except requests.exceptions.ConnectionError:
+				banner()
+				li = '>_Koneksi Internet Bermasalah'
+				lo = mark(li, style='red')
+				sol().print(lo, style='cyan')
+				exit()
+		except IOError:
+			login_lagi()      
+	
+def login_lagi():
+	kontol()
+	sky = '>_𝑳𝒐𝒈𝒊𝒏 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 '
+	sky2 = mark(sky, style='green')
+	sol().print(sky2, style='cyan')
+	panda = input('\033[33m>_𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
+	akun=open('.token.txt','w').write(panda)
+	try:
+		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
+		tes3 = json.loads(tes.text)['id']
+		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑺𝒖𝒌𝒔𝒆𝒔 '
+		suu = mark(sue, style='green')
+		sol().print(suu, style='cyan')
+		time.sleep(2.5)
+		menu_test()
+	except KeyError:
+		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
+		suu = mark(sue, style='red')
+		sol().print(suu, style='cyan')
+		time.sleep(2.5)
+		memek()
+	except requests.exceptions.ConnectionError:
+		li = '>_𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
+		lo = mark(li, style='red')
+		sol().print(lo, style='cyan')
+		exit()
 		
 def menu_test():
 	jalan('𝑯𝒆𝒍𝒍𝒐....... ')
