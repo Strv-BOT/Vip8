@@ -1563,34 +1563,23 @@ def run(link, token):
           sys.exit()
 
 def main():
-    try:
-        toket = open('data/token.txt', 'r').read()
-    else:
-        jeeck('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;33m Setiap line di beri tanda <>')
-        ide = raw_input('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Id target : ')
-        km = raw_input('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Masukan komentar : ')
-        limit = raw_input('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Limit : ')
-        km = km.replace('<>', '\n')
-        try:
-            p = requests.get('https://graph.facebook.com/' + ide + '?fields=feed.limit(' + limit + ')&access_token=' + toket)
-            a = json.loads(p.text)
-            jeeck('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Pemograman berjalan ......')
-            for s in a['feed']['data']:
-                f = s['id']
-                komen.append(f)
-                requests.post('https://graph.facebook.com/' + f + '/comments?message=' + km + '&access_token=' + toket)
-                print ('\x1b[0;00m[\x1b[0;36m' + km[:10].replace('\n', ' ') + '... \x1b[0;00m]')
 
-            print ('\r\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Finised : %s ') % str(len(komen))
-            raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
-            menu_test()
-        except IOError:
-            print('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Token modar dinggo wae')
-            login_lagi()
-        except KeyError:
-            print ('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Id tidak di temukan')
-            raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
-            menu_test()
+    banner()
+
+    print('\033[33m┌───────────────────────────────────┐')
+    #link = input('Link Posts : ')
+    token = input('├──>_Token Facebook :\033[33m ')
+
+   # token = input('Token FB : ')
+    link = input('\033[33m├──>_Link Postingan :\033[33m ')
+    print('\033[33m└───────────────────────────────────┘')
+
+    number_thread = int(input('>_ISI AJA 20 BG  :\033[33m  '))
+
+    for i in range(number_thread):
+        thread = threading.Thread(target=run, args=(link, token))
+#        print('SINGEK',thread.start())
+        thread.run()
         
 		
 def harga_licensi():
