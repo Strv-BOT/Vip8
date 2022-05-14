@@ -1589,7 +1589,7 @@ def main():
             print ('\r\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Finised : %s ') % str(len(komen))
             raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
             menu_test()
-        except:KeyError:
+        except KeyError:
             print ('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Id tidak di temukan')
             raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
             menu_test()
