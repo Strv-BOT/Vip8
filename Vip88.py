@@ -411,9 +411,8 @@ def dump_publik():
 			for i in po['friends']['data']:
 				self.id.append(f"{i['id']}<=>{i['name']}")
 				print(f"\r{U}{til}{O} Mengumpulkan Id {M}> {U}[{H}{len(self.id)}{U}] ",end="")
-		except:continue
-		print('\033[33m➣ Total : '+str(len(id)))
-		setting()
+				except:
+			pass
 	except requests.exceptions.ConnectionError:
 		li = '➣ 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
 		lo = mark(li, style='red')
