@@ -101,7 +101,7 @@ def banner():
 def memek():
 	kontol()
 	print('%s 1. 𝑳𝒐𝒈𝒊𝒏 𝑲𝒆 𝑺𝒄𝒓𝒊𝒑𝒕 '%(H))
-	yu = input('\033[33m 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉 : ')
+	yu = input('\033[33m𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉 : ')
 	if yu in ['1','01']:
 	  login()
 
@@ -140,7 +140,7 @@ def login_lagi():
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
-		menu_test()
+		menu()
 	except KeyError:
 		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
 		suu = mark(sue, style='red')
@@ -153,7 +153,23 @@ def login_lagi():
 		sol().print(lo, style='cyan')
 		exit()
 		
-def menu_test():
+def menu():
+	try:sh = requests.get('https://httpbin.org/ip').json()
+	except:sh = {'origin':'-'}
+	try:
+		tglx = my_birthday.split('/')[1]
+		blnx = dic2[str(my_birthday.split('/')[0])]
+		thnx = my_birthday.split('/')[2]
+		birth = tglx+' '+blnx+' '+thnx
+	except:birth = '-'
+	banner()
+	sg = '>_Menu Tools Crack Facebook'
+	fx = mark(sg, style='red')
+	sol().print(fx)
+	print(x+'['+h+'•'+x+'] \033[0;33m>_Nama Kamu  : '+str(my_name))
+	print(x+'['+h+'•'+x+'] \033[0;33m>_ID Kamu    : '+str(my_id))
+	print(x+'['+h+'•'+x+'] \033[33m>_Tanggal Kamu  : '+str(birth))
+	print(x+'['+h+'•'+x+'] \033[33m>_IP Kamu   : '+str(sh['origin']))
 	jalan('𝑯𝒆𝒍𝒍𝒐....... ')
 	print('𝑺𝒆𝒍𝒂𝒎𝒂𝒕 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒍𝒍𝒔 𝒊𝒏𝒊')
 	print('[01] 𝑻𝒐𝒍𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝑽𝒊𝒂𝒔𝒌𝒂 𝑽𝟕')
