@@ -114,7 +114,7 @@ def login():
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				sy4 = json.loads(sy.text)['birthday']
-				menu()
+				login_lagi()
 			except KeyError:
 				login_lagi()
 			except requests.exceptions.ConnectionError:
@@ -140,7 +140,7 @@ def login_lagi():
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
-		menu()
+		menu_test()
 	except KeyError:
 		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
 		suu = mark(sue, style='red')
@@ -153,23 +153,7 @@ def login_lagi():
 		sol().print(lo, style='cyan')
 		exit()
 		
-def menu():
-	try:sh = requests.get('https://httpbin.org/ip').json()
-	except:sh = {'origin':'-'}
-	try:
-		tglx = my_birthday.split('/')[1]
-		blnx = dic2[str(my_birthday.split('/')[0])]
-		thnx = my_birthday.split('/')[2]
-		birth = tglx+' '+blnx+' '+thnx
-	except:birth = '-'
-	banner()
-	sg = '>_Menu Tools Crack Facebook'
-	fx = mark(sg, style='red')
-	sol().print(fx)
-	print(x+'['+h+'•'+x+'] \033[0;33m>_Nama Kamu  : '+str(my_name))
-	print(x+'['+h+'•'+x+'] \033[0;33m>_ID Kamu    : '+str(my_id))
-	print(x+'['+h+'•'+x+'] \033[33m>_Tanggal Kamu  : '+str(birth))
-	print(x+'['+h+'•'+x+'] \033[33m>_IP Kamu   : '+str(sh['origin']))
+def menu_test():
 	jalan('𝑯𝒆𝒍𝒍𝒐....... ')
 	print('𝑺𝒆𝒍𝒂𝒎𝒂𝒕 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒍𝒍𝒔 𝒊𝒏𝒊')
 	print('[01] 𝑻𝒐𝒍𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝑽𝒊𝒂𝒔𝒌𝒂 𝑽𝟕')
