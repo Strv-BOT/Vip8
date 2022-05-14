@@ -140,7 +140,7 @@ def login_lagi():
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
-		self.bot()
+		bot()
 	except KeyError:
 		sue = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
 		suu = mark(sue, style='red')
@@ -155,7 +155,7 @@ def login_lagi():
 
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
-def bot(self):
+def bot:
 		try:
 			toket = open('token.x','r').read()
 		except IOError:
