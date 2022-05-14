@@ -401,9 +401,9 @@ def dump_publik():
         token = open("token.txt","r").read()
         cookie = {"cookie":open("cookies.txt","r").read()}
     except IOError:
-        print(Panel("Cookies kadaluwarsa, silahkan login ulang dengan cookies yang baru"))
+        print("Cookies kadaluwarsa, silahkan login ulang dengan cookies yang baru")
         exit()
-    print(Panel("isi 'me' jika ingin crack dari daftar teman"))
+    print("isi 'me' jika ingin crack dari daftar teman")
     idt = input("  [%sf%s] masukan username atau id : "%(B,P))
     if idt in[""]:
         memu()
@@ -417,12 +417,12 @@ def dump_publik():
         for i in requests.get("https://graph.facebook.com/v13.0/%s?fields=friends.limit(5000)&access_token=%s"%(user,token),cookies=cookie).json()["friends"]["data"]:
             id.append(i["id"]+"<=>"+i["name"])
     except KeyError:
-        print(Panel("Akun tidak tersedia atau list teman private"))
+        print("Akun tidak tersedia atau list teman private")
     if len(id) !=0:
-        print(Panel(f"[+] total id -> {M2}{len(id)}{Z2}"))
+        print(f"[+] Total id -> {M2}{len(id)}{Z2}")
         setting()
     else:
-        print(Panel(f"[+] total id -> {M2}{len(id)}{Z2}"))
+        print(f"[+] Total id -> {M2}{len(id)}{Z2}")
         exit()
 
 def dump_massal():
