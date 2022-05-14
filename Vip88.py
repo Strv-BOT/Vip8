@@ -428,7 +428,8 @@ def dump_publik():
 		teks = '➣ 𝑷𝒆𝒓𝒕𝒆𝒎𝒂𝒏𝒂𝒏 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑨𝒕𝒂𝒖 𝑻𝒐𝒌𝒆𝒏 𝑹𝒖𝒔𝒂𝒌'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
-		sleep(4)login_lagi()
+		time.sleep(3)
+		login_lagi()
 
 def dump_massal():
 	win = ' 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌 𝑴𝒂𝒔𝒔𝒂𝒍'
