@@ -150,11 +150,8 @@ def bot():
 		except IOError:
 			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601likes?summary=true&access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/comments/?message='+komen+'&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
-		os.system('xdg-open wa.me/6281221523195')
 		menu_test()
 		
 def menu_test():
