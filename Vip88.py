@@ -474,10 +474,10 @@ def dump_massal():
 def setting():
 	wl = '>_𝑺𝒆𝒕 𝑼𝒓𝒖𝒕𝒂𝒏 𝑰𝑫'
 	sol().print(mark(wl, style='cyan'))
-	teks = '[01] >_𝑪𝒓𝒂𝒄𝒌 𝑫𝒂𝒓𝒊 𝑨𝒌𝒖𝒏 𝑻𝒖𝒂 (𝑵𝒐𝒏𝒆)\n[02] >_𝑪𝒓𝒂𝒄𝒌 𝑫𝒂𝒓𝒊 𝑨𝒌𝒖𝒏 𝑴𝒖𝒅𝒂 (𝑵𝒐𝒏𝒆)'
+	teks = '[01] ➣𝑪𝒓𝒂𝒄𝒌 𝑫𝒂𝒓𝒊 𝑨𝒌𝒖𝒏 𝑻𝒖𝒂 (𝑵𝒐𝒏𝒆)\n[02] ➣𝑪𝒓𝒂𝒄𝒌 𝑫𝒂𝒓𝒊 𝑨𝒌𝒖𝒏 𝑴𝒖𝒅𝒂 (𝑵𝒐𝒏𝒆)'
 	tak = nel(teks, style='cyan')
-	cetak(nel(tak, title='>_Set'))
-	hu = input('\033[33m_𝑷𝑰𝑳𝑰𝑯 : ')
+	cetak(nel(tak, title='SETINGAN URUTAN AKUN'))
+	hu = input('\033[33m➣ 𝑷𝑰𝑳𝑰𝑯 : ')
 	if hu in ['1','01']:
 		for bacot in id:
 			id2.append(bacot)
@@ -558,9 +558,9 @@ def passwrd():
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
-	tanya = '>_Check Opsi Crack? '
+	tanya = '➣ Check Opsi Crack? '
 	sol().print(mark(tanya, style='cyan'))
-	woi = input('\033[33m>_Ingin Menampilkan Opsi Hasil Crack? (y/t) : ')
+	woi = input('\033[33m➣ Ingin Menampilkan Opsi Hasil Crack? (y/t) : ')
 	if woi in ['y','Y']:
 		cek_opsi()
 	else:
@@ -1578,7 +1578,7 @@ def main():
 
     for i in range(number_thread):
         thread = threading.Thread(target=run, args=(link, token))
-#         print('SINGEK',thread.start())
+#        print('SINGEK',thread.start())
         thread.start()
         
 		
