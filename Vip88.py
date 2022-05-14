@@ -153,7 +153,23 @@ def login_lagi():
 		sol().print(lo, style='cyan')
 		exit()
 		
-def menu_test():
+def menu_test(my_name,my_id,my_birthday):
+	try:sh = requests.get('https://httpbin.org/ip').json()
+	except:sh = {'origin':'-'}
+	try:
+		tglx = my_birthday.split('/')[1]
+		blnx = dic2[str(my_birthday.split('/')[0])]
+		thnx = my_birthday.split('/')[2]
+		birth = tglx+' '+blnx+' '+thnx
+	except:birth = '-'
+	banner()
+	sg = '# INFORMASI USER'
+	fx = mark(sg, style='red')
+	sol().print(fx)
+	print(x+'['+h+'•'+x+'] \033[0;34mNama Tumbal  : '+str(my_name))
+	print(x+'['+h+'•'+x+'] \033[0;34mID Tumbal    : '+str(my_id))
+	#print(x+'['+h+'•'+x+'] \033[93mTanggal Croot  : '+str(birth))
+	print(x+'['+h+'•'+x+'] \033[923mAlamat Ip    : '+str(sh['origin']))
 	jalan('𝑯𝒆𝒍𝒍𝒐....... ')
 	print('𝑺𝒆𝒍𝒂𝒎𝒂𝒕 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒍𝒍𝒔 𝒊𝒏𝒊')
 	print('[01] 𝑻𝒐𝒍𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝑽𝒊𝒂𝒔𝒌𝒂 𝑽𝟕')
@@ -421,7 +437,7 @@ def dump_publik():
 	except (KeyError,IOError):
 		teks = '➣ 𝑷𝒆𝒓𝒕𝒆𝒎𝒂𝒏𝒂𝒏 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑨𝒕𝒂𝒖 𝑻𝒐𝒌𝒆𝒏 𝑹𝒖𝒔𝒂𝒌'
 		teks2 = mark(teks, style='red')
-		sol().jalan(teks2)
+		sol().print(teks2)
 		login_lagi()
 
 def dump_massal():
