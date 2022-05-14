@@ -131,24 +131,24 @@ def login_lagi():
 	sky = '>_𝑳𝒐𝒈𝒊𝒏 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 '
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
-	panda = input('\033[33m>_𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
+	panda = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	akun=open('.token.txt','w').write(panda)
 	try:
 		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
 		tes3 = json.loads(tes.text)['id']
-		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑺𝒖𝒌𝒔𝒆𝒔 '
+		sue = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑺𝒖𝒌𝒔𝒆𝒔 '
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
 		menu_test()
 	except KeyError:
-		sue = '>_𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
+		sue = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
 		suu = mark(sue, style='red')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
 		memek()
 	except requests.exceptions.ConnectionError:
-		li = '>_𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
+		li = '➣ 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
 		lo = mark(li, style='red')
 		sol().print(lo, style='cyan')
 		exit()
@@ -180,7 +180,7 @@ def krekefbi():
 	jalan('[04] 𝑪𝒉𝒆𝒄𝒌 𝑶𝒑𝒔𝒊 𝑯𝒂𝒔𝒊𝒍 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕')
 	jalan('[05] 𝑪𝒆𝒌 𝑯𝒂𝒔𝒊𝒍 𝑪𝒓𝒂𝒄𝒌 𝑶𝑲/𝑪𝑷')
 	jalan('[00] 𝑬𝒙𝒊𝒕') 
-	badag = input('➣  𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
+	badag = input('➣ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
 	if badag in ['1','01']:
 		jancok()
 	elif badag in ['2','02']:
@@ -206,10 +206,10 @@ def pedo():
 	file()
 	
 def bottzy():
-	jalan('>_Menu BOT') 
-	print('[01]>_BOT Share')
-	print('[00]>_Exit')
-	jadah = input('>_Pilih :  ')
+	jalan('➣ Menu BOT') 
+	print('[01] BOT Share')
+	print('[00] Exit')
+	jadah = input('➣ Pilih :  ')
 	if jadah in ['1','01']:
 		kanjoed()
 	elif jadah in ['0','00']:
@@ -414,15 +414,15 @@ def dump_publik():
 		print('\033[33m➣ Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		li = '>_𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
+		li = '➣ 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
 		lo = mark(li, style='red')
 		sol().print(lo, style='cyan')
 		exit()
 	except (KeyError,IOError):
-		teks = '>_𝑷𝒆𝒓𝒕𝒆𝒎𝒂𝒏𝒂𝒏 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑨𝒕𝒂𝒖 𝑻𝒐𝒌𝒆𝒏 𝑹𝒖𝒔𝒂𝒌'
+		teks = '➣ 𝑷𝒆𝒓𝒕𝒆𝒎𝒂𝒏𝒂𝒏 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑨𝒕𝒂𝒖 𝑻𝒐𝒌𝒆𝒏 𝑹𝒖𝒔𝒂𝒌'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
-		exit()
+		menu_test()
 
 def dump_massal():
 	win = ' 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌 𝑴𝒂𝒔𝒔𝒂𝒍'
