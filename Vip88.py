@@ -129,17 +129,19 @@ def login():
 def login_lagi():
 		os.system('clear')
 		kontol()
-		token = input(' [%s*%s] Masukan token : '%(O,N))
+		token = input(' [%s*%s] Masukan Token : '%(O,N))
 		if token in ['']:
 			time.sleep(2);login().login_lagi()
 		else:
 			try:
 				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
 				open('token.x','w').write(token)
-				print('\n [%s+%s] Login berhasil %s'%(H,N,cc))
+				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
 			except KeyError:
-				jalan(' [%s!%s] Token error coba ganti akun tumbal!'%(M,N))
+				jalan(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
+				jalan(' [%s!%s] Silahkan Masukan Kembali Perintah'%(M,N))
+				jalan(' [%s!%s] python Vip88.py!'%(M,N))
 				exit()
 	
 
