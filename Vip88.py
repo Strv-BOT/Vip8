@@ -1564,12 +1564,9 @@ def run(link, token):
 
 def main():
     try:
+    os.system('rm -rf data/token.txt')
+    time.sleep(1)
         toket = open('data/token.txt', 'r').read()
-    except IOError:
-        print('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Token modar dinggo wae')
-        os.system('rm -rf data/token.txt')
-        time.sleep(1)
-        login_lagi()
     else:
         jeeck('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;33m Setiap line di beri tanda <>')
         ide = raw_input('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Id target : ')
@@ -1589,6 +1586,9 @@ def main():
             print ('\r\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Finised : %s ') % str(len(komen))
             raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
             menu_test()
+        except IOError:
+            print('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Token modar dinggo wae')
+            login_lagi()
         except KeyError:
             print ('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Id tidak di temukan')
             raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
