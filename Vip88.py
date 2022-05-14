@@ -119,7 +119,7 @@ def login():
 				login_lagi()
 			except requests.exceptions.ConnectionError:
 				banner()
-				li = '>_Koneksi Internet Bermasalah'
+				li = '➣ Koneksi Internet Bermasalah'
 				lo = mark(li, style='red')
 				sol().print(lo, style='cyan')
 				exit()
@@ -131,7 +131,7 @@ def login_lagi():
 	sky = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 '
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
-	panda = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
+	panda = input('\033[33m 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏  : ')
 	akun=open('.token.txt','w').write(panda)
 	try:
 		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
@@ -407,10 +407,11 @@ def dump_publik():
 	print('\033[33m➣ 𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
 	pil = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	try:
-		koh2 = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-		for pi in koh2['friends']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
+			po = requests.get(f'https://graph.facebook.com/{user}?fields=name,friends.fields(id,name).limit(5000)&access_token={token}').json()
+			for i in po['friends']['data']:
+				self.id.append(f"{i['id']}<=>{i['name']}")
+				print(f"\r{U}{til}{O} Mengumpulkan Id {M}> {U}[{H}{len(self.id)}{U}] ",end="")
+		except:continue
 		print('\033[33m➣ Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
