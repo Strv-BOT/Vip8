@@ -1564,8 +1564,6 @@ def run(link, token):
 
 def main():
     try:
-    os.system('rm -rf data/token.txt')
-    time.sleep(1)
         toket = open('data/token.txt', 'r').read()
     else:
         jeeck('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;33m Setiap line di beri tanda <>')
