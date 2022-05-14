@@ -407,12 +407,12 @@ def dump_publik():
 	print('\033[33m➣ 𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
 	pil = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	try:
-			po = requests.get(f'https://graph.facebook.com/{user}?fields=name,friends.fields(id,name).limit(5000)&access_token={token}').json()
-			for i in po['friends']['data']:
-				self.id.append(f"{i['id']}<=>{i['name']}")
-				print(f"\r{U}{til}{O} Mengumpulkan Id {M}> {U}[{H}{len(self.id)}{U}] ",end="")
-				except:
-			pass
+		koh2 = requests.get('https://graph.facebook.com/{user}?fields=name,friends.fields(id,name).limit(5000)&access_token='+tokenku[0]).json()
+		for pi in koh2['friends']['data']:
+			try:id.append(pi['id']+'|'+pi['name'])
+			except:continue
+		print('\033[33m➣ Total : '+str(len(id)))
+		setting()
 	except requests.exceptions.ConnectionError:
 		li = '➣ 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
 		lo = mark(li, style='red')
@@ -1605,3 +1605,4 @@ if __name__=='__main__':
 	except:pass
 	#licensi
 	janda_sebalah()
+
