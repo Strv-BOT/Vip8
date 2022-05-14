@@ -1566,10 +1566,10 @@ def main():
     try:
         toket = open('data/token.txt', 'r').read()
     except IOError:
-        print '\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Token modar dinggo wae'
+        print('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Token modar dinggo wae')
         os.system('rm -rf data/token.txt')
         time.sleep(1)
-        masuk()
+        login_lagi()
     else:
         jeeck('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;33m Setiap line di beri tanda <>')
         ide = raw_input('\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Id target : ')
