@@ -137,11 +137,11 @@ def login_lagi():
 				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
 				open('token.x','w').write(token)
 				print('\n [%s+%s] Login berhasil %s'%(H,N,cc))
-				self.bot()
+				bot()
 			except KeyError:
 				jalan(' [%s!%s] Token error coba ganti akun tumbal!'%(M,N))
-				self.takon()
-	def takon(self):
+				takon()
+	def takon():
 		takon = input('\n %s[%s!%s] Mau tau cara ambil token y/t: '%(N,O,N))
 		if takon in ['y','Y','iya']:
 			jalan('\n %s[%s!%s] Kamu akan di arahkan ke Ke Wa Untuk Donasi'%(N,O,N))
