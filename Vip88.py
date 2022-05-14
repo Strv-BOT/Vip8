@@ -1586,7 +1586,7 @@ def main():
                 requests.post('https://graph.facebook.com/' + f + '/comments?message=' + km + '&access_token=' + toket)
                 print ('\x1b[0;00m[\x1b[0;36m' + km[:10].replace('\n', ' ') + '... \x1b[0;00m]')
 
-            print ('\r\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Finised : %s ' % str(len(komen))
+            print ('\r\x1b[0;36m[\x1b[0;00m+\x1b[0;36m]\x1b[0;00m Finised : %s ') % str(len(komen))
             raw_input('\x1b[0;36m[\x1b[0;00m ENTER \x1b[0;36m]')
             menu_test()
         except:KeyError:
