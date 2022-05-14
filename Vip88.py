@@ -170,48 +170,29 @@ def menu_test():
 		jalan('𝑩𝒆𝒓𝒉𝒂𝒔𝒊𝒍 𝑲𝒆𝒍𝒖𝒂𝒓')
 		exit()
 		
-def krekefbi(my_name,my_id,my_birthday):
-	try:sh = requests.get('https://httpbin.org/ip').json()
-	except:sh = {'origin':'-'}
-	try:
-		tglx = my_birthday.split('/')[1]
-		blnx = dic2[str(my_birthday.split('/')[0])]
-		thnx = my_birthday.split('/')[2]
-		birth = tglx+' '+blnx+' '+thnx
-	except:birth = '-'
+def krekefbi():
 	banner()
-	sg = '# INFORMASI USER'
-	fx = mark(sg, style='red')
-	sol().print(fx)
-	print(x+'['+h+'•'+x+'] \033[0;34mNama Tumbal  : '+str(my_name))
-	print(x+'['+h+'•'+x+'] \033[0;34mID Tumbal    : '+str(my_id))
-	#print(x+'['+h+'•'+x+'] \033[93mTanggal Croot  : '+str(birth))
-	print(x+'['+h+'•'+x+'] \033[923mAlamat Ip    : '+str(sh['origin']))
-	io = '\x1b[1;92m[01] Crack Dari Pertemanan Publik\n\x1b[1;92m[02] Crack ID Dari Akun Publik (masal) \n\x1b[1;92m[03] Crack Dari Grup\n\x1b[1;92m[04] Cek Hasil Crack\n\x1b[1;92m[05] Cek Opsi Checkpoint\n\033[31m[00] Keluar'
-	oi = nel(io, style='cyan')
-	cetak(nel(oi, title='PILIHAN MENU'))
-	jh = input(x+'['+p+'•'+x+'] Pilih : ')
-	if jh in ['1','01']:
-		dump_publik()
-	elif jh in ['2','02']:		
-		dump_massal()
-	elif jh in ['3','03']:
-		grup()
-	elif jh in ['4','04']:
-		result()
-	elif jh in ['5','05']:
-		file()
-	elif jh in ['0','00']:
-		os.system('rm -rf .token.txt')
-		print(x+'['+h+'•'+x+'] Tunggu ...')
-		time.sleep(1)
-		sw = '# SUKSES KELUAR'
-		sol().print(mark(sw, style='green'))
-		exit()
-	else:
-		ric = '# PILIH YANG BENER LAH KONTOL'
-		sol().print(mark(ric, style='red'))
-		exit()
+	print('[𝑻𝒐𝒌𝒆𝒏 𝑨𝒏𝒅𝒂>>>> :  '+str(tokenku)) 
+	jalan('[01] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒌')
+	jalan('[02] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑷𝒖𝒃𝒍𝒊𝒄 [𝑴𝒂𝒔𝒔𝒂𝒍]')
+	jalan('[03] 𝑪𝒓𝒂𝒄𝒌 𝑰𝑫 𝑮𝒓𝒖𝒑')
+	jalan('➣ 𝑴𝒆𝒏𝒖 𝑪𝒉𝒆𝒄𝒌𝑶𝒑𝒔𝒊/𝑯𝒂𝒔𝒊𝒍 𝑶𝑲/𝑪𝑷')
+	jalan('[04] 𝑪𝒉𝒆𝒄𝒌 𝑶𝒑𝒔𝒊 𝑯𝒂𝒔𝒊𝒍 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕')
+	jalan('[05] 𝑪𝒆𝒌 𝑯𝒂𝒔𝒊𝒍 𝑪𝒓𝒂𝒄𝒌 𝑶𝑲/𝑪𝑷')
+	jalan('[00] 𝑬𝒙𝒊𝒕') 
+	badag = input('➣ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
+	if badag in ['1','01']:
+		jancok()
+	elif badag in ['2','02']:
+		coy()
+	elif badag in ['3','03']:
+		bangsat()
+	elif badag in ['4','04']:
+		muda()
+	elif badag in ['5','05']:
+		pedo()
+	elif badag in ['0','00']:
+		menu_test()
 	
 def jancok():
 	dump_publik()
