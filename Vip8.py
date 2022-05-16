@@ -92,7 +92,7 @@ def banner():
 
 def login_lagi():
 		os.system('clear')
-		kontol()
+		kontoll()
 		token = input(' [%s*%s] Masukan Token : '%(O,N))
 		if token in ['']:
 			time.sleep(2);login().login_lagi()
