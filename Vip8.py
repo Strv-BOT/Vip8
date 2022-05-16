@@ -957,7 +957,7 @@ def harga_licensi():
 
 if __name__ == '__main__':
    os.system('git pull')
-   menu().janda_sebalah()
+   janda_sebalah()
 
 
 # MAU NGAPAIN KENTOD #
