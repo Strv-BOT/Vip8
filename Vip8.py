@@ -74,6 +74,7 @@ def jalan(kontol):
 		sys.stdout.write(wibu)
 		sys.stdout.flush()
 		time.sleep(0.03)
+
 def folder():
 	try:os.mkdir('okeh')
 	except:pass
@@ -99,7 +100,7 @@ class login:
 		self.ada = []
 	def __login__(self):
 		os.system('clear')
-		banner()
+		kontoll()
 		token = input(' [%s*%s] Masukan Token EAAB: '%(O,N))
 		if token in ['']:
 			time.sleep(2);login().__login__()
@@ -886,11 +887,78 @@ def cek_apk(coki):
 		print ("\r      %s• cookie invalid"%(M))
 
 
+def kontoll():
+    os.system("clear")
+    print(f"""    
+\33[31m  ██████╗ ████████╗ ██████╗  ██╗   ██╗
+\33[31m ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║   ██║
+\33[31m ╚█████╗     ██║    ██████╔╝ ╚██╗ ██╔╝
+\33[37m  ╚═══██╗    ██║    ██╔══██╗  ╚████╔╝
+\33[37m ██████╔╝    ██║    ██║  ██║   ╚██╔╝
+\33[37m ╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝
+\x1b[0;31m────────────────────────────────────────
+\x1b[0;37m GITHUB    : \33[1;32mHttps://github.com/Strv-BOT 
+\x1b[0;37m FACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara       
+\x1b[0;37m WHATSAPP  : \33[1;33m082290885204
+\x1b[0;37m INSTAGRAM : \33[1;33mteddyyyy_11     
+\x1b[0;37m TOOLS     : \33[1;96mPremium  
+\x1b[0;31m─────────────────────────────────────────
+""")
+
+def janda_sebalah():#line:42
+  try :#line:43
+    os .system ('clear')
+    banner()
+    print (f"""
+{U}[{P}1{U}]{P} 𝑩𝒆𝒍𝒊 𝑳𝒊𝒄𝒆𝒏𝒔𝒊 𝑻𝒓𝒊𝒂𝒍
+{U}[{P}2{U}]{P} 𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑳𝒊𝒄𝒆𝒏𝒔𝒊 𝑨𝒏𝒅𝒂
+{U}[{P}3{U}]{P} 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 {U}[{H}𝑳𝒊𝒄𝒆𝒏𝒔𝒊{U}]{H}
+""")#line:49
+    OOO00O0OOO00OO00O =input (f"{H}[{P}?{H}]{P} 𝑪𝒉𝒐𝒐𝒔𝒆 :{K} ")#line:50
+    if OOO00O0OOO00OO00O in ['1','01']:#line:51
+      print (f"{H}[{P}!{H}]{P} Send Message..");time .sleep (3 );os .system ('xdg-open https://wa.me/6282290885204?text=Assalamualaikum+Bang+Mau+Beli+Lisensi+Api+Key+Dong+Ada+Ngak+?');exit ()#line:52
+    elif OOO00O0OOO00OO00O in ['2','02']:#line:53
+      O000O000OOO000OOO =input (f"{H}[{P}?{H}]{P} 𝑳𝒊𝒄𝒆𝒏𝒔𝒊 :{K} ")#line:54
+      if len (O000O000OOO000OOO )==0 :#line:55
+        exit (f"{P}[{M}!{P}]{M} Jangan Kosong")#line:56
+      else :#line:57
+        with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58
+          OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIxNjk4MDU3NSIsImlCa283WGlDTkN6QTdhczB1bU85NlRlWlJIaFFQai81ZlhBalJoWTkiXQ==&ProductId=14869&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
+          open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
+          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );memek()#line:61
+    elif OOO00O0OOO00OO00O in ['3','03']:#line:62
+      harga_licensi ()#line:63
+    else :#line:64
+      exit (f"{P}[{M}!{P}]{M} 𝑾𝒓𝒐𝒏𝒈 𝑰𝒏𝒑𝒖𝒕")#line:65
+  except (KeyError ):#line:66
+    exit (f"{P}[{M}!{P}]{M} 𝑨𝒑𝒊 𝑲𝒆𝒚 𝑰𝒏𝒗𝒂𝒍𝒊𝒅")#line:67
+  except Exception as O0OO00OOO000OOO00 :#line:68
+    exit (f"{P}[{M}!{P}]{M} {O0OO00OOO000OOO00}")#line:69
+
+balmond = O+"["+J+"•"+O+"]"
+
+def harga_licensi():
+	jalan(' \33[1;33m\n\n 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 ')
+	jalan(' \33[1;33m 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒐𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝒗𝒊𝒂𝒔𝒌𝒂 ')
+	jalan(' \33[1;33m𝑷𝒂𝒌𝒆𝒕 : ')
+	print("""%s \33[1;96m𝟏. 𝑻𝒓𝒊𝒂𝒍 𝟑 𝑯𝒂𝒓𝒊 : 𝐑𝐩. 𝟓.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;96m𝟐. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒎𝒊𝒏𝒈𝒈𝒖 : 𝐑𝐩. 𝟏𝟎.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;96m𝟑. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟐𝟓.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;96m𝟒. 𝑻𝒓𝒊𝒂𝒍 𝟐 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟓𝟎.𝟎𝟎𝟎 """%(h))
+	print("""%s \33[1;32m\n\n𝑵𝒐𝒕𝒊𝒄𝒆 𝑰𝒏𝒇𝒐 :  """%(h))
+	print("""%s \33[1;32m 𝑼𝒏𝒕𝒖𝒌 𝑷𝒆𝒎𝒆𝒔𝒂𝒏𝒂𝒏 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑪𝒉𝒂𝒕 𝑨𝒅𝒎𝒊𝒏  """%(h))
+	print("""%s \33[1;32m 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂  """%(h))
+	print("""%s \33[1;32m 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒  """%(h))
+	print("""%s \33[1;32m\n𝑯𝒂𝒓𝒈𝒂 𝑨𝒌𝒂𝒏 𝑩𝒆𝒓𝒖𝒃𝒂𝒉  """%(h))
+	print("""%s \33[1;32m𝑲𝒆𝒕𝒊𝒌𝒂 𝑻𝒐𝒐𝒍𝒔 𝑨𝒅𝒂 𝑷𝒆𝒎𝒃𝒂𝒓𝒖𝒂𝒏 𝑩𝒆𝒔𝒂𝒓. """%(h))
+	exit()
+
+
 
 if __name__ == '__main__':
    os.system('git pull')
    menu().main()
-   folder()
+   janda_sebalah()
 
 
 # MAU NGAPAIN KENTOD #
