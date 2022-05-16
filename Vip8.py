@@ -106,7 +106,7 @@ def login_anjing(self):
 				self.bot()
 			except KeyError:
 				jalan(' [%s!%s] Token Eror Silakan Ganti Akun Tumbal!'%(M,N))
-				self.takon()
+				self.takon(self)
 	def takon(self):
 		takon = input('\n %s[%s!%s] Mau Tau Cara Ambil Token y/t: '%(N,O,N))
 		if takon in ['y','Y','iya']:
