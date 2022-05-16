@@ -103,8 +103,7 @@ def login_lagi():
 				open('token.x','w').write(token)
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
-			except (KeyError,IOError):
-        except (KeyError,IOError):
+        except KeyError:
                 print('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
                 os.system('rm -rf token.txt')
                 exit()
