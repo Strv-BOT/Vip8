@@ -98,10 +98,8 @@ def login_lagi():
 			time.sleep(2);login_lagi()
 		else:
 			try:
-        token = open("token.txt","r").read()
-        otw = requests.get("https://graph.facebook.com/me/?access_token=" + token)
-        a = json.loads(otw.text)
-        nama = a["name"]
+       cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
+				open('token.x','w').write(token)
     except (KeyError,IOError):
         print('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
         os.system('rm -rf token.txt')
