@@ -137,7 +137,7 @@ class menu:
 		print(' %s➣ [%s9%s] crack email                 [ON]'%(N,O,N))
 		print(' %s➣ [%sG%s] Get data² facebook          [ON]'%(N,O,N))
 		print(' %s➣ [%sK%s] Lapor bug script            [ON]'%(N,O,N))
-		print(' %s➣ [%sA%s] Keluar, hapus token[        [ON]'%(N,O,N))
+		print(' %s➣ [%sA%s] Keluar, hapus token         [ON]'%(N,O,N))
 		print(' %s➣ [%sU%s] Upgrade ke premium          [ON]'%(N,O,N))
 		self.pilih()
 
@@ -146,7 +146,7 @@ class menu:
 		usna = input(' %s╠═[%s+%s] choose : '%(N,O,N))
 		if usna in ['']:
 			print(' %s║'%(N))
-			print(' %s╚═[%s!%s] Jangan kosong mas'%(N,M,N));time.sleep(2);menu().main()
+			print(' %s╚═[%s!%s] Jangan Isi Kosong!'%(N,M,N));time.sleep(2);menu().main()
 		elif usna in ['0','00']:
 			try:
 				token = open('token.x','r').read()
@@ -173,7 +173,7 @@ class menu:
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
-				r = requests.get('https://graph.facebook.com/%s?fields=friends.limit(5001)&access_token=%s'%(idt,token))
+				r = requests.get('https://graph.facebook.com/%s?fields=friends.limit(5000)&access_token=%s'%(idt,token))
 				e = json.loads(r.text)
 				id = []
 				for u in e['friends']['data']:
@@ -327,7 +327,7 @@ class menu:
 		elif usna in ['G','g']:
 			target()
 		elif usna in ['K','k']:
-			nom_wa ='+6285866306386'
+			nom_wa ='+6282290885204'
 			text = input(' %s╚═[%s!%s] Apa yang error ketik di sini : '%(N,O,N))
 			url_wa = ("https://api.whatsapp.com/send?phone="+nom_wa+"&text="+text)
 			subprocess.check_output(["am", "start", url_wa])
@@ -335,7 +335,7 @@ class menu:
 		elif usna in ['a','A']:
 			os.system('rm -rf token.x');exit()
 		elif usna in ['U','u']:
-			nom_wa ='+6285866306386'
+			nom_wa ='+6282290885204'
 			kata = input(' %s╚═[%s!%s] Masukan pesan kamu ke admin : %s'%(N,O,N,H))
 			url_wa = ("https://api.whatsapp.com/send?phone="+nom_wa+"&text="+kata)
 			subprocess.check_output(["am", "start", url_wa])
