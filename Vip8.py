@@ -127,23 +127,9 @@ class menu:
 		self.uid = []
 	def main(self):
 		os.system('clear')
-		try:
-			toke = open('token.x','r').read()
-		except IOError:
-			print(' [%s+%s] Kamu Belum Login'%(M,N));login_lagi()
-		try:
-			r = requests.get('https://graph.facebook.com/me?access_token=%s'%(toke)).json()['name']
-		except KeyError:
-			print(' [%s!%s] Login gagal ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);login_lagi()
-		except requests.exceptions.ConnectionError:
-			exit(' [%s!%s] cek koneksi'%(M,N))
-		try:
-			akss = open('license.txt','r').read()
-		except IOError:
-			akss = '-'
 		kontoll()
 		IP = requests.get('https://api.ipify.org').text
-		jalan(' %s➣ [ %sselamat Datang Om>< %s%s ]'%(N,H,r,N))
+		print(' %s➣ [ %sselamat Datang Om>< %s%s ]'%(N,H,r,N))
 		print(' %s║'%(N))
 		print(' %s➣ [%s•%s] Accsess licensee kamu   : %s'%(N,O,N,akss))
 		print(' %s➣ [%s•%s] Alamat IP kamu saat ini : %s'%(N,O,N,IP))
