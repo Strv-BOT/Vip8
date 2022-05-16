@@ -107,7 +107,7 @@ def login_anjing(self):
 			except KeyError:
 				jalan(' [%s!%s] Token Eror Silakan Ganti Akun Tumbal!'%(M,N))
 				self.exit()
-	def bot(self):
+	def bot():
 		# JANGAN DI GANTI NGENTOD CUKUP DI TAMBAHKAN SAJA KONTOL.
 		try:
 			toket = open('token.x','r').read()
