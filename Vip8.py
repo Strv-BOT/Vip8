@@ -103,9 +103,7 @@ def login_lagi():
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
 			except KeyError:
-				print(' [%s!%s] Login gagal ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);login().__login__()
-		    except requests.exceptions.ConnectionError:
-			     exit(' [%s!%s] cek koneksi'%(M,N))
+				print(' [%s!%s] Login gagal token rusak ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);__login__()
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 def bot():
