@@ -75,11 +75,6 @@ def jalan(kontol):
 		sys.stdout.flush()
 		time.sleep(0.03)
 
-def folder():
-	try:os.mkdir('okeh')
-	except:pass
-	try:os.mkdir('cepeh')
-	except:pass
 
 def banner():
     print(f"""
@@ -94,16 +89,13 @@ def banner():
 \x1b[0;37m TOOLS     : \33[31mBelum Premium  
 \x1b[0;31m─────────────────────────────────────────""")
 
-class login:
 
-	def __init__(self):
-		self.ada = []
-	def __login__(self):
+	def login_anjing(self):
 		os.system('clear')
 		kontoll()
 		token = input(' [%s*%s] Masukan Token EAAB: '%(O,N))
 		if token in ['']:
-			time.sleep(2);login().__login__()
+			time.sleep(2);login_anjing()
 		else:
 			try:
 				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
@@ -119,7 +111,7 @@ class login:
 			jalan('\n %s[%s!%s] Kamu Akan Di Arahkan Ke WhatsApp. '%(N,O,N))
 			os.system('xdg-open wa.me/628290238779');exit()
 		else:
-			login().__login__()
+			login_anjing()
 	def bot(self):
 		# JANGAN DI GANTI NGENTOD CUKUP DI TAMBAHKAN SAJA KONTOL.
 		try:
@@ -925,9 +917,9 @@ def janda_sebalah():#line:42
         with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58
           OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIxNjk4MDU3NSIsImlCa283WGlDTkN6QTdhczB1bU85NlRlWlJIaFFQai81ZlhBalJoWTkiXQ==&ProductId=14869&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
-          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );jalan()#line:61
+          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login_anjing() #line:93
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
-      harga_licensi ()#line:63
+      harga_licensi () #line:932
     else :#line:64
       exit (f"{P}[{M}!{P}]{M} 𝑾𝒓𝒐𝒏𝒈 𝑰𝒏𝒑𝒖𝒕")#line:65
   except (KeyError ):#line:66
@@ -941,23 +933,27 @@ def harga_licensi():
 	jalan(' \33[1;33m\n\n 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 ')
 	jalan(' \33[1;33m 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒐𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝒗𝒊𝒂𝒔𝒌𝒂 ')
 	jalan(' \33[1;33m𝑷𝒂𝒌𝒆𝒕 : ')
-	print(' \33[1;96m𝟏. 𝑻𝒓𝒊𝒂𝒍 𝟑 𝑯𝒂𝒓𝒊 : 𝐑𝐩. 𝟓.𝟎𝟎𝟎 ')
-	print(' \33[1;96m𝟐. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒎𝒊𝒏𝒈𝒈𝒖 : 𝐑𝐩. 𝟏𝟎.𝟎𝟎𝟎 ')
-	print(' \33[1;96m𝟑. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟐𝟓.𝟎𝟎𝟎 ')
-	print(' \33[1;96m𝟒. 𝑻𝒓𝒊𝒂𝒍 𝟐 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟓𝟎.𝟎𝟎𝟎 ')
+	print(' \33[1;96m   𝟏. 𝑻𝒓𝒊𝒂𝒍 𝟑 𝑯𝒂𝒓𝒊 : 𝐑𝐩. 𝟓.𝟎𝟎𝟎 ')
+	print(' \33[1;96m   𝟐. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒎𝒊𝒏𝒈𝒈𝒖 : 𝐑𝐩. 𝟏𝟎.𝟎𝟎𝟎 ')
+	print(' \33[1;96m   𝟑. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟐𝟓.𝟎𝟎𝟎 ')
+	print(' \33[1;96m   𝟒. 𝑻𝒓𝒊𝒂𝒍 𝟐 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟓𝟎.𝟎𝟎𝟎 ')
 	jalan(' \33[1;32m\n\n𝑵𝒐𝒕𝒊𝒄𝒆 𝑰𝒏𝒇𝒐 :  ')
 	jalan(' \33[1;32m 𝑼𝒏𝒕𝒖𝒌 𝑷𝒆𝒎𝒆𝒔𝒂𝒏𝒂𝒏 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑪𝒉𝒂𝒕 𝑨𝒅𝒎𝒊𝒏  ')
-	jalan(' \33[1;32m 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂  ')
-	jalan(' \33[1;32m 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒  ')
-	jalan(' \33[1;32m 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑨𝒌𝒂𝒏 𝑩𝒆𝒓𝒖𝒃𝒂𝒉 ')
-	print(' \33[1;32m 𝑲𝒆𝒕𝒊𝒌𝒂 𝑻𝒐𝒐𝒍𝒔 𝑨𝒅𝒂 𝑷𝒆𝒎𝒃𝒂𝒓𝒖𝒂𝒏 𝑩𝒆𝒔𝒂𝒓. ')
+	jalan(' \33[1;32m𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂  ')
+	jalan(' \33[1;32m𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒  ')
+	jalan(' \33[1;32m𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑨𝒌𝒂𝒏 𝑩𝒆𝒓𝒖𝒃𝒂𝒉 ')
+	print(' \33[1;32m𝑲𝒆𝒕𝒊𝒌𝒂 𝑻𝒐𝒐𝒍𝒔 𝑨𝒅𝒂 𝑷𝒆𝒎𝒃𝒂𝒓𝒖𝒂𝒏 𝑩𝒆𝒔𝒂𝒓. ')
 	exit()
 
 
 
 if __name__ == '__main__':
+    try:os.mkdir('okeh')
+	except:pass
+	try:os.mkdir('cepeh')
+	except:pass
    os.system('git pull')
-   janda_sebalah()
+     janda_sebalah()
 
 
 # MAU NGAPAIN KENTOD #
