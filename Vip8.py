@@ -90,7 +90,9 @@ def banner():
 \x1b[0;31m─────────────────────────────────────────""")
 
 
-	def login_anjing():
+def __init__(self):
+	self.ada = []
+def login_anjing(self):
 		os.system('clear')
 		kontoll()
 		token = input(' [%s*%s] Masukan Token EAAB: '%(O,N))
@@ -917,7 +919,7 @@ def janda_sebalah():#line:42
         with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58
           OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIxNjk4MDU3NSIsImlCa283WGlDTkN6QTdhczB1bU85NlRlWlJIaFFQai81ZlhBalJoWTkiXQ==&ProductId=14869&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
-          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login_anjing() #line:93
+          print (f"{H}[{P}*{H}]{P} 𝑬𝒙𝒑𝒊𝒓𝒆𝒅 :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login_anjing(self) #line:93
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
       harga_licensi () #line:932
     else :#line:64
