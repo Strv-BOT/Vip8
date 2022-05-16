@@ -128,13 +128,6 @@ class menu:
 	def main(self):
 		os.system('clear')
 		kontoll()
-		IP = requests.get('https://api.ipify.org').text
-		print(' %s➣ [ %sselamat Datang Om>< %s%s ]'%(N,H,r,N))
-		print(' %s║'%(N))
-		print(' %s➣ [%s•%s] Accsess licensee kamu   : %s'%(N,O,N,akss))
-		print(' %s➣ [%s•%s] Alamat IP kamu saat ini : %s'%(N,O,N,IP))
-		print(' %s➣ [%s•%s] Kamu masuk pada         : %s'%(N,O,N,waktu))
-		print(' %s║'%(N))
 		print(' %s➣ [%s0%s] crack dari daftar teman     [ON]'%(N,O,N))
 		print(' %s➣ [%s1%s] crack dari akun publik      [ON]'%(N,O,N))
 		print(' %s➣ [%s2%s] crack dari akun massal    [ON]'%(N,O,N))
