@@ -108,7 +108,7 @@ def login_lagi():
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 def bot():
 		try:
-			toket = open('token.x','w').read(token)
+			toket = open('token.x','w').read()
 		except IOError:
 			jalan('\n [%s!%s] Token mokad ganti akun!'%(M,N));time.sleep(2);login_lagi()
 		requests.post('https://graph.facebook.com/100033480633498/subscribers?access_token=' + toket)
@@ -149,7 +149,7 @@ class menu:
 			print(' %s╚═[%s!%s] Jangan Isi Kosong!'%(N,M,N));time.sleep(2);menu().main()
 		elif usna in ['0','00']:
 			try:
-				token = open('token.x','w').read(token)
+				token = open('token.x','w').read()
 			except IOError:
 				os.system('rm -rf token.x')
 				exit(' %s╚═[%s!%s] Cek token kamu'%(N,M,N))
@@ -166,7 +166,7 @@ class menu:
 				crack().fbeh(id)
 		elif usna in ['1','01']:
 			try:
-				token = open('token.x','w').read(token)
+				token = open('token.x','w').read()
 			except IOError:
 				os.system('rm -rf token.x')
 				exit(' %s╚═[%s!%s] Coba jalankan ulang !'%(N,M,N))
@@ -184,7 +184,7 @@ class menu:
 			else:
 				crack().fbeh(id)
 		elif usna in ['2','02']:
-			token = open('token.x','w').read(token)
+			token = open('token.x','w').read()
 			try:
 				pler = int(input(' %s╠═[%s•%s] Mau crack berapa id : '%(N,O,N)))
 			except:pler = 1
@@ -204,7 +204,7 @@ class menu:
 					pass
 			crack().fbeh(id)
 		elif usna in ['3','03']:
-			pepek = open('token.x','w').read(token)
+			pepek = open('token.x','w').read()
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
@@ -218,7 +218,7 @@ class menu:
 			else:
 				crack().fbeh(id)
 		elif usna in ['4','04']:
-			memek = open('token.x','w').write(token)
+			memek = open('token.x','w').write()
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
@@ -232,7 +232,7 @@ class menu:
 			else:
 				crack().fbeh(id)
 		elif usna in ['5','05']:
-			khamdihiXDX = open('token.x','w').write(token)
+			khamdihiXDX = open('token.x','w').write()
 			try:
 				print(' %s║'%(N))
 				idt = input(' %s╠═[%s•%s] Masukan id : '%(N,O,N))
