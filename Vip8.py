@@ -106,14 +106,7 @@ def login_anjing(self):
 				self.bot()
 			except KeyError:
 				jalan(' [%s!%s] Token Eror Silakan Ganti Akun Tumbal!'%(M,N))
-				self.takon(self)
-	def takon(self):
-		takon = input('\n %s[%s!%s] Mau Tau Cara Ambil Token y/t: '%(N,O,N))
-		if takon in ['y','Y','iya']:
-			jalan('\n %s[%s!%s] Kamu Akan Di Arahkan Ke WhatsApp. '%(N,O,N))
-			os.system('xdg-open wa.me/628290238779');exit()
-		else:
-			login_anjing()
+				self.exit()
 	def bot(self):
 		# JANGAN DI GANTI NGENTOD CUKUP DI TAMBAHKAN SAJA KONTOL.
 		try:
