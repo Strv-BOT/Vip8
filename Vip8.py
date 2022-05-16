@@ -104,7 +104,7 @@ def login_lagi():
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
 			except KeyError:
-				jalan(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N))
+				print(' [%s!%s] Token Error Coba Ganti Akun Tumbal'%(M,N));time.sleep(2)
 				exit()
 	
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
