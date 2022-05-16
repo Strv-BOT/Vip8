@@ -941,13 +941,13 @@ def harga_licensi():
 
 
 
-if __name__ == '__main__':
-    try:os.mkdir('okeh')
+if __name__=='__main__':
+	try:os.mkdir('CP')
 	except:pass
-	try:os.mkdir('cepeh')
+	try:os.mkdir('OK')
 	except:pass
-   os.system('git pull')
-     janda_sebalah()
+	#licensi
+	janda_sebalah()
 
 
 # MAU NGAPAIN KENTOD #
