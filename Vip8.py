@@ -104,9 +104,10 @@ def login_lagi():
 				print('\n [%s+%s] Login Berhasil %s'%(H,N,cc))
 				bot()
 			except (KeyError,IOError):
-        print('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
-        os.system('rm -rf token.txt')
-
+        except (KeyError,IOError):
+                print('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
+                os.system('rm -rf token.txt')
+                exit()
 # HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 
 def bot():
