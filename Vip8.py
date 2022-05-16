@@ -90,8 +90,6 @@ def banner():
 \x1b[0;31m─────────────────────────────────────────""")
 
 
-def __init__(self):
-	self.ada = []
 def login_lagi():
 		os.system('clear')
 		kontol()
