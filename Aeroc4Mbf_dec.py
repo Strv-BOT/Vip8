@@ -84,7 +84,7 @@ def login():
 				exit()
 		except IOError:
 			login_lagi()
-	else:lisensi()
+	else:tlisensi()
 
 # LOGIN
 def login_lagi():
