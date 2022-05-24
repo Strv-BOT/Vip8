@@ -131,7 +131,7 @@ def lisensi():
 		cek=open('.lisen.txt').read()
 		lisensikuni.append(cek)
 	except:
-		tlisensi()
+		lisensi()
 	ses=requests.Session()
 	res=ses.get('https://app.cryptolens.io/api/key/Activate?token=WyIxNjk4MDU3NSIsImlCa283WGlDTkN6QTdhczB1bU85NlRlWlJIaFFQai81ZlhBalJoWTkiXQ==&ProductId=14869&Key='+lisensikuni[0]).json()
 	status=res['licenseKey']['key']
@@ -144,7 +144,7 @@ def lisensi():
 		lisensiku.append("sukses")
 		login()
 	else:
-		tlisensi()
+		lisensi()
 
 # MENU
 def menu(my_name,my_id,my_birthday):
