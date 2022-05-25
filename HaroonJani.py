@@ -11,6 +11,7 @@ while (loop == 'true'):
     if (username == CorrectUsername):
             print ('\033[1;92m Logged in successfully as ')
             time.sleep(1)
+            menu()
             os.system('xdg-open https://www.facebook.com/attaullah.wardag.5')
             os.system('clear')
             loop = 'false'
@@ -41,7 +42,7 @@ except ImportError:
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from mechanize import Browser
-menu()
+reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
