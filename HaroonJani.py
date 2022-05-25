@@ -123,11 +123,11 @@ def menu():
     os.system('clear')
     print = logo
     print('Welcome Bro')
-    print
+   
     jalan ('\x1b[1;96m[1] START RANDOM NUMBER CLONING ')
-    print
+  
     print ('\x1b[1;96m[0] TOOL LOGOUT')
-    print
+  
     print('semoga harimu menyenangkan')
     action()
 
