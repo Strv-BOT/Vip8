@@ -139,8 +139,8 @@ def action():
     elif ss == '1':
         tik()
         os.system('clear')
-        print logo
-        print logo1
+        print = logo
+        print = logo1
         try:
             c = raw_input('\x1b[1;97mCODE : ')
             k = '03'
