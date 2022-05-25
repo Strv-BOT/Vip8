@@ -41,7 +41,7 @@ except ImportError:
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from mechanize import Browser
-reload(sys)
+menu()
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
