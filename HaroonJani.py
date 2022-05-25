@@ -160,7 +160,7 @@ def action():
         print ('[!] Fill In Correctly')
         action()
     os.system('clear')
-    print logo
+    print = logo
     jalan ('\x1b[1;97mUSE AIROPLANE MODE AFTER EVERY 10 MINUTES')
     print(47*'-')
     xxx = str(len(id))
