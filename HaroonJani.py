@@ -132,7 +132,7 @@ cpb = []
 
 def menu():
     os.system('clear')
-    print = logo
+    banner()
     print('Welcome Bro')
    
     jalan ('\x1b[1;96m[1] START RANDOM NUMBER CLONING ')
@@ -152,7 +152,7 @@ def action():
     elif ss == '1':
         tik()
         os.system('clear')
-        print = logo
+        banner()
         print = logo1
         try:
             c = input('\x1b[1;97mCODE : ')
@@ -173,7 +173,7 @@ def action():
         print ('[!] Fill In Correctly')
         action()
     os.system('clear')
-    print = logo
+    banner()
     jalan ('\x1b[1;97mUSE AIROPLANE MODE AFTER EVERY 10 MINUTES')
     print(47*'-')
     xxx = str(len(id))
