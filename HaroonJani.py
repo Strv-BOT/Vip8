@@ -7,7 +7,7 @@ CorrectUsername = 'HAROON-007'
 os.system('clear')
 loop = 'true'
 while (loop == 'true'):
-    username = raw_input('\033[1;91mENTER TOOL KEY…………=>> :\033[1;93m ')
+    username = input('\033[1;91mENTER TOOL KEY…………=>> :\033[1;93m ')
     if (username == CorrectUsername):
             print ('\033[1;92m Logged in successfully as ')
             time.sleep(1)
