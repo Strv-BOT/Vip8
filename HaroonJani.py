@@ -90,27 +90,38 @@ def tik():
         time.sleep(0.5)
 
  ##### LOGO ##### 
-logo = """
-          .....LOVER
-          .....CREATOR
-          .....HACKER
-          .....HAROONO....
-          .....PATHANO....
-          .....SWABIWALL....
-          .....ONLY/LONELY.....
-          .....LOVE U ALL HATER.....
-          .....MAKE ME FAMOUS....
-          .....MY MOM IS MY HOME❤❤.....
+
+   def banner():
+    print(f"""
+ \33[31m█▀▀█  █▀▀█  █▀▀█  █▀▀█  █ ▄▀  █▀▀▀  █▀▀█ 
+ \33[31m█     █▄▄▀  █▄▄█  █     █▀▄   █▀▀▀  █▄▄▀ 
+ \33[31m█▄▄█  █  █  █  █  █▄▄█  █  █  █▄▄▄  █  █
+\x1b[0;31m─────────────────────────────────────────
+\x1b[0;37m GITHUB    : \33[1;32mhttps://github.com/Strv-BOT 
+\x1b[0;37m FACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara       
+\x1b[0;37m WHATSAPP  : \33[1;33m082290885204
+\x1b[0;37m INSTAGRAM : \33[1;33mteddyyyy_11     
+\x1b[0;37m TOOLS     : \33[31mBelum Premium  
+\x1b[0;31m─────────────────────────────────────────""")  
+ 
+    
+
+         
+   
+        
+       
+        
+
                 
 
 
- ​______________________________________________
- ​Author   :     Haroono
- Facebook :     Nothing SPECIAL
- ​GitHub   :     github.com/Haroon302
- ​Whatsapp  :    03494462675
- ​______________________________________________
- ​                                                 """ 
+
+
+
+
+
+
+
 logo1 = '   \n\n\x1b[4;96mSELECT PAK  SIM CODE \x1b[1;0m\n\x1b[1;96m[1] Jazz    \x1b[1;97m 00,01,02,03,04,05,06,07,08\n\x1b[1;96m[2] Zong    \x1b[1;97m 11,12,13,14,15,16,17\n\x1b[1;96m[3] Warid   \x1b[1;97m 21,22,23,24,25\n\x1b[1;96m[4] Ufone   \x1b[1;97m 30,31,32,33,34,35\n\x1b[1;96m[5] Telenor \x1b[1;97m 40,41,42,43,44,45,46,47\n\n\n\n\x1bx \x1b[1;97m\x1b[1;0m\n'
 back = 0
 berhasil = []
