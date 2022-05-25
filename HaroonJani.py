@@ -49,7 +49,7 @@ br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 
 def exb():
-    print '[!] Exit Successfully '
+    print ('[!] Exit Successfully ')
     os.sys.exit()
 
 
@@ -119,7 +119,7 @@ cpb = []
 
 def menu():
     os.system('clear')
-    print logo
+    print = logo
     print(47*'-')
     print
     jalan ('\x1b[1;96m[1] START RANDOM NUMBER CLONING ')
@@ -134,7 +134,7 @@ def action():
     global oks
     ss = raw_input('\x1b[1;96mselect Optoin =   ')
     if ss == '':
-        print '[!] Warning'
+        print ('[!] Warning')
         action()
     elif ss == '1':
         tik()
@@ -149,7 +149,7 @@ def action():
                 id.append(line.strip())
 
         except IOError:
-            print '[!] File Not Found'
+            print ('[!] File Not Found')
             raw_input('\n[ Back ]')
             menu()
 
@@ -157,7 +157,7 @@ def action():
         exb()
         login()
     else:
-        print '[!] Fill In Correctly'
+        print ('[!] Fill In Correctly')
         action()
     os.system('clear')
     print logo
@@ -243,11 +243,11 @@ def action():
     p = ThreadPool(30)
     p.map(main, id)
     print(48*"-")
-    print 'Process Has Been Completed ...'
-    print 'Total OK : ' + str(len(oks))
-    print 'Total CP : ' + str(len(cpb))
+    print ('Process Has Been Completed ...')
+    print ('Total OK : ' + str(len(oks))
+    print ('Total CP : ' + str(len(cpb))
     print(47*"-")
-    print 'Cloned Accounts Has Been Saved : save/cloned.txt'
+    print 'Cloned Accounts Has Been Saved : save/cloned.txt')
     jalan('Note : Cp account  10 say 12 days BAD OPEN KRY')
     raw_input('\n\x1b[1;95m[\x1b[1;98mHAROON_menu_Back\x1b[1;95m]')
     login()
