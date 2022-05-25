@@ -122,13 +122,13 @@ cpb = []
 def menu():
     os.system('clear')
     print = logo
-    print('47*')
+    print('Welcome Bro')
     print
     jalan ('\x1b[1;96m[1] START RANDOM NUMBER CLONING ')
     print
     print ('\x1b[1;96m[0] TOOL LOGOUT')
     print
-    print(47*'-')
+    print('semoga harimu menyenangkan')
     action()
 
 def action():
@@ -144,7 +144,7 @@ def action():
         print = logo
         print = logo1
         try:
-            c = raw_input('\x1b[1;97mCODE : ')
+            c = input('\x1b[1;97mCODE : ')
             k = '03'
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
@@ -152,7 +152,7 @@ def action():
 
         except IOError:
             print ('[!] File Not Found')
-            raw_input('\n[ Back ]')
+            input('\n[ Back ]')
             menu()
 
     elif ss == '0':
