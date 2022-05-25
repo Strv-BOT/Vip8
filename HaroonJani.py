@@ -15,7 +15,7 @@ while (loop == 'true'):
             os.system('clear')
             loop = 'false'
     else:
-        print '\033[1;93m Wrong Key !'
+        print ('\033[1;93m Wrong Key !')
         os.system('xdg-open https://www.facebook.com/attaullah.wardag.5')
         os.system('clear')
 done = False
