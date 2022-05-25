@@ -83,7 +83,7 @@ def jalan(x):
 def tik():
     titik = ['   ', '. ', '.. ', '...', '. ', '.. ', '...', '']
     for o in titik:
-        print '\r\x1b[1;96m \x1b[1;96m               Load\x1b[1;96ming\x1b[1;0m\x1b[1;96m' + o,
+        print ('\r\x1b[1;96m \x1b[1;96m               Load\x1b[1;96ming\x1b[1;0m\x1b[1;96m') + o,
         sys.stdout.flush()
         time.sleep(0.5)
 
