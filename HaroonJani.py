@@ -122,7 +122,7 @@ cpb = []
 def menu():
     os.system('clear')
     print = logo
-    print(47*'-')
+    print('47*'-'')
     print
     jalan ('\x1b[1;96m[1] START RANDOM NUMBER CLONING ')
     print
