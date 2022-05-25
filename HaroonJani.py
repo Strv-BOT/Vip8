@@ -3,7 +3,7 @@
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, getpass
 __author__ = 'HAROON'
 __copyright = 'All rights reserved . Copyright  HAROON PATHAAN'
-CorrectUsername = 'HAROON-007'
+CorrectUsername = 'Teddy'
 os.system('clear')
 loop = 'true'
 while (loop == 'true'):
@@ -11,7 +11,7 @@ while (loop == 'true'):
     if (username == CorrectUsername):
             print ('\033[1;92m Logged in successfully as ')
             time.sleep(1)
-            menu()
+
             os.system('xdg-open https://www.facebook.com/attaullah.wardag.5')
             os.system('clear')
             loop = 'false'
