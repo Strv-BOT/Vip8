@@ -109,7 +109,7 @@ def memek():
 
 def login():
     clear()
-    logo()
+    banner()
     print(f"[{B}f{P}] Jangan Menggunakan Akun Pribadi {M}!{P}\n[{B}f{P}] Setelah Memasukan Cookies Mohon Tunggu Beberapa Saat {M}!")
     #cookie = str(input('%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
     cookie = str(input(f"  [{B}f{P}] Masukan Cookies : {B}"))
