@@ -432,14 +432,14 @@ def moch_yayan(my_name,my_id):
     print(f"{P} [{H}•{P}] IP     : {IP}")
     print(f"{P} [{H}•{P}] Join   : {waktu}")
     print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
-    print(f" {BM}OPTION MENU{N}")
+    print(f" {BM}PILIHAN MENU TOOLS{N}")
     print(' [%s01%s] Crack ID Publik (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s02%s] crack ID Massal (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s03%s] Crack ID Grub Public (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s04%s] Crack Like Posts (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s05%s] Crack Comment Posts (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s06%s] Checkpoint Detedtor (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s07%s] Check Crack Results (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s06%s] Cek Opsi Checkpoint (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s07%s] Cek Hasil Crack (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s08%s] SC update info'%(H,N));time.sleep(0.03)
     print(' [%s00%s] Logout (%sRemove Cookie%s)'%(M,N,M,N));time.sleep(0.03)
     pepek = input('\n %s[%s?%s] Pilih menu : '%(N,K,N))
@@ -715,7 +715,7 @@ def moch_yayan(my_name,my_id):
 
 
 
-        input(' [%sPRESS ENTER%s] To Out Tools'%(H,N));exit()
+        input(' [%sPRESS ENTER%s] Untuk Keluar !'%(H,N));exit()
 
 
 
