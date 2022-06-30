@@ -309,12 +309,12 @@ def logo():
 \33[37m  ╚═══██╗    ██║    ██╔══██╗  ╚████╔╝
 \33[37m ██████╔╝    ██║    ██║  ██║   ╚██╔╝
 \33[37m ╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝
-\x1b[0;33[ GITHUB    : \33[1;32mPrivate  
-\x1b[0;33[ FACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara           
-\x1b[0;33[ WHATSAPP  : \33[1;33m082290238779
-\x1b[0;33[ INSTAGRAM : \33[1;33mTeddyyyy_11     
-\x1b[0;33[ SCRIP FOR : \33[1;96mHacking & Cracking 
-\x1b[0;33[ VERSION   : \33[1;96mV.01 Beta.Test  """)
+\x1b[0;33[GITHUB    : \33[1;32mPrivate  
+\x1b[0;33[FACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara           
+\x1b[0;33[WHATSAPP  : \33[1;33m082290238779
+\x1b[0;33[INSTAGRAM : \33[1;33mTeddyyyy_11     
+\x1b[0;33[SCRIP FOR : \33[1;96mHacking & Cracking 
+\x1b[0;33[VERSION   : \33[1;96mV.01 Beta.Test  """)
 
 
 #CRACK SELESAI
@@ -831,19 +831,6 @@ class __crack__:
 
     # ------- NAMPILKAN APLIKASI --------
 
-    def tampilkan_apk(self):
-
-        print("%s\n [%s!%s] Tampilkan Aplikasi Terkait. Ini Akan Menyebabkan Akun Terkena Spam Dan Akan Banyak Hasil Yang Checkpoints, Ini Tidak Di Rekomendasikan Untuk Dijalakan Jika Mau Hasil Bagus ! "%(N,M,N))
-        crot = input(f" {N}[{K}?{N}] Ingin Tetap Tampilakan Apps ? [{H}y{N}/{M}t{N}]: ")
-        if crot in["rchxai"]:
-            print(f" {N}[{M}×{N}] Don't be empty");self.tampilkan_apk()
-        elif crot in["Y","y"]:
-            Apk.append("y")
-        elif crot in["T","t"]:
-            Apk.append("t")
-        else:
-            print(f" {N}[{M}×{N}] Choose between y/t");self.tampilkan_apk()
-
 
 
 # METODE SANDI MANUAL
@@ -855,7 +842,7 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-            self.tampilkan_apk()
+            self.mentod()
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING MANUAL PASSWORD%s'%(N,BM,N))
             print(' %s[%s!%s] Berikan Tanda %sKomma%s Pada Setiap Kata\n [%s•%s] Example : %sbangsat%s,%ssayang%s,%skontol'%(N,M,N,H,N,H,N,H,N,H,N,H))
             while True:
