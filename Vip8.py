@@ -2127,8 +2127,6 @@ class __crack__:
 
 
     def kombinasi_pw(self,url):
-       os.system('clear')
-       logo()
         print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sPASSWORD MENU%s'%(N,BM,N))
         print(' %s[%s1%s] nama,nama123,nama12345'%(N,H,N))
         print(' %s[%s2%s] nama,nama123,nama1234,nama12345'%(N,H,N))
