@@ -878,7 +878,7 @@ class __crack__:
                                 for ikeh in self.id:
                                     try:
                                         kimochi = ikeh.split('<=>')[0]
-                                        __yayanXD__.submit(self.crackfree,url,uid,pwx, "free.facebook.com")
+                                        __yayanXD__.submit(self.crackfree)
                                     except: pass
                             hasil(ok,cp)
                         elif cin == '2':
