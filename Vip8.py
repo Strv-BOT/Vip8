@@ -270,20 +270,6 @@ def jalan(z):
         time.sleep(0.03)
 
 
-
-     
-
-
-
-def mentod():
-    loading()
-    print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
-    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
-    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
-    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
-
-
-
 #-------- LOADING ANIMASI ------------
 
 
@@ -841,7 +827,7 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-            self. mentod()
+            self. __pler__()
         
 
     def __metode__(self, cebok, user, pasw):
@@ -909,7 +895,10 @@ class __crack__:
 
 
     def __pler__(self):
-
+        print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
+    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
+    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
+    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
         yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
         if yan == '':
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
