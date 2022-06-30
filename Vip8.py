@@ -460,16 +460,16 @@ def yayanxd():
 
 
 def moch_yayan(my_name,my_id):
-    logo()
     os.system('clear')
+    logo()
     ipm = requests.get(url_ip).json()
     IP = ipm["origin"]
     print(f" {BM}INFO ACCOUNT TUMBAL{N}")
-    print(f"{P} [{H}•{P}] NAME   : {BM}{my_name}{N}")
-    print(f"{P} [{H}•{P}] ID     : {BM}{my_id}{N}")
+    print(f"{P} [{H}•{P}] NAME   : {my_name}")
+    print(f"{P} [{H}•{P}] ID     : {my_id}")
     print(f"{P} [{H}•{P}] IP     : {IP}")
     print(f"{P} [{H}•{P}] Join   : {waktu}")
-    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
+    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
     print(f" {BM}OPTION MENU{N}")
     print(' [%s01%s] Crack ID Publik (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s02%s] crack ID Massal (%sON%s)'%(H,N,H,N));time.sleep(0.03)
