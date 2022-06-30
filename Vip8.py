@@ -1822,8 +1822,8 @@ class __crack__:
 
     def plerr(self,id):
         self.id = id
-        print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
-        ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
+        print(f' %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
+        ___yayanganteng___ = input('[%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Teddy Ganteng', 'Teddy Ganteng'):
             self.tampilkan_apk()
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMANUAL PASSWORD DETAILS%s'%(N,BM,N))
