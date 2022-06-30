@@ -447,8 +447,6 @@ def yayanxd():
     	ken=open(".token.txt", "w").write(find_token.group(1))
     	cok=open(".cokie.txt", "w").write(___kontol___)
     	print('\n LOGIN SUCCESSFULLY')
-        print('\n JALANKAN ULANG PERINTAH')
-         print('\n python run.py')
     	exit()
     except Exception as e:
     	os.system("rm -f .token.txt")
