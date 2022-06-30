@@ -366,7 +366,7 @@ def hasil(ok,cp):
 
 
 
-        cek_cp = input(f"{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [{K}?{N}] Show CP detector options [{H}Y{N}/{M}t{N}]: ")
+        cek_cp = input(f"{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [{K}?{N}] Show CP detector options [{H}Y{N}/{M}t{N}]: ")
 
 
 
@@ -386,7 +386,7 @@ def hasil(ok,cp):
             for memek in cp:
                 kontol = memek.replace('\n', '')
                 titid  = kontol.split(' • ')
-                print(f'{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n {H}LOGIN PROCESS')
+                print(f'{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n {H}LOGIN PROCESS')
                 jalan(f' {N}[{M}?{N}] Account : {K}{kontol.replace("[ROY-CP] ", "")}{N}')
                 try:
                     log_hasil(titid[0].replace("[ROY-CP] ", ""), titid[1])
@@ -462,13 +462,13 @@ def moch_yayan(my_name,my_id):
     logo()
     ipm = requests.get(url_ip).json()
     IP = ipm["origin"]
-    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
+    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
     print(f" {BM}INFO ACCOUNT TUMBAL{N}")
     print(f"{P} [{H}•{P}] NAME   : {my_name}")
     print(f"{P} [{H}•{P}] ID     : {my_id}")
     print(f"{P} [{H}•{P}] IP     : {IP}")
     print(f"{P} [{H}•{P}] Join   : {waktu}")
-    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
+    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
     print(f" {BM}OPTION MENU{N}")
     print(' [%s01%s] Crack ID Publik (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s02%s] crack ID Massal (%sON%s)'%(H,N,H,N));time.sleep(0.03)
@@ -1803,9 +1803,7 @@ class __crack__:
 
     def tampilkan_apk(self):
 
-
-
-        print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Tampilkan Aplikasi Terkait. Ini Akan Menyebabkan Akun Terkena Spam Dan Akan Banyak Hasil Yang Checkpoints,Ini Tidak Di Rekomendasika ! "%(N,M,N))
+        print("%s\n [%s!%s] Tampilkan Aplikasi Terkait. Ini Akan Menyebabkan Akun Terkena Spam Dan Akan Banyak Hasil Yang Checkpoints, Ini Tidak Di Rekomendasikan Untuk Dijalakan Jika Mau Hasil Bagus ! "%(N,M,N))
         crot = input(f" {N}[{K}?{N}] Ingin Tetap Tampilakan Apps ? [{H}y{N}/{M}t{N}]: ")
         if crot in["rchxai"]:
             print(f" {N}[{M}×{N}] Don't be empty");self.tampilkan_apk()
@@ -1825,8 +1823,8 @@ class __crack__:
     def plerr(self,id):
         self.id = id
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
-        ___yayanganteng___ = input('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s?%s] Click Enter To (%sNext Tools%s) : %s'%(N,K,N,H,N,H))
-        if ___yayanganteng___ in ('raraY', 'raray'):
+        ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
+        if ___yayanganteng___ in ('Teddy Ganteng', 'Teddy Ganteng'):
             self.tampilkan_apk()
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMANUAL PASSWORD DETAILS%s'%(N,BM,N))
             print(' %s[%s!%s] Use %sKOMMA%s for separator\n [%s•%s] Example : %sroy123%s,%ssayang%s,%sbismillah'%(N,M,N,H,N,H,N,H,N,H,N,H))
