@@ -309,12 +309,12 @@ def logo():
 \33[37m  ╚═══██╗    ██║    ██╔══██╗  ╚████╔╝
 \33[37m ██████╔╝    ██║    ██║  ██║   ╚██╔╝
 \33[37m ╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝
-\x1b[0;33[GITHUB    : \33[1;32mPrivate  
-\x1b[0;33[FACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara           
-\x1b[0;33[WHATSAPP  : \33[1;33m082290238779
-\x1b[0;33[INSTAGRAM : \33[1;33mTeddyyyy_11     
-\x1b[0;33[SCRIP FOR : \33[1;96mHacking & Cracking 
-\x1b[0;33[VERSION   : \33[1;96mV.01 Beta.Test  """)
+\x1b[0;33[ GITHUB    : \33[1;32mPrivate  
+\x1b[0;33[ FACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara           
+\x1b[0;33[ WHATSAPP  : \33[1;33m082290238779
+\x1b[0;33[ INSTAGRAM : \33[1;33mTeddyyyy_11     
+\x1b[0;33[ SCRIP FOR : \33[1;96mHacking & Cracking 
+\x1b[0;33[ VERSION   : \33[1;96mV.01 Beta.Test  """)
 
 
 #CRACK SELESAI
