@@ -1803,6 +1803,8 @@ class __crack__:
 
     def tampilkan_apk(self):
 
+
+
         print("%s\n [%s!%s] Tampilkan Aplikasi Terkait. Ini Akan Menyebabkan Akun Terkena Spam Dan Akan Banyak Hasil Yang Checkpoints, Ini Tidak Di Rekomendasikan Untuk Dijalakan Jika Mau Hasil Bagus ! "%(N,M,N))
         crot = input(f" {N}[{K}?{N}] Ingin Tetap Tampilakan Apps ? [{H}y{N}/{M}t{N}]: ")
         if crot in["rchxai"]:
@@ -1822,8 +1824,8 @@ class __crack__:
 
     def plerr(self,id):
         self.id = id
-        print(f' %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
-        ___yayanganteng___ = input('[%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
+        print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
+        ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Teddy Ganteng', 'Teddy Ganteng'):
             self.tampilkan_apk()
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMANUAL PASSWORD DETAILS%s'%(N,BM,N))
