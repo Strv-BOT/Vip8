@@ -899,7 +899,7 @@ class __crack__:
     print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
     print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
     print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
-        yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
+        yan = input(f"\n {N}[{K}?{N}] Choose Method : ")
         if yan == '':
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
         elif yan in ('1', '01'):
