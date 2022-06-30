@@ -478,11 +478,10 @@ def moch_yayan(my_name,my_id):
     print(' [%s06%s] Checkpoint Detedtor (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s07%s] Check Crack Results (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s08%s] SC update info'%(H,N));time.sleep(0.03)
-    print(' [%s00%s] Logout (%sRemove Token/Cookie%s)'%(M,N,M,N));time.sleep(0.03)
+    print(' [%s00%s] Logout (%sRemove Cookie%s)'%(M,N,M,N));time.sleep(0.03)
     pepek = input('\n %s[%s?%s] Pilih menu : '%(N,K,N))
     if pepek == '':
         jalan('\n %s[%s×%s] Sorry the menu selection is wrong...!'%(N,M,N));time.sleep(2);login()
-
 
 
 ###### CRACK ID PUBLIK SINGEL #####
@@ -1826,10 +1825,10 @@ class __crack__:
         self.id = id
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Masukan Password Scrip (%sInput%s) : %s'%(N,K,N,H,N,H))
-        if ___yayanganteng___ in ('Teddy Ganteng', 'Teddy Ganteng'):
+        if ___yayanganteng___ in ('Teddy Ganteng', 'Strovmirviaska'):
             self.tampilkan_apk()
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMANUAL PASSWORD DETAILS%s'%(N,BM,N))
-            print(' %s[%s!%s] Use %sKOMMA%s for separator\n [%s•%s] Example : %sroy123%s,%ssayang%s,%sbismillah'%(N,M,N,H,N,H,N,H,N,H,N,H))
+            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING MANUAL PASSWORD%s'%(N,BM,N))
+            print(' %s[%s!%s] Berikan Tanda %sKomma%s Pada Setiap Kata\n [%s•%s] Example : %sbangsat%s,%ssayang%s,%skontol'%(N,M,N,H,N,H,N,H,N,H,N,H))
             while True:
                 pwek = input(' %s[%s?%s] Enter password : %s'%(N,K,N,H))
                 print(' %s[%s•%s] Active Password : %s%s%s' % (N,H,N,H, pwek, N))
