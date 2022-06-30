@@ -855,7 +855,10 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-           
+            self.tampilkan_apk()
+            
+
+            #print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.plerr(id)
 # PROSES CRACK METODE 3 in 1
 
 
