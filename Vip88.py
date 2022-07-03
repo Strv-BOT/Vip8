@@ -387,15 +387,13 @@ def gabut():
         else:
             pwBaru.append(pwBar)
     print(f' %s[%s•%s] Total %s%s%s account'%(N,H,N,H,str(len(buka_baju)),N))
-    print("%s##################################################"%(N))
     for memek in buka_baju:
         kontol = memek.replace('\n', '')
         titid  = kontol.split(' • ')
-        print(f'{N}##################################################\n {H}LOGIN PROCESS')
-
-        jalan(f' {N}[{M}?{N}] Account : {K}{kontol.replace("[ROY-CP] ", "")}{N}')
+        print(f' {H}LOGIN PROCESS')
+        jalan(f' {N}[{M}?{N}] Account : {K}{kontol.replace("[STRV-CP] ", "")}{N}')
         try:
-            log_hasil(titid[0].replace("[ROY-CP] ", ""), titid[1])
+            log_hasil(titid[0].replace("[STRV-CP] ", ""), titid[1])
         except requests.exceptions.ConnectionError:
             continue
             print("")
