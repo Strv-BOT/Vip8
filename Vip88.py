@@ -255,7 +255,7 @@ def login():
             sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':kukis})
             sy2 = json.loads(sy.text)['name']
             sy3 = json.loads(sy.text)['id']
-            moch_yayan(sy2,sy3)
+            yayanxd(sy2,sy3)
         except KeyError:
             yayanxd()
         except requests.exceptions.ConnectionError:
