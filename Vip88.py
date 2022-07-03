@@ -606,19 +606,15 @@ class __crack__:
 
 
 
+  def __pler__(self):
 
-    def __pler__(self):
-
-        print(" [%s1%s] free (%sfast%s)"%(H,N,H,N))
-        print(" [%s2%s] Mbasic (%sSlow%s)"%(H,N,H,N))
-        print(" [%s3%s] Mobile (%sSuper Slow%s)"%(H,N,H,N))
         yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
         if yan == '':
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
         elif yan in ('1', '01'):
             xx = "free.facebook.com"
             self.kombinasi_pw(xx)
-          elif yan in ('2', '02'):
+        elif yan in ('2', '02'):
             xx = "mbasic.facebook.com"
             self.kombinasi_pw(xx)
         elif yan in ('3', '03'):
@@ -626,6 +622,7 @@ class __crack__:
             self.kombinasi_pw(xx)
         else:
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
+
 
 
     def kombinasi_pw(self,url):
