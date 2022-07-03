@@ -281,7 +281,7 @@ def kska():
     if xx in[""]:
         jalan(" %s[%s!%s] Sorry don't be blank!"%(N,M,N));time.sleep(1);cek_pw()
     elif xx in pwas:
-        jalan(" %s[%s✓%s] OK Password is correct"%(N,H,N));time.sleep(2);open(".ini_pw.txt", "a").write(xx);moch_yayan()
+        jalan(" %s[%s✓%s] OK Password is correct"%(N,H,N));time.sleep(2);open(".ini_pw.txt", "a").write(xx);login()
     else:
         jalan(" %s[%s!%s] Sorry, wrong Password"%(N,M,N));time.sleep(1);cek_pw()
 
@@ -991,5 +991,5 @@ class __crack__:
             print(f"\n {N}[{M}!{N}] Correct input");self.kombinasi_pw(url)
 
 if __name__ == '__main__':
-    login()
+    cek_pw();moch_yayan()
     #cek_pw()
