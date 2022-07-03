@@ -280,7 +280,7 @@ def moch_yayan(my_name,my_id):
     print(f"{P} [{H}•{P}] Join   : {waktu}")
     print(f" {BM}PILIHAN MENU TOOLS{N}")
     print(' [%s01%s] Crack ID Publik (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s02%s] Cek Opsi Checkpoint (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s02%s] Cek Opsi Hasil Crack (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s03%s] Cek Hasil Crack (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s04%s] SC update info'%(H,N));time.sleep(0.03)
     print(' [%s00%s] Logout (%sRemove Cookie%s)'%(M,N,M,N));time.sleep(0.03)
@@ -319,7 +319,7 @@ def moch_yayan(my_name,my_id):
         print("%s##################################################"%(N));time.sleep(2)
         for memek in total:
             kontol = memek.replace("\n","")
-            titid  = kontol.replace("[METAVERS-OK] ","\x1b[1;92m[METAVERS-OK] ").replace("[METAVERS-CP] ", "\x1b[1;93m[METAVERS-CP] ")
+            titid  = kontol.replace("[STRV-OK] ","\x1b[1;92m[STRV-OK] ").replace("[STRV-CP] ", "\x1b[1;93m[METAVERS-CP] ")
             print("%s%s"%(titid,N));time.sleep(0.03)
         jalan("\n %s[%s✓%s] File check complete..."%(N,H,N))
         input(' [%sPRESS ENTER%s] Untuk Keluar !'%(H,N));exit()
