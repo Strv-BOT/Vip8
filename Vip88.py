@@ -243,48 +243,6 @@ def hasil(ok,cp):
             print(f"\n {N}[{M}!{N}] Choose Y/t");hasil(ok,cp)
     else:
         jalan('\n\n %s[%s!%s] Sorry you didnt get results'%(N,M,N));exit()
-#LOGIN SC
-user = "teddy"
-pwas = "ganteng"
-def cek_pw():
-    try:
-        open(".ini_pw.txt", "r").read()
-    except FileNotFoundError:
-        os.system("clear")
-        logo()
-        print('\n %s%sOPTION MENU%s'%(BM,P,N))
-        print(' [%s1%s] Already have SC Login Info'%(H,N))
-        print(' [%s2%s] Send a message to the Author'%(H,N))
-        pil = input('\n %s[%s?%s] Choice : '%(N,K,N))
-        if pil =="":
-            jalan(f" {N}[{M}×{N}] Sorry, it is wrong...!");time.sleep(1);cek_pw()
-        elif pil in["2","02"]:
-            jalan("\n %s[%s•%s] %sYou will be redirected to the Author Whatsapp..."%(N,H,N,H));time.sleep(0.02)
-            os.system('xdg-open https://wa.me/601160610812?text=Hallo+izin+menggunakan+SC+ini');time.sleep(2);cek_pw()
-        elif pil in["1","01"]:
-            print('%s══════════════════════════════════════════'%(N))
-            print(' %s[%s!%s] You must have a %susername & password%s to\n continue with this tool!'%(N,M,N,H,N))
-        else:
-            exit(f"{N}[{M}×{N}] Sorry, it is wrong...!")
-        #print(" %s[%s!%s] You must have a %susername & password%s to continue with this tool!"%(N,M,N,K,N))
-        pw = input("\n %s[%s?%s] Enter Username : %s"%(N,K,N,H))
-        loading()
-        if pw in [""]:
-            jalan(" %s[%s!%s] Sorry don't be blank!"%(N,M,N));time.sleep(1);cek_pw()
-        elif pw in user:
-            jalan(" %s[%s✓%s] OK Username is correct"%(N,H,N));time.sleep(1);kska()
-        else:
-            jalan(" %s[%s!%s] Sorry, wrong username"%(N,M,N));time.sleep(1);cek_pw()
-    moch_yayan()
-def kska():
-    xx = input("\n %s[%s?%s] Enter Password : %s"%(N,K,N,H))
-    loading()
-    if xx in[""]:
-        jalan(" %s[%s!%s] Sorry don't be blank!"%(N,M,N));time.sleep(1);cek_pw()
-    elif xx in pwas:
-        jalan(" %s[%s✓%s] OK Password is correct"%(N,H,N));time.sleep(2);open(".ini_pw.txt", "a").write(xx);moch_yayan()
-    else:
-        jalan(" %s[%s!%s] Sorry, wrong Password"%(N,M,N));time.sleep(1);cek_pw()
 
 #METODE LOGIN
 def login():
@@ -340,41 +298,6 @@ def infoauthor():
             jalan(' %s[%s✓%s] Retrun SC type "%spython run.py%s"'%(N,H,N,H,N));exit()
         else:
             exit(f"{N}[{M}×{N}] Sorry, it is wrong")
-# ----- UBAH COOKIE -------
-def ubah_cok(cookie):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
-        'Cookie': cookie
-    }
-    with requests.Session() as r:
-      req = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-      cari_id = re.findall('act=(.*?)&nav_source', req.text)
-      for z in cari_id:
-          rex = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={z}&nav_source=no_referrer', headers = headers)
-          #mmk = re.search('(EAAB\w+)', rex.text).group(1)
-      #return {"ikeh":mmk}
-          token = re.search('(EAAB\w+)', rex.text).group(1)
-      return {"token":token}
-# Menu Convert Token
-def convert_cookietotoken():
-  try:
-      cookie = input(f"{N}════════════════════════════════════════════\n {BM}DETAIL CONVERT{N}\n [{K}?{N}] Masukan Cookie FB : {A}")
-      loading()
-      if len(cookie) == 0:
-        jalan(f" {N}[{M}!{N}] Don't be empty");yayanxd()
-      else:
-        headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0','Cookie': cookie}
-        with requests.Session() as r:
-          req = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-          cari_id = re.findall('act=(.*?)&nav_source', req.text)
-          for z in cari_id:
-            rex = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={z}&nav_source=no_referrer', headers = headers)
-            token = re.search('(EAAB\w+)', rex.text).group(1)
-      #return {"token":token}
-            print(f"\n {N}[{H}•{N}] Your EAAB Token : {H}{token}")
-            jalan(f"\n {N}[{H}!{N}] Please copy the EAAB Token above");login_token()
-  except (AttributeError,KeyError):
-        jalan(f"\n {N}[{M}!{N}] Sign in {M}Vailed{N}")
      
 ### MENU UTAMA ###
 def moch_yayan():
@@ -992,5 +915,5 @@ class __crack__:
             print(f"\n {N}[{M}!{N}] Correct input");self.kombinasi_pw(url)
 
 if __name__ == '__main__':
-    cek_pw()
+    login()
     #cek_pw()
