@@ -377,7 +377,7 @@ def gabut():
         buka_baju = open(f'results/{files}','r').readlines()
     except IOError:
         print('\n [!] Sorry, the file doesnt exist');time.sleep(2);moch_yayan()
-    ww=input(f"[{M}!{N}] Mode Pesawat Dulu Sebelum Mulai.\n {N}[{K}?{N}] Ganti Password Jika {BM}TAP YES ?{N} [{H}Y{N}/{M}t{N}]: {K}")
+    ww=input(f" [{M}!{N}] Mode Pesawat Dulu Sebelum Mulai.\n {N}[{K}?{N}] Ganti Password Jika {BM}TAP YES ?{N} [{H}Y{N}/{M}t{N}]: {K}")
     if ww in ("Y","y","ya"):
         ubahP.append("y")
         print(f"\n {N}[{H}•{N}] Contoh Password : {H}admin123{N}")
