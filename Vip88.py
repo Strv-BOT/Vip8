@@ -377,11 +377,11 @@ def gabut():
         buka_baju = open(f'results/{files}','r').readlines()
     except IOError:
         print('\n [!] Sorry, the file doesnt exist');time.sleep(2);moch_yayan()
-    ww=input(f"{N}##################################################\n [{M}!{N}] Play airplanemode first.\n##################################################\n {N}[{K}?{N}] Change password when {BM}TAP YES{N} [{H}Y{N}/{M}t{N}]: {K}")
+    ww=input(f"[{M}!{N}] Mode Pesawat Dulu Sebelum Mulai.\n {N}[{K}?{N}] Ganti Password Jika {BM}TAP YES ?{N} [{H}Y{N}/{M}t{N}]: {K}")
     if ww in ("Y","y","ya"):
         ubahP.append("y")
-        print(f"\n {N}[{H}•{N}] Password example : {H}admin123{N}")
-        pwBar=input(f" [{K}?{N}] Enter new password : {K}")
+        print(f"\n {N}[{H}•{N}] Contoh Password : {H}admin123{N}")
+        pwBar=input(f" [{K}?{N}] Masukan password baru : {K}")
         if len(pwBar) <= 5:
              print('\n %s[%s×%s] Password minimum 6 characters'%(N,M,N))
         else:
