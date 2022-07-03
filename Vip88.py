@@ -255,7 +255,7 @@ def login():
             sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':kukis})
             sy2 = json.loads(sy.text)['name']
             sy3 = json.loads(sy.text)['id']
-            yayanxd()
+            moch_yayan()
         except KeyError:
             yayanxd()
         except requests.exceptions.ConnectionError:
@@ -277,7 +277,7 @@ def yayanxd():
         ken=open(".token.txt", "w").write(find_token.group(1))
         cok=open(".cokie.txt", "w").write(___kontol___)
         print('\n Login Berhasil Jalankan Ulang Python run.py')
-        moch_yayan()
+        exit()
     except Exception as e:
         os.system("rm -f .token.txt")
         os.system("rm -f .cokie.txt")
