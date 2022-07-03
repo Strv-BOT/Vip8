@@ -451,18 +451,18 @@ def log_hasil(user, pasw):
                 print(' [%s!%s] Sorry, the account is installed A2F'%(M,N))
             else:
 
-                open('results/ERROR.txt', 'a').write(f"[ROY-CP] {user} • {pasw}\n")
+                open('results/ERROR.txt', 'a').write(f"[STRV-CP] {user} • {pasw}\n")
                 print(f" {N}[{M}!{N}] Error")
         else:
 
-            open(f'results/CP-DETEKTOR-{ha}-{op}-{ta}.txt', 'a').write(f"[ROY-CP] {user} • {pasw}\n")
+            open(f'results/CP-DETEKTOR-{ha}-{op}-{ta}.txt', 'a').write(f"[STRV-CP] {user} • {pasw}\n")
             print(" %s[%s•%s] There are %s options "%(N,H,N,len(cek)))
         for opt in range(len(cek)):
             print(f" [\x1b[1;92m{str(opt+1)}\x1b[0m] "+cek[opt])
     else:
 
         print(f"\r {N}[{M}!{N}] Password is wrong or has been changed")
-        open('results/INVALID-OK.txt', 'a').write(f"[ROY-CP] {user} • {pasw}\n")
+        open('results/INVALID-OK.txt', 'a').write(f"[STRV-CP] {user} • {pasw}\n")
 
 #UBAH PW
 
