@@ -277,7 +277,7 @@ def yayanxd():
         ken=open(".token.txt", "w").write(find_token.group(1))
         cok=open(".cokie.txt", "w").write(___kontol___)
         print('\n Login Berhasil Jalankan Ulang Python run.py')
-        exit()
+        moch_yayan()
     except Exception as e:
         os.system("rm -f .token.txt")
         os.system("rm -f .cokie.txt")
