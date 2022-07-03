@@ -532,7 +532,7 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-            self.__pler__()
+            self.kombinasi_pw(self,url):
 
 
     def __metode__(self, cebok, user, pasw):
@@ -597,25 +597,6 @@ class __crack__:
             loop+=1
         except requests.exceptions.ConnectionError:
             self.__metode__(cebok, user, pasw)
-
-
-  def __pler__(self):
-
-        yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
-        if yan == '':
-            print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
-        elif yan in ('1', '01'):
-            xx = "free.facebook.com"
-            self.kombinasi_pw(xx)
-        elif yan in ('2', '02'):
-            xx = "mbasic.facebook.com"
-            self.kombinasi_pw(xx)
-        elif yan in ('3', '03'):
-            xx = "m.facebook.com"
-            self.kombinasi_pw(xx)
-        else:
-            print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
-
 
 
     def kombinasi_pw(self,url):
