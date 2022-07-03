@@ -275,14 +275,14 @@ def cek_pw():
             jalan(" %s[%s✓%s] OK Username is correct"%(N,H,N));time.sleep(1);kska()
         else:
             jalan(" %s[%s!%s] Sorry, wrong username"%(N,M,N));time.sleep(1);cek_pw()
-    login()
+    moch_yayan()
 def kska():
     xx = input("\n %s[%s?%s] Enter Password : %s"%(N,K,N,H))
     loading()
     if xx in[""]:
         jalan(" %s[%s!%s] Sorry don't be blank!"%(N,M,N));time.sleep(1);cek_pw()
     elif xx in pwas:
-        jalan(" %s[%s✓%s] OK Password is correct"%(N,H,N));time.sleep(2);open(".ini_pw.txt", "a").write(xx);login()
+        jalan(" %s[%s✓%s] OK Password is correct"%(N,H,N));time.sleep(2);open(".ini_pw.txt", "a").write(xx);moch_yayan()
     else:
         jalan(" %s[%s!%s] Sorry, wrong Password"%(N,M,N));time.sleep(1);cek_pw()
 
