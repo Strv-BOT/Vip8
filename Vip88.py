@@ -139,6 +139,11 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.03)
 
+def mentod():
+    print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
+    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
+    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
+    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
 
 #-------- LOADING ANIMASI ------------
 
@@ -604,12 +609,20 @@ class __crack__:
 
     def __pler__(self):
 
-        print(" [%s1%s] Mobile (%sSuper Slow%s)"%(H,N,H,N))
+        print(" [%s1%s] free (%sfast%s)"%(H,N,H,N))
+        print(" [%s2%s] Mbasic (%sSlow%s)"%(H,N,H,N))
+        print(" [%s3%s] Mobile (%sSuper Slow%s)"%(H,N,H,N))
         yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
         if yan == '':
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
         elif yan in ('1', '01'):
-            xx = "M.facebook.com"
+            xx = "free.facebook.com"
+            self.kombinasi_pw(xx)
+          elif yan in ('2', '02'):
+            xx = "mbasic.facebook.com"
+            self.kombinasi_pw(xx)
+        elif yan in ('3', '03'):
+            xx = "m.facebook.com"
             self.kombinasi_pw(xx)
         else:
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
