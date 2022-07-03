@@ -272,6 +272,7 @@ def moch_yayan(my_name,my_id):
     logo()
     ipm = requests.get(url_ip).json()
     IP = ipm["origin"]
+    print(f"\33[1;96mSELAMAT MENGGUNAKAN TOOLS INI")
     print(f" {BM}INFO ACCOUNT TUMBAL{N}")
     print(f"{P} [{H}•{P}] NAME   : {my_name}")
     print(f"{P} [{H}•{P}] ID     : {my_id}")
