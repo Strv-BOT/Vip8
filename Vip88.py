@@ -532,7 +532,7 @@ class __crack__:
         print(f'\n %s[%s•%s] Total ID : %s%s%s' %(N,H,N,H,len(self.id),N))
         ___yayanganteng___ = input('%s\n [%s?%s] Silakan Tekan (%sENTER%s) : %s'%(N,K,N,H,N,H))
         if ___yayanganteng___ in ('Kontol'):
-            self.kombinasi_pw(self,url):
+            self.kombinasi_pw():
 
 
     def __metode__(self, cebok, user, pasw):
@@ -600,17 +600,17 @@ class __crack__:
 
 
     def kombinasi_pw(self,url):
-        print('%sPASSWORD MENU%s'%(N,BM,N))
-        print(' %s[%s1%s] Password Random'%(N,H,N))
-        print(' %s[%s2%s] Password Acak'%(N,H,N))
-        print(' %s[%s3%s] Acak Dan Random,%s+Input Sandi%s'%(N,H,N,H,N))
+        print(f"%sPASSWORD MENU%s"%(N,BM,N))
+        print(f" %s[%s1%s] Password Random"%(N,H,N))
+        print(f" %s[%s2%s] Password Acak"%(N,H,N))
+        print(f" %s[%s3%s] Acak Dan Random,%s+Input Sandi%s"%(N,H,N,H,N))
         pw = input(f"\n {N}[{K}?{N}] Silahkan Pilih : ")
         if pw in[""]:
             print(f" {N}[{M}!{N}] Don't be empty");self.kombinasi_pw(url)
         elif pw in["1","01"]:
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
-            print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Mode Pesawat Setiap DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+            print(f" [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
+            print(f" %s[%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
+            print(f" [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Mode Pesawat Setiap DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !")
             with YayanGanteng(max_workers=35) as kirim:
                 for yntkts in self.id:
                    try:
@@ -625,9 +625,9 @@ class __crack__:
             hasil(ok,cp)
 
         elif pw in["2","02"]:
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
-            print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+            print(f" [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
+            print(f" [%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
+            print(f" [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !")
             with YayanGanteng(max_workers=35) as kirim:
                 for yntkts in self.id:
                    try:
@@ -642,13 +642,13 @@ class __crack__:
             hasil(ok,cp)
 
         elif pw in["3","03"]:
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sSETTING PASSWORD MANUAL%s'%(N,BM,N))
-            print(" %s[%s!%s] Berikan Tanda %sKomma Pada%s Setiap Kata"%(N,M,N,H,N))
-            print(" %s[%s!%s] Example : %ssayang,rahasia,bismillah%s"%(N,M,N,H,N))
+            print(f" %sSETTING PASSWORD MANUAL%s"%(N,BM,N))
+            print(f" %s[%s!%s] Berikan Tanda %sKomma Pada%s Setiap Kata"%(N,M,N,H,N))
+            print(f" %s[%s!%s] Example : %ssayang,rahasia,bismillah%s"%(N,M,N,H,N))
             pw = input(f" {N}[{K}?{N}] Enter additional password : {H}").split(",")
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s+%s] OK : results/OK-%s-%s-%s.txt'%(N,H,N,ha, op, ta))
-            print(' %s[%s+%s] CP : results/CP-%s-%s-%s.txt'%(N,K,N,ha, op, ta))
-            print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄'%(N,M,N,M,N,M,N,H,N))
+            print("% [%s+%s] OK : results/OK-%s-%s-%s.txt"%(N,H,N,ha, op, ta))
+            print(" %s[%s+%s] CP : results/CP-%s-%s-%s.txt"%(N,K,N,ha, op, ta))
+            print(" [%s!%s] Aktifkan Mode Pesawat 5 detik jika Terkena Spam \n [%s!%s] Aktifkan Kembali Mode Pesawat Pada DUMP ID Ke 1000\n [%s!%s] CTRL+Z %sPada Keyboard%s Jika Ingin Stop !")
             with YayanGanteng(max_workers=35) as kirim:
                 for yntkts in self.id:
                    try:
