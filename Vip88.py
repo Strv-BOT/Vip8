@@ -139,13 +139,6 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.03)
 
-def mentod():
-    print('%s▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n %sMETHOD MENU%s'%(N,BM,N))
-    print(' %s[%s1%s] Free (%sfast%s)'%(N,H,N,H,N))
-    print(' [%s2%s] Mbasic (%sSlow%s)'%(H,N,H,N))
-    print(' [%s3%s] Mobile (%sSuper Slow%s)'%(H,N,H,N))
-
-
 
 #-------- LOADING ANIMASI ------------
 
@@ -319,10 +312,10 @@ def moch_yayan(my_name,my_id):
         print("%s##################################################"%(N));time.sleep(2)
         for memek in total:
             kontol = memek.replace("\n","")
-            titid  = kontol.replace("[STRV-OK] ","\x1b[1;92m[STRV-OK] ").replace("[STRV-CP] ", "\x1b[1;93m[METAVERS-CP] ")
+            titid  = kontol.replace("[STRV-OK] ","\x1b[1;92m[STRV-OK] ").replace("[STRV-CP] ", "\x1b[1;93m[STRV-CP] ")
             print("%s%s"%(titid,N));time.sleep(0.03)
         jalan("\n %s[%s✓%s] File check complete..."%(N,H,N))
-        input(' [%sPRESS ENTER%s] Untuk Keluar !'%(H,N));exit()
+        input(' [%sPRESS ENTER%s] Untuk Keluar !'%(H,N));moch_yayan()
 
     elif pepek in['4','04']:
         print("%s##################################################"%(N))
@@ -611,17 +604,12 @@ class __crack__:
 
     def __pler__(self):
 
+        print(" [%s1%s] Mobile (%sSuper Slow%s)"%(H,N,H,N))
         yan = input('\n %s[%s?%s] Choose Method : '%(N,K,N))
         if yan == '':
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
         elif yan in ('1', '01'):
-            xx = "free.facebook.com"
-            self.kombinasi_pw(xx)
-        elif yan in ('2', '02'):
-            xx = "mbasic.facebook.com"
-            self.kombinasi_pw(xx)
-        elif yan in ('3', '03'):
-            xx = "m.facebook.com"
+            xx = "M.facebook.com"
             self.kombinasi_pw(xx)
         else:
             print('\n %s[%s×%s] Sorry, it is wrong...!'%(N,M,N));self.__pler__()
