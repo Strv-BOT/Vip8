@@ -274,7 +274,7 @@ def cek_pw():
             jalan(" %s[%s✓%s] OK Username is correct"%(N,H,N));time.sleep(1);kska()
         else:
             jalan(" %s[%s!%s] Sorry, wrong username"%(N,M,N));time.sleep(1);cek_pw()
-    moch_yayan()
+    login()
 def kska():
     xx = input("\n %s[%s?%s] Enter Password : %s"%(N,K,N,H))
     loading()
