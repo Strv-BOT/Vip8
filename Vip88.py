@@ -368,8 +368,8 @@ def __convert__(mmk):
 
 def gabut():
     dirs = os.listdir("results")
-    print(f"\33[1;96mINFO FILE")
-    print(f" {BM}HASIL CRACK CHEKPOINT{N}")
+    print(f"\33[1;96mCEK OPSI CHECKPOINT")
+    print(f" \x1b[1;97m{BM}HASIL CRACK CHECKPOINT{N}")
     for file in dirs:
         print(" [%s+%s] %s"%(H,N,file))
     files = input("\n %s[%s?%s] Enter file : %s"%(N,K,N,H))
