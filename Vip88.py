@@ -368,7 +368,7 @@ def __convert__(mmk):
 
 def gabut():
     dirs = os.listdir("results")
-    print('%s##################################################\n %sFILE RESULT CRACK%s'%(N,BM,N))
+    print('%sFILE RESULT CRACK%s'%(N,BM,N))
     for file in dirs:
         print(" [%s+%s] %s"%(H,N,file))
     files = input("\n %s[%s?%s] Enter file : %s"%(N,K,N,H))
