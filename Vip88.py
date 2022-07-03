@@ -379,18 +379,6 @@ def convert_cookietotoken():
 def moch_yayan():
     os.system('clear')
     logo()
-    try:
-        tokenz = open('.token.txt', 'r').read()
-    except IOError:
-        print('\n %s[%s×%s] Cookie/Token expired'%(N,M,N));time.sleep(2);os.system('rm -rf .token.txt');os.system('rm -rf .cokie.txt');yayanxd()
-    try:
-        xx = requests.get('https://graph.facebook.com/me?access_token=%s'%(tokenz)).json()
-        nama = xx['name']
-        idfb = xx['id']
-    except KeyError:
-        print('\n %s[%s×%s] Sorry, Cookie/Token invalid'%(N,M,N));time.sleep(2);os.system('rm -rf .token.txt');os.system('rm -rf .cokie.txt');yayanxd()
-    except requests.exceptions.ConnectionError:
-        exit('\n\n %s[%s!%s] Sorry no connection\n'%(N,M,N))
     ipm = requests.get(url_ip).json()
     IP = ipm["origin"]
     print(f" {BM}LOGIN INFO{N}")
