@@ -991,5 +991,5 @@ class __crack__:
             print(f"\n {N}[{M}!{N}] Correct input");self.kombinasi_pw(url)
 
 if __name__ == '__main__':
-    login();moch_yayan()
+    login()
     #cek_pw()
