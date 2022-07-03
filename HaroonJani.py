@@ -150,7 +150,7 @@ def banner():
 •   _/      _/   _/         _/    _/          •
 •  _/      _/     _/_/   _/_/_/  _/ V.01 Beta •
 •                                             • 
-•     𝐌𝐔𝐋𝐓𝐈 𝐂𝐑𝐀𝐂𝐊𝐈𝐍𝐆 𝐈𝐃 𝐏𝐔𝐁𝐋𝐈𝐊 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊     •
+•      𝐌𝐔𝐋𝐓𝐈 𝐂𝐑𝐀𝐂𝐊𝐈𝐍𝐆 𝐈𝐃 𝐏𝐔𝐁𝐋𝐈𝐊 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊      •
 •     GITHUB : HTTPS://GITHUB.COM/PRIVATE     •'''
 	oi = nel(tekz(ban,justify='center',style='bold'), style='cyan')
 	cetak(nel(oi, title='[bold cyan] • DEVELOVER INFORMATION • [/bold cyan]'))
