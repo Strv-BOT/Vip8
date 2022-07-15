@@ -170,6 +170,7 @@ def back():
 	login()
 
 def memek():
+	os.system('clear')
 	logo()
 	print('%s [1] Info Author '%(C))
 	print('%s [2] Login '%(B))
